@@ -1,3 +1,4 @@
 ENV
 dnswebsite/dnswebsite/__pycache__
 .idea
+dnswebsite/DNSmisconfiguration/__pycache__
