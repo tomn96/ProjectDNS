@@ -1,3 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import AddressURL, AddressIP
+
+admin.site.register(AddressURL)
+admin.site.register(AddressIP)
