@@ -2,3 +2,4 @@ ENV
 dnswebsite/dnswebsite/__pycache__
 .idea
 dnswebsite/DNSmisconfiguration/__pycache__
+dnswebsite/DNSmisconfiguration/migrations/__pycache__
