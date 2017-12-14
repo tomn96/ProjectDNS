@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DNS tool</title>
+</head>
+<body>
+
+<h1>This is the DNS misconfiguration tool</h1>
+
+{% if group_members %}
+    <h2>We are:</h2>
+    <ul>
+    {% for member in group_members %}
+        {% if member.mentor %}
+        <li><b>Mentor: </b> {% member.name %} </li>
+        {% else %}
+        <li>{% member.name %} </li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+{% endif %}
+
+</body>
+</html>
