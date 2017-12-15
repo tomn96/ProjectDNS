@@ -2,5 +2,9 @@
 
 
 {% block navbarABOUT %}
-    <a href="{% url 'DNSmisconfiguration:about' %}" class="w3-bar-item w3-button w3-padding-large w3-white">About</a>
+<a href="{% url 'DNSmisconfiguration:about' %}" class="w3-bar-item w3-button w3-padding-large w3-white">About</a>
+{% endblock %}
+
+{% block navbarDemoABOUT %}
+<a href="{% url 'DNSmisconfiguration:about' %}" class="w3-bar-item w3-button w3-padding-large w3-gray">About</a>
 {% endblock %}

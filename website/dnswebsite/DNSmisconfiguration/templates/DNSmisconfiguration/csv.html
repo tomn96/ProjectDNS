@@ -2,5 +2,9 @@
 
 
 {% block navbarCSV %}
-    <a href="{% url 'DNSmisconfiguration:csv' %}" class="w3-bar-item w3-button w3-padding-large w3-white">CSV</a>
+<a href="{% url 'DNSmisconfiguration:csv' %}" class="w3-bar-item w3-button w3-padding-large w3-white">CSV</a>
+{% endblock %}
+
+{% block navbarDemoCSV %}
+<a href="{% url 'DNSmisconfiguration:csv' %}" class="w3-bar-item w3-button w3-padding-large w3-gray">CSV</a>
 {% endblock %}
