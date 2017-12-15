@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from django.http import HttpResponse
 
 class Member:
     def __init__(self, name, role="Project Member", brief=None, email="Not Allowed", image="", image_alt=None):
@@ -20,4 +20,12 @@ def index(request):
     members.append(Member("Haya Shulman", role="Mentor"))
 
     context = {'team_members': members}
-    return render(request, 'DNSmisconfiguration/main.html', context)
+    return render(request, 'DNSmisconfiguration/index.html', context)
+
+
+def csv(request):
+    return HttpResponse("please upload CSV file")
+
+
+def address(request):
+    return HttpResponse("please enter URL address")
