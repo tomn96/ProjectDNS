@@ -24,8 +24,12 @@ def index(request):
 
 
 def csv(request):
-    return HttpResponse("please upload CSV file")
+    return render(request, 'DNSmisconfiguration/csv.html')
 
 
 def address(request):
-    return HttpResponse("please enter URL address")
+    return render(request, 'DNSmisconfiguration/address.html')
+
+
+def about(request):
+    return render(request, 'DNSmisconfiguration/about.html')

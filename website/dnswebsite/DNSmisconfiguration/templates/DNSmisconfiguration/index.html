@@ -2,6 +2,12 @@
 
 {% load static %}
 
+{% block navbarHOME %}
+    <a href="{% url 'DNSmisconfiguration:index' %}" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+{% endblock %}
+
+
+
 <!-- Header -->
 {% block header %}
 <header class="w3-container w3-red w3-center" style="padding:128px 16px">
