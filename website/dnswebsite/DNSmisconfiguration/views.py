@@ -1,29 +1,23 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+
+
+class Member:
+    def __init__(self, name, role="Project Member", brief=None, email="Not Allowed", image="", image_alt=None):
+        self.name = name
+        self.role = role
+        self.brief = brief if brief is not None else "Acts as a " + role + " in this project"
+        self.email = email
+        self.image = "DNSmisconfiguration/" + image
+        self.image_alt = image_alt if image_alt is not None else "Image of " + name
 
 
 def index(request):
 
     members = list()
-    members.append(Member('Tom Nissim'))
-    members.append(Member('Tomer Lior'))
-    members.append(Member('Tom Elyassi'))
-    members.append(Member('Haya Shulman', True))
+    members.append(Member("Tom Nissim"))
+    members.append(Member("Tomer Lior"))
+    members.append(Member("Tom Eliassy"))
+    members.append(Member("Haya Shulman", role="Mentor"))
 
-    context = {'group_members': members}
-
-    return render(request, 'DNSmisconfiguration/index.html', context)
-
-
-class Member:
-    def __init__(self, name, mentor=False):
-        self.name = name
-        self.mentor = mentor
-
-
-def address(request):
-    return HttpResponse("Enter new URL please")
-
-
-def csv(request):
-    return HttpResponse("Enter new CSV file please")
+    context = {'team_members': members}
+    return render(request, 'DNSmisconfiguration/main.html', context)
