@@ -13,9 +13,9 @@
     <ul>
     {% for member in group_members %}
         {% if member.mentor %}
-        <li><b>Mentor: </b> {% member.name %} </li>
+        <li><b>Mentor: </b> {{ member.name }} </li>
         {% else %}
-        <li>{% member.name %} </li>
+        <li>{{ member.name }} </li>
         {% endif %}
     {% endfor %}
     </ul>
