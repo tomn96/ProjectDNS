@@ -1,5 +1,6 @@
 {% extends "DNSmisconfiguration/base.html" %}
 
+{% load static %}
 
 {% block navbarCSV %}
 <a href="{% url 'DNSmisconfiguration:csv' %}" class="w3-bar-item w3-button w3-padding-large w3-white">CSV</a>
@@ -7,4 +8,16 @@
 
 {% block navbarDemoCSV %}
 <a href="{% url 'DNSmisconfiguration:csv' %}" class="w3-bar-item w3-button w3-padding-large w3-gray">CSV</a>
+{% endblock %}
+
+
+{% block content %}
+<script src="{% static 'DNSmisconfiguration/dropzonejs/dropzone.js' %}"></script>
+<link rel="stylesheet" href="{% static 'DNSmisconfiguration/dropzonejs/dropzone.css' %}">
+
+<form action="/file-upload" class="dropzone" id="uploadFile">
+    <div class="fallback">
+        <input name="file" type="file" multiple/>
+    </div>
+</form>
 {% endblock %}
