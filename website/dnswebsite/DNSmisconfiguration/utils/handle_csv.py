@@ -1,10 +1,11 @@
 import csv
 
 
-def handle_csv_file(file_name):
-    result = list()
-    with open(file_name, 'r') as csv_file:
-        file_reader = csv.reader(csv_file)
-        for row in file_reader:
-            result.append(row)
+def handle_csv_file(file):
+
+    utf8 = (line.decode('utf-8') for line in file)
+    file_reader = csv.reader(utf8)
+
+    result = [row for row in file_reader]
+
     return result

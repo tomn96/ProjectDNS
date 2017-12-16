@@ -1,5 +1,8 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponseRedirect, HttpResponse
+from .utils.handle_csv import handle_csv_file
+from django.views.decorators.csrf import csrf_exempt
+
 
 class Member:
     def __init__(self, name, role="Project Member", brief=None, email="Not Allowed", image="", image_alt=None):
@@ -33,3 +36,15 @@ def address(request):
 
 def about(request):
     return render(request, 'DNSmisconfiguration/about.html')
+
+
+@csrf_exempt
+def upload_csv(request):
+    if request.method == 'POST':
+        result = handle_csv_file(request.FILES['file'])
+        return HttpResponseRedirect("uploaded_csv/" + str(result))
+    return csv(request)
+
+
+def uploaded_csv(request, csv_result):
+    return HttpResponse("This is your CSV file: \n" + str(csv_result))
