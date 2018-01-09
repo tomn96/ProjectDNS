@@ -10,14 +10,26 @@ TEXT_ENTRY = "TXT"
 MAIL_EXCHANGER = "MX"
 SONS = "SONS"
 
+RESOLVER_ORIGIN = True
 
 class QueryObj:
 
-    def __init__(self, host):
-        self.__resolver = dns.resolver.Resolver()
-        self.__host = host
+    def __init__(self, domain):
+        self.__domain = domain
+        self.__origin = not RESOLVER_ORIGIN
+        self.__host = None
+        self.__name_servers = list()
+        self.__ipv4_addresses = list()
+        self.__ipv6_addresses = list()
+        self.__mail_exchanger = None
+        self.__text_entry = None
+
+    def fillWithResolver(self):
         try:
-            self.__name_server = self.perform_query(NAME_SERVER)
+            self.__origin = RESOLVER_ORIGIN
+            self.__host = host
+            self.__resolver = dns.resolver.Resolver()
+            self.__name_servers = self.perform_query(NAME_SERVER)
             self.__ipv4_addresses = self.perform_query(HOST_ADDRESS)
             self.__mail_exchanger = self.perform_query(MAIL_EXCHANGER)
             self.__text_entry = self.perform_query(TEXT_ENTRY)
@@ -28,21 +40,27 @@ class QueryObj:
             print("Request timeout")
         except dns.exception.DNSException:
             print("Unhandled DNS exception")
-
         try:
             self.__ipv6_addresses = self.perform_query(HOST6_ADDRESS)
         except Exception:
             self.__ipv6_addresses = None
 
-        try:
-            self.__authorative = self.get_authoritative_nameserver()
-        except Exception:
-            self.__authorative = None
+
+    def addRRData(self, rr):
+        if rr.rdtype == dns.rdatatype.NS:
+            self.__host = str(rr)
+        else:
+            if self.__host is None:
+                self.__host = rr.name
+        if rr.rdtype == dns.rdatatype.A:
+            self.__ipv4_addresses.extend(rr.items)
+        if rr.rdtype == dns.rdatatype.AAAA:
+            self.__ipv6_addresses.extend(rr.items)
 
 
     def perform_query(self, type):
         try:
-            query = self.__resolver.query(self.__host, type)
+            query = self.__resolver.query(self.__domain, type)
         except dns.resolver.NXDOMAIN:
             print("No such Domain")
         except dns.resolver.Timeout:
@@ -66,68 +84,25 @@ class QueryObj:
 
     def __str__(self):
         s = "DNS information\n"
-        s += "Host: " + str(self.__host) + "\n"
+        s += "Domain: " + str(self.__domain) + "\n"
         s += "IPv4 Addresses: " + self.get_record_str(self.__ipv4_addresses)
         s += "IPv6 Addresses :" + self.get_record_str(self.__ipv6_addresses)
-        s += "Name Server: " + self.get_record_str(self.__name_server)
+        s += "Name Server: " + self.get_record_str(self.__name_servers)
         s += "Mail Exchanger: " + self.get_record_str(self.__mail_exchanger)
         return s
 
     def __getitem__(self, item):
         return {
-            NAME_SERVER: self.__name_server,
+            NAME_SERVER: self.__name_servers,
             HOST_ADDRESS: self.__ipv4_addresses,
             HOST6_ADDRESS: self.__ipv4_addresses,
             TEXT_ENTRY: self.__text_entry,
             MAIL_EXCHANGER: self.__mail_exchanger,
-            SONS: self.__sons
         }[item]
 
     def __repr__(self):
         return self.__str__()
 
-    def get_authoritative_nameserver(domain, log=lambda msg: None):
-        n = dns.name.from_text(domain)
-
-        depth = 2
-        default = dns.resolver.get_default_resolver()
-        nameserver = default.nameservers[0]
-
-        last = False
-        while not last:
-            s = n.split(depth)
-
-            last = s[0].to_unicode() == u'@'
-            sub = s[1]
-
-            log('Looking up %s on %s' % (sub, nameserver))
-            query = dns.message.make_query(sub, dns.rdatatype.NS)
-            response = dns.query.udp(query, nameserver)
-
-            rcode = response.rcode()
-            if rcode != dns.rcode.NOERROR:
-                if rcode == dns.rcode.NXDOMAIN:
-                    raise Exception('%s does not exist.' % sub)
-                else:
-                    raise Exception('Error %s' % dns.rcode.to_text(rcode))
-
-            rrset = None
-            if len(response.authority) > 0:
-                rrset = response.authority[0]
-            else:
-                rrset = response.answer[0]
-
-            rr = rrset[0]
-            if rr.rdtype == dns.rdatatype.SOA:
-                log('Same server is authoritative for %s' % sub)
-            else:
-                authority = rr.target
-                log('%s is authoritative for %s' % (authority, sub))
-                nameserver = default.query(authority).rrset[0].to_text()
-
-            depth += 1
-
-        return nameserver
 
     import sys
 

@@ -7,6 +7,7 @@ import sys
 import pandas as pd
 
 FILE_INDEX = 1
+FIRST = 0
 
 #---------------------------------------------------------------Assist Methods-----------------------------------------
 
@@ -73,31 +74,38 @@ def perform_DNS_routine(domain, log=lambda msg: None):
         else:
             # no authoritative severs found - saves the current name server as authoritative
             rrsets = response.answer
-
+        rrName = None
+        queryInfo = None
         # handles all authoritative name servers for the current domain (not just the first one)
         for rrset in rrsets:
-            for rr in rrset:
-                if rr.rdtype == dns.rdatatype.SOA: # in case of DNSSec
+            for i in range(len(rrset)):
+                if((rrset[i].rdtype == dns.rdatatype.A or rrset[i].rdtype == dns.rdatatype.AAAA) and
+                           rrName != rrset[i].name or rrset[i].rdtype == dns.rdatatype.NS ):
+                    queryInfo = QO.QueryObj(sub)
+                    dns_tree[sub].append(queryInfo)
+                    if (rrset[i].rdtype != dns.rdatatype.NS):
+                        rrName = rrset[i].name
+                    else:
+                        rrName = str(rrset[i])
+                if rrset[i].rdtype == dns.rdatatype.SOA: # in case of DNSSec
                     log('Same server is authoritative for %s' % (sub))
-                elif rr.rdtype == dns.rdatatype.A:  # in case of address
-                    ns = rr.items[0].address
-                    log('Glue record for %s: %s' % (rr.name, ns))
-                elif rr.rdtype == dns.rdatatype.NS:  # in case of name server
-                    authority = rr.target
+                elif rrset[i].rdtype == dns.rdatatype.A:  # in case of address
+                    ns = rrset[i].items[0].address
+                    log('Glue record for %s: %s' % (rrset[i].name, ns))
+                elif rrset[i].rdtype == dns.rdatatype.NS:  # in case of name server
+                    authority = rrset[i].target
                     ns = default_resolver.query(authority).rrset[0].to_text()
 
                     # TODO ask about children too
 
-                    queryInfo = QO.QueryObj(str(rr))
-                    dns_tree[sub].append(queryInfo)
                     log('%s [%s] is authoritative for %s; ttl %i' %
                         (authority, ns, sub, rrset.ttl))
                     result = rrset
                 else:
-                    # IPv6 glue records etc
-                    log('Ignoring %s' % (rr))
+                    log('Ignoring %s' % (rrset[i]))
                     pass
-
+                queryInfo.addRRData(rrset[i])
+            queryInfo = None
     return dns_tree
 
 
@@ -107,8 +115,14 @@ def log(msg):
     sys.stderr.write(msg + u'\n')
 
 
-for s in sys.argv[1:]:
-    print(perform_DNS_routine(s, log))
+def printQueryObjects(DNSTree):
+    for domain in DNSTree.keys():
+        print("################################\nDomain: " + domain +"\n################################\n")
+        for qo in DNSTree[domain]:
+            print(str(qo))
+
+# for s in sys.argv[1:]:
+
 
     # lst1 = ["Tomer", "Yossi", "Tom", "Avi"]
     # lst2 = ["Yossi", "Avi", "Moshe"]
@@ -117,11 +131,15 @@ for s in sys.argv[1:]:
 
 
 #------------------------------------------------------------Main Function----------------------------------------------
-if __name__ == "__main__":
-    #Gets the input from the user
-    df=pd.read_csv(sys.argv[FILE_INDEX], sep=',',header=None)
+# if __name__ == "__main__":
+#     #Gets the input from the user
+#     df=pd.read_csv(sys.argv[FILE_INDEX], sep=',',header=None)
+#
+#     #Process every url address in the input csv file
+#     for urlAddr in df.itertuples():
+#         #TODO Check validation of the url addr?
+#         perform_DNS_routine(urlAddr)
 
-    #Process every url address in the input csv file
-    for urlAddr in df.itertuples():
-        #TODO Check validation of the url addr?
-        perform_DNS_routine(urlAddr)
+if __name__ == '__main__':
+    d = perform_DNS_routine("walla.co.il")
+    # printQueryObjects(d)
