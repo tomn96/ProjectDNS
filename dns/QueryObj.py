@@ -45,17 +45,47 @@ class QueryObj:
         except Exception:
             self.__ipv6_addresses = None
 
+    def getNSByIP(self):
+        myAnswers = list()
+        response = None
+        resolver = dns.resolver.Resolver()
+        for address in self.__ipv4_addresses:
+            resolver.nameservers.append(address)
+            req = '.'.join(reversed(str(address).split("."))) + ".in-addr.arpa"
+
+            # checks if the name received by the A response is different from PTR query response
+            myAnswers.append(resolver.query(req, "PTR"))
+            answerNS = myAnswers[0].response.answer[0].items[0].target
+            if answerNS != self.__host:
+                print("names are different")
+
+            # queries the current name server for the name servers for this domain
+            query = dns.message.make_query(self.__domain, dns.rdatatype.NS)
+            response = dns.query.udp(query, str(address))
+
+        self.__name_servers.extend(response.additional)
+
+        print()
+
 
     def addRRData(self, rr):
         if rr.rdtype == dns.rdatatype.NS:
-            self.__host = str(rr)
+            self.__host = rr.target
+            resolver = dns.resolver.get_default_resolver()
+            for ip in resolver.query(rr.target).rrset:
+                self.__ipv4_addresses.append(ip)
+
         else:
             if self.__host is None:
                 self.__host = rr.name
         if rr.rdtype == dns.rdatatype.A:
             self.__ipv4_addresses.extend(rr.items)
+
         if rr.rdtype == dns.rdatatype.AAAA:
             self.__ipv6_addresses.extend(rr.items)
+
+        # if rr.rdtype == dns.rdatatype.AAAA or rr.rdtype == dns.rdatatype.A:
+        self.getNSByIP()
 
 
     def perform_query(self, type):
