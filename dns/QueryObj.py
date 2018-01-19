@@ -3,12 +3,13 @@ import dns.name
 import dns.query
 import dns.resolver
 
+HOST_NAME = "SERVER_NAME"
 NAME_SERVER = "NS"
 HOST_ADDRESS = "A"
 HOST6_ADDRESS = "AAAA"
 TEXT_ENTRY = "TXT"
 MAIL_EXCHANGER = "MX"
-SONS = "SONS"
+MISCONFIG = "MISCONFIG"
 
 RESOLVER_ORIGIN = True
 
@@ -18,16 +19,17 @@ class QueryObj:
         self.__domain = domain
         self.__origin = not RESOLVER_ORIGIN
         self.__host = None
-        self.__name_servers = list()
+        self.__name_servers = set()
         self.__ipv4_addresses = list()
         self.__ipv6_addresses = list()
         self.__mail_exchanger = None
+        self.__misconfigurations = None
         self.__text_entry = None
+
 
     def fillWithResolver(self):
         try:
             self.__origin = RESOLVER_ORIGIN
-            self.__host = host
             self.__resolver = dns.resolver.Resolver()
             self.__name_servers = self.perform_query(NAME_SERVER)
             self.__ipv4_addresses = self.perform_query(HOST_ADDRESS)
@@ -63,9 +65,14 @@ class QueryObj:
             query = dns.message.make_query(self.__domain, dns.rdatatype.NS)
             response = dns.query.udp(query, str(address))
 
-        self.__name_servers.extend(response.additional)
+
+        for server in response.additional:
+            self.__name_servers.add(server.name)
 
         print()
+        # todo check ipv4/6 also????
+        # self.__name_servers.extend(response.additional)
+
 
 
     def addRRData(self, rr):
@@ -115,6 +122,7 @@ class QueryObj:
     def __str__(self):
         s = "DNS information\n"
         s += "Domain: " + str(self.__domain) + "\n"
+        s += "Host: " + str(self.__host) + "\n"
         s += "IPv4 Addresses: " + self.get_record_str(self.__ipv4_addresses)
         s += "IPv6 Addresses :" + self.get_record_str(self.__ipv6_addresses)
         s += "Name Server: " + self.get_record_str(self.__name_servers)
@@ -124,6 +132,8 @@ class QueryObj:
     def __getitem__(self, item):
         return {
             NAME_SERVER: self.__name_servers,
+            MISCONFIG: self.__misconfigurations,
+            HOST_NAME: self.__host,
             HOST_ADDRESS: self.__ipv4_addresses,
             HOST6_ADDRESS: self.__ipv4_addresses,
             TEXT_ENTRY: self.__text_entry,
@@ -133,9 +143,21 @@ class QueryObj:
     def __repr__(self):
         return self.__str__()
 
+    # This function finds the values of lst1 that ARE NOT in lst2
+    def build_foreign_list(self, lst1, lst2):
+        result = list()
+        for element in lst1:
+            i = 0
+            while i < (len(lst2)):
+                if element == lst2[i]:
+                    break
+                i += 1
+            if i == len(lst2):
+                result.append(element)
+        return result
 
-    import sys
-
-    def log(msg):
-        print(msg)
-
+    # Finds the differences between the servers lists of the resolver's response and the process of the DNS protocol
+    def find_misconfigurations(self, listToCompare):
+        foreign_to_server = self.build_foreign_list(list(self.__name_servers), listToCompare)
+        foreign_to_dns_routine = self.build_foreign_list(listToCompare, list(self.__name_servers))
+        self.__misconfigurations = (foreign_to_server, foreign_to_dns_routine)

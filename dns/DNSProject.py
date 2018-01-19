@@ -126,6 +126,25 @@ def printQueryObjects(DNSTree):
         for qo in DNSTree[domain]:
             print(str(qo))
 
+        print("#######################\nmisconfigurations: " + domain + "\n#######################\n")
+        for qo in DNSTree[domain]:
+            print("foreign to server " + str(qo["SERVER_NAME"]) +":\n" + str(qo["MISCONFIG"][0]))
+            print("foreign to default " + str(qo["SERVER_NAME"]) + ":\n" + str(qo["MISCONFIG"][1]))
+
+def findMissConfiguration(dns_dict):
+    defaultNS = list()
+    for domain in dns_dict.keys():
+
+        # construct the domain's default name servers list
+        for server_info in dns_dict[domain]:
+            defaultNS.append(server_info["SERVER_NAME"])
+
+        # for each server, compare name server list with default
+        for server_info in dns_dict[domain]:
+            server_info.find_misconfigurations(defaultNS)
+
+        defaultNS.clear()
+
 # for s in sys.argv[1:]:
 
 
@@ -146,7 +165,11 @@ def printQueryObjects(DNSTree):
 #         perform_DNS_routine(urlAddr)
 
 if __name__ == '__main__':
-    d = perform_DNS_routine("google.com")
+    d = perform_DNS_routine("walla.co.il")
+    findMissConfiguration(d)
+    printQueryObjects(d)
+    print()
+
 
     # ip = "216.239.32.10"
     # myResolver = dns.resolver.Resolver()  # create a new instance named 'myResolver'
