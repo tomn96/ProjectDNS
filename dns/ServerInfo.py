@@ -8,21 +8,31 @@ NAME_SERVER = "NS"
 HOST_ADDRESS = "A"
 HOST6_ADDRESS = "AAAA"
 TEXT_ENTRY = "TXT"
+DESCRIPTION = "DESC"
 MAIL_EXCHANGER = "MX"
 MISCONFIG = "MISCONFIG"
+
+HOST_INDEX = 0
+IPV4_INDEX = 1
+IPV6_INDEX = 2
+DESCRIPTION_INDEX = 3
+DOMAIN = 4
 
 RESOLVER_ORIGIN = True
 
 class ServerInfo:
 
-    def __init__(self, domain, host):
-        self.__domain = domain
-        self.__host = host
-        self.__name_servers = set()
+    def __init__(self, data):
         self.__ipv4_addresses = list()
         self.__ipv6_addresses = list()
-        self.__mail_exchanger = None
-        self.__text_entry = None
+
+        self.__domain = data[DOMAIN]
+        self.__host = data[HOST_INDEX]
+        self.__ipv4_addresses.extend(data[IPV4_INDEX])
+        self.__ipv6_addresses.extend(data[IPV6_INDEX])
+        self.__description = data[DESCRIPTION_INDEX]
+
+        # self.get_NS_for_domain()
 
     # fill additional dns info for this host
     def fillWithResolver(self):
@@ -45,7 +55,11 @@ class ServerInfo:
         except Exception:
             self.__ipv6_addresses = None
 
-    def getNSByIP(self):
+    def get_NS_for_domain(self, domain_to_check):
+        """
+        querries this server for NS in the given domain
+            :param domain_to_check: the domain to query
+        """
         myAnswers = list()
         response = None
         resolver = dns.resolver.Resolver()
@@ -60,14 +74,14 @@ class ServerInfo:
                 print("names are different")
 
             # queries the current name server for the name servers for this domain
-            query = dns.message.make_query(self.__domain, dns.rdatatype.NS)
+            query = dns.message.make_query(domain_to_check, dns.rdatatype.NS)
             response = dns.query.udp(query, str(address))
 
-
+        name_servers = set()
         for server in response.additional:
-            self.__name_servers.add(server.name)
-
-        print()
+            name_servers.add(server.name)
+        return name_servers
+        
         # todo check ipv4/6 also????
         # self.__name_servers.extend(response.additional)
 
@@ -88,9 +102,6 @@ class ServerInfo:
 
         if rr.rdtype == dns.rdatatype.AAAA:
             self.__ipv6_addresses.extend(rr.items)
-
-        # if rr.rdtype == dns.rdatatype.AAAA or rr.rdtype == dns.rdatatype.A:
-        self.getNSByIP()
 
 
     def perform_query(self, type):
@@ -123,18 +134,18 @@ class ServerInfo:
         s += "Host: " + str(self.__host) + "\n"
         s += "IPv4 Addresses: " + self.get_record_str(self.__ipv4_addresses)
         s += "IPv6 Addresses :" + self.get_record_str(self.__ipv6_addresses)
-        s += "Name Server: " + self.get_record_str(self.__name_servers)
-        s += "Mail Exchanger: " + self.get_record_str(self.__mail_exchanger)
+        s += "Description: " + self.__description
+        # s += "Mail Exchanger: " + self.get_record_str(self.__mail_exchanger)
         return s
 
     def __getitem__(self, item):
         return {
-            NAME_SERVER: self.__name_servers,
             HOST_NAME: self.__host,
             HOST_ADDRESS: self.__ipv4_addresses,
             HOST6_ADDRESS: self.__ipv4_addresses,
-            TEXT_ENTRY: self.__text_entry,
-            MAIL_EXCHANGER: self.__mail_exchanger,
+            DESCRIPTION: self.__description,
+            # TEXT_ENTRY: self.__text_entry,
+            # MAIL_EXCHANGER: self.__mail_exchanger,
         }[item]
 
     def __repr__(self):

@@ -5,11 +5,10 @@ import dns.resolver
 
 class DomainInfo:
 
-    def __init__(self, domain, default_resolver):
+    def __init__(self, domain):
 
         # ToDo document the meaning of each list
         self.__domain = domain
-        self.__default_resolver = default_resolver
         self.__defaultNS = list()
 
 
@@ -63,8 +62,8 @@ class DomainInfo:
         # handles all authoritative name servers for the current domain (not just the first one)
         for rrset in rrsets:
             for rr in rrset:
-                if(rr.rdtype)
-                self.__selfQueriedNameServers.append(rr.items[0])
+                if(rr.rdtype):
+                    self.__selfQueriedNameServers.append(rr.items[0])
                 if (rr.rdtype != dns.rdatatype.NS):
                     rrName = rr.name
                 else:

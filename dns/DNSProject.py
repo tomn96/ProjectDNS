@@ -3,11 +3,14 @@ import dns.name
 import dns.query
 import dns.resolver
 import QueryObj as QO
+import ServerInfo as SI
 import sys
 import pandas as pd
 
 FILE_INDEX = 1
 FIRST = 0
+
+ROOT_SERVERS_FILE_PATH = 'C:\\Users\\Tomeriq\\Documents\\Visual Code\\Python\\ProjectDNS\\dns\\IANA Root Servers.csv'
 
 #---------------------------------------------------------------Assist Methods-----------------------------------------
 
@@ -144,6 +147,33 @@ def findMissConfiguration(dns_dict):
             server_info.find_misconfigurations(defaultNS)
 
         defaultNS.clear()
+
+
+def get_master_root_servers():
+    """
+    reads the addresses of the 13 IANA root servers 
+    (see https://www.iana.org/domains/root/servers)
+        :returns the raw data read from csv file
+    """
+    raw_data = pd.read_csv(ROOT_SERVERS_FILE_PATH, names=[
+                           'Server Name', 'IPv4 Address', 'IPv6 Address', 'Owner Description'])
+    return raw_data
+
+
+def build_root_servers_info_objects():
+    """
+    builds ServerInfo objects for each root server
+    :returns list of ServerInfo objects for each root server
+    """
+    servers_info = get_master_root_servers()
+    servers = list()
+    for server_csv_data in servers_info.values:
+        server_data = list()
+        for i in range(len(server_csv_data)):
+            server_data.append(server_csv_data[i])
+        server_data.append("Root Domain")
+        servers.append(SI.ServerInfo(server_data))
+    return servers
 
 # for s in sys.argv[1:]:
 
