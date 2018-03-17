@@ -35,7 +35,7 @@ def shouldCreateNewQueryObject(rr, previousName):
     return ((rr.rdtype == dns.rdatatype.A or rr.rdtype == dns.rdatatype.AAAA) and
             previousName != rr.name or rr.rdtype == dns.rdatatype.NS )
 
-def queryAboutSubDomain(subDomain, dnsDict, serverToStartFrom,default_resolver):
+def queryAboutSubDomain(subDomain, dnsDict, serverToStartFrom, default_resolver):
 
     # checks the sub-domain for name servers
     log('Looking up %s on %s' % (subDomain, serverToStartFrom))
