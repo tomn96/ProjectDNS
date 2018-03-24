@@ -6,8 +6,16 @@ import DomainInfo as DI
 import ServerInfo as SI
 import pandas as PD
 
+TOP_LEVEL_DOMAIN = 0
 
 RESOLVER_ORIGIN = True
+
+# time before ignoring udp response (in seconds)
+UDP_QUERY_TIME_OUT = 4
+
+# server data that should be handled as a list
+LIST_TYPE_ARGS = {SI.IPV4_INDEX,SI.IPV6_INDEX,SI}
+
 ROOT_SERVERS_FILE_PATH = 'C:\\Users\\Tomeriq\\Documents\\Visual Code\\Python\\ProjectDNS\\dns\\IANA Root Servers.csv'
 
 
@@ -33,7 +41,11 @@ def build_root_servers_info_objects(servers_info_file_path):
     for server_csv_data in servers_info.values:
         server_data = list()
         for i in range(len(server_csv_data)):
-            server_data.append(server_csv_data[i])
+            if i in LIST_TYPE_ARGS:
+                server_data.append(list())
+                server_data[i].append(server_csv_data[i])
+            else:
+                server_data.append(server_csv_data[i])
         server_data.append("Root Domain")
         servers.append(SI.ServerInfo(server_data))
     return servers
@@ -57,7 +69,6 @@ def build_foreign_list(lst1, lst2):
             result.append(element)
     return result
 
-@staticmethod
 def add_server_data_from_query_response(server_info, response):
         """
         adds data from a given dns response to server_info list
@@ -78,7 +89,6 @@ def add_server_data_from_query_response(server_info, response):
 
         return server_info
 
-@staticmethod
 def create_new_server_data_list(server_name):
         """
         creates a new list of server's data paramaters
@@ -90,7 +100,6 @@ def create_new_server_data_list(server_name):
         server_info.append(list())
         return server_info
 
-@staticmethod
 def get_NS_for_domain(server, domain_to_check):
     """
     querries this server for NS in the given domain
@@ -100,21 +109,41 @@ def get_NS_for_domain(server, domain_to_check):
     NS_dict = dict() # dictionary in the form of { server's name -> server's data }
     response = None
     resolver = dns.resolver.Resolver()
+
+    # clears the default servers the resolver queries
+    # [local COMM/dns and 8.8.8.8 (google)]
+    resolver.nameservers.clear()
+    server_name = None
+
+    # adds the server's addresses to the servers queried
+    # by resolver
     for address in server[SI.HOST_ADDRESS]:
         resolver.nameservers.append(address)
 
-        # queries the name servers for the given domain
-        query = dns.message.make_query(domain_to_check, dns.rdatatype.NS)
-        response = dns.query.udp(query, str(address))
+        try:
+            # queries the name servers for the given domain
+            query = dns.message.make_query(domain_to_check, dns.rdatatype.NS)
+            response = dns.query.udp(query, str(address), timeout=4)
+        except dns.resolver.NXDOMAIN:
+            print("No such Domain")
+        except dns.resolver.Timeout:
+            print("Request timeout")
+            return None
+        except dns.exception.DNSException:
+            print("Unhandled DNS exception")
+        except Exception as e:
+            print(e.__cause__)
+
 
         # analyses respone and creates data lists
         for rr in response.additional:
-            if rr.name not in NS_dict:
-                NS_dict[rr.name] = create_new_server_data_list(rr.name)
-                NS_dict[rr.name].append(
+            server_name = str(rr.name)
+            if server_name not in NS_dict:
+                NS_dict[server_name] = create_new_server_data_list(server_name)
+                NS_dict[server_name].append(
                     "Name server for domain " + '"' + str(domain_to_check) + '"')
-                NS_dict[rr.name].append(str(domain_to_check))
-            add_server_data_from_query_response(NS_dict[rr.name], rr)
+                NS_dict[server_name].append(str(domain_to_check))
+            add_server_data_from_query_response(NS_dict[server_name], rr)
 
     # builds a ServerInfo object for each server data list
     name_servers = list()
@@ -158,19 +187,23 @@ class MisconfigurationInfo:
         foreign_to_child = None
 
         sub_domain_NS_list = list()
-        sub_domain_level = len(self.__domains) - 1
+        sub_domain_level = TOP_LEVEL_DOMAIN
+
+        answer = None
 
         # start with IANA root server, query about top sub-domain first
         for root_server in root_servers:
-                    sub_domain_NS_list.extend(get_NS_for_domain(
-                        root_server, self.__domains[sub_domain_level]))
+            answer = get_NS_for_domain(
+                root_server, self.__domains[TOP_LEVEL_DOMAIN])
+            sub_domain_NS_list.extend(answer)
 
-        sub_domain_level -= 1
+        sub_domain_level += 1
 
-        while(sub_domain_level > 0):
+        while(sub_domain_level < len(self.__domains)):
             # check misconfiguration for each server in list
             for server in sub_domain_NS_list:
                 NS_to_compare_with = get_NS_for_domain(server, self.__domains[sub_domain_level])
+
                 #TODO - Finish!
             
                 
