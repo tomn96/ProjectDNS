@@ -18,7 +18,6 @@ LIST_TYPE_ARGS = {SI.IPV4_INDEX,SI.IPV6_INDEX,SI}
 
 ROOT_SERVERS_FILE_PATH = 'C:\\Users\\Tomeriq\\Documents\\Visual Code\\Python\\ProjectDNS\\dns\\IANA Root Servers.csv'
 
-
 def get_master_root_servers():
     """
     reads the addresses of the 13 IANA root servers 
@@ -50,7 +49,7 @@ def build_root_servers_info_objects(servers_info_file_path):
         servers.append(SI.ServerInfo(server_data))
     return servers
 
-@staticmethod
+''' @staticmethod
 def build_foreign_list(lst1, lst2):
     """
     create as list composed of elements found in the 
@@ -67,7 +66,7 @@ def build_foreign_list(lst1, lst2):
             i += 1
         if i == len(lst2):
             result.append(element)
-    return result
+    return result '''
 
 def add_server_data_from_query_response(server_info, response):
         """
@@ -82,6 +81,8 @@ def add_server_data_from_query_response(server_info, response):
             ip_type = SI.IPV4_INDEX
         elif response.rdtype == dns.rdatatype.AAAA:
             ip_type = SI.IPV6_INDEX
+
+        # if response.rdtype == dns.rdatatype.NS: # TODO: can be called if record was from authority/answer. not sure whether need to add code or not.
 
         # adds all addresses listed for the server
         for ip in response.items:
@@ -120,30 +121,53 @@ def get_NS_for_domain(server, domain_to_check):
     for address in server[SI.HOST_ADDRESS]:
         resolver.nameservers.append(address)
 
-        try:
-            # queries the name servers for the given domain
-            query = dns.message.make_query(domain_to_check, dns.rdatatype.NS)
-            response = dns.query.udp(query, str(address), timeout=4)
-        except dns.resolver.NXDOMAIN:
-            print("No such Domain")
-        except dns.resolver.Timeout:
-            print("Request timeout")
-            return None
-        except dns.exception.DNSException:
-            print("Unhandled DNS exception")
-        except Exception as e:
-            print(e.__cause__)
+    try:
+        # queries the name server for the given domain
+        query = dns.message.make_query(domain_to_check, dns.rdatatype.NS)
+        response = dns.query.udp(query, str(address), timeout=UDP_QUERY_TIME_OUT)
+    except dns.resolver.NXDOMAIN:
+        print("No such Domain")
+    except dns.resolver.Timeout:
+        print("Request timeout")
+        return None
+    except dns.exception.DNSException:
+        print("Unhandled DNS exception")
+    except Exception as e:
+        print(e.__cause__)
 
+    # analyses respone and creates data lists
+    for rr in response.additional:
+        server_name = str(rr.name)
+        if server_name not in NS_dict:
+            NS_dict[server_name] = create_new_server_data_list(server_name)
+            NS_dict[server_name].append(
+                "Name server for domain " + '"' + str(domain_to_check) + '"')
+            NS_dict[server_name].append(str(domain_to_check))
+        add_server_data_from_query_response(NS_dict[server_name], rr)
 
-        # analyses respone and creates data lists
-        for rr in response.additional:
-            server_name = str(rr.name)
+    if len(response.authority) > 0:
+        for rr in response.authority[0].items:
+            server_name = str(rr.target)
             if server_name not in NS_dict:
                 NS_dict[server_name] = create_new_server_data_list(server_name)
                 NS_dict[server_name].append(
                     "Name server for domain " + '"' + str(domain_to_check) + '"')
                 NS_dict[server_name].append(str(domain_to_check))
             add_server_data_from_query_response(NS_dict[server_name], rr)
+
+
+    if len(response.answer) > 0:
+        for rr in response.answer[0].items:
+        server_name = str(rr.target)
+        if server_name not in NS_dict:
+            NS_dict[server_name] = create_new_server_data_list(server_name)
+            NS_dict[server_name].append(
+                "Name server for domain " + '"' + str(domain_to_check) + '"')
+            NS_dict[server_name].append(str(domain_to_check))
+        add_server_data_from_query_response(NS_dict[server_name], rr)
+    
+
+    # TODO: need to check if record comes from NS and then from A/AAAA. then should update instead of creating new object.
 
     # builds a ServerInfo object for each server data list
     name_servers = list()
@@ -155,6 +179,13 @@ def get_NS_for_domain(server, domain_to_check):
 
 # static ServerInfo object list of 13 IANA root name servers
 root_servers = build_root_servers_info_objects(ROOT_SERVERS_FILE_PATH)
+
+# static dictionary in the form of { domain -> list of NS the root servers knows for the domain } 
+# equivalent to the union of all IANA root NS answers for a specific domain
+root_NS_dict = dict()
+
+# static dictionary in the form of { server's name + domain -> list of NS the servers knows for the domain }
+DNS_dict = dict()
 
 class MisconfigurationInfo:
 
@@ -169,42 +200,32 @@ class MisconfigurationInfo:
             sub = '.'.join(subDomains[i - 1:])
             self.__domains.append(sub)
 
-    def find_misconfigurations(self):
+    def get_domain_info(self, domain):
         """
-        Finds the differences between the servers lists of the resolver's response and the process of the DNS protocol
-            :param server: {ServerInfo} a DNS for which the misconfiguration is computed 
-            :param domain_to_check: {string} the domain that being checked for misconfigurations
-            :returns: {tuple} - 3 lists that contains information about misconfigurations:
-                        [0] - server name
-                        [1] - server queried NS that are not known to ancestor domain servers
-                        [2] - server queried NS that are not known to siblings domain servers
-                        [3] - server queried NS that are not known to child domain servers
+        Queries the IANA root servers about the sub-domains of this url
+        the result is stored in a static dictionary
         """
+        servers_to_check = set()
+
+        # for server in get_NS_for_domain(root_servers[0], "il"):
+        #     get_NS_for_domain(server,"il")
         
-        misconfigurations = None
-        foreign_to_ancestor = None
-        foreign_to_siblings = None
-        foreign_to_child = None
-
-        sub_domain_NS_list = list()
-        sub_domain_level = TOP_LEVEL_DOMAIN
-
-        answer = None
-
         # start with IANA root server, query about top sub-domain first
         for root_server in root_servers:
-            answer = get_NS_for_domain(
-                root_server, self.__domains[TOP_LEVEL_DOMAIN])
-            sub_domain_NS_list.extend(answer)
+            servers_to_check.add(root_server)
 
-        sub_domain_level += 1
+        while len(servers_to_check) > 0:
+            for server in servers_to_check:
+                if (server, domain) not in DNS_dict:
+                    answer = get_NS_for_domain(server, domain)
+                    if(answer is not None):
+                        DNS_dict[(server,domain)] = answer
+                        for new_server in answer:
+                            servers_to_check.add(new_server)
+                servers_to_check.remove(server)
 
-        while(sub_domain_level < len(self.__domains)):
-            # check misconfiguration for each server in list
-            for server in sub_domain_NS_list:
-                NS_to_compare_with = get_NS_for_domain(server, self.__domains[sub_domain_level])
-
-                #TODO - Finish!
+    def get_domains(self):
+        return self.__domains
+        
             
-                
-                                    
+                                  

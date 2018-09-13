@@ -34,7 +34,7 @@ class ServerInfo:
 
         # self.get_NS_for_domain()
 
-    # fill additional dns info for this host
+    ''' # fill additional dns info for this host
     def fillWithResolver(self):
         try:
             self.__origin = RESOLVER_ORIGIN
@@ -53,46 +53,11 @@ class ServerInfo:
         try:
             self.__ipv6_addresses = self.perform_query(HOST6_ADDRESS)
         except Exception:
-            self.__ipv6_addresses = None
-
-    def get_NS_for_domain(self, domain_to_check):
-        """
-        querries this server for NS in the given domain
-            :param domain_to_check: the domain to query
-        """
-        myAnswers = list()
-        response = None
-        resolver = dns.resolver.Resolver()
-        for address in self.__ipv4_addresses:
-            resolver.nameservers.append(address)
-            req = '.'.join(reversed(str(address).split("."))) + ".in-addr.arpa"
-
-            # checks if the name received by the A response is different from PTR query response
-            myAnswers.append(resolver.query(req, "PTR"))
-            answerNS = myAnswers[0].response.answer[0].items[0].target
-            if answerNS != self.__host:
-                print("names are different")
-
-            # queries the current name server for the name servers for this domain
-            query = dns.message.make_query(domain_to_check, dns.rdatatype.NS)
-            response = dns.query.udp(query, str(address))
-
-        name_servers = set()
-        for server in response.additional:
-            name_servers.add(server.name)
-        return name_servers
-        
-        # todo check ipv4/6 also????
-        # self.__name_servers.extend(response.additional)
-
-
+            self.__ipv6_addresses = None '''
 
     def addRRData(self, rr):
         if rr.rdtype == dns.rdatatype.NS:
             self.__host = rr.target
-            resolver = dns.resolver.get_default_resolver()
-            for ip in resolver.query(rr.target).rrset:
-                self.__ipv4_addresses.append(ip)
 
         else:
             if self.__host is None:
@@ -104,7 +69,7 @@ class ServerInfo:
             self.__ipv6_addresses.extend(rr.items)
 
 
-    def perform_query(self, type):
+    ''' def perform_query(self, type):
         try:
             query = self.__resolver.query(self.__domain, type)
         except dns.resolver.NXDOMAIN:
@@ -114,10 +79,10 @@ class ServerInfo:
         except dns.exception.DNSException:
             print("Unhandled DNS exception")
 
-        return query
+        return query '''
 
-    def get_sub_queries(self):
-        return dict
+    ''' def get_sub_queries(self):
+        return dict '''
 
     def get_record_str(self, item):
         s = ""
@@ -150,3 +115,7 @@ class ServerInfo:
 
     def __repr__(self):
         return self.__str__()
+
+    # TODO: check if two objects cannot exist with the same name
+    def __le__(self, other):
+        return self.__host < other.__host
