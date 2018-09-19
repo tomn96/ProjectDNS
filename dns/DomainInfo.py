@@ -67,7 +67,7 @@ def add_server_data_from_query_response(server_info, response):
             ip_type = SI.IPV4_INDEX
         elif response.rdtype == dns.rdatatype.AAAA:
             ip_type = SI.IPV6_INDEX
-        elif response.rdtype == dns.rdatatype.CNAME:
+        elif response.rdtype == dns.rdatatype.CNAME or response.rdtype == dns.rdatatype.SOA:
             return
         # adds all addresses listed for the server
         for ip in response.items:
