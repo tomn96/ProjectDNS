@@ -23,6 +23,15 @@ RESOLVER_ORIGIN = True
 class ServerInfo:
 
     def __init__(self, data):
+        """
+        initializes a ServerInfo from given data list
+        :param data: {list} a list that stores data related to the server in the following format:
+        [0] = server's host name
+        [1] = server's ip4 addresses
+        [2] = server's ip6 addresses
+        [3] = server's description
+        [4] = server's original domain
+        """
         self.__ipv4_addresses = list()
         self.__ipv6_addresses = list()
 
@@ -32,32 +41,10 @@ class ServerInfo:
         self.__ipv6_addresses.extend(data[IPV6_INDEX])
         self.__description = data[DESCRIPTION_INDEX]
 
-        # self.get_NS_for_domain()
-
-    ''' # fill additional dns info for this host
-    def fillWithResolver(self):
-        try:
-            self.__origin = RESOLVER_ORIGIN
-            self.__resolver = dns.resolver.Resolver()
-            self.__name_servers = self.perform_query(NAME_SERVER)
-            self.__ipv4_addresses = self.perform_query(HOST_ADDRESS)
-            self.__mail_exchanger = self.perform_query(MAIL_EXCHANGER)
-            self.__text_entry = self.perform_query(TEXT_ENTRY)
-            self.__sons = self.get_sub_queries()
-        except dns.resolver.NXDOMAIN:
-            print("No such Domain")
-        except dns.resolver.Timeout:
-            print("Request timeout")
-        except dns.exception.DNSException:
-            print("Unhandled DNS exception")
-        try:
-            self.__ipv6_addresses = self.perform_query(HOST6_ADDRESS)
-        except Exception:
-            self.__ipv6_addresses = None '''
-
     def extend_addresses_no_duplicates(self, rr):
         """
         extends the first_list with foreign elements from second_list
+        :param rr: {DNS response record} the response from which information is updated
         """
         in_second = set()
         for rr_data in rr.items:
@@ -68,8 +55,11 @@ class ServerInfo:
         list_to_extend.extend(list(new_items))
 
 
-
     def add_rr_data(self, rr):
+        """
+        updates the server information with information received in the DNS response record
+        :param rr: {DNS response record} the response from which information is updated
+        """
         if rr.rdtype == dns.rdatatype.NS and self.__host is None:
             self.__host = rr.target
 
@@ -80,21 +70,6 @@ class ServerInfo:
         if rr.rdtype == dns.rdatatype.A or rr.rdtype == dns.rdatatype.AAAA:
             self.extend_addresses_no_duplicates(rr)
 
-
-    ''' def perform_query(self, type):
-        try:
-            query = self.__resolver.query(self.__domain, type)
-        except dns.resolver.NXDOMAIN:
-            print("No such Domain")
-        except dns.resolver.Timeout:
-            print("Request timeout")
-        except dns.exception.DNSException:
-            print("Unhandled DNS exception")
-
-        return query '''
-
-    ''' def get_sub_queries(self):
-        return dict '''
 
     def get_record_str(self, item):
         s = ""
@@ -128,6 +103,5 @@ class ServerInfo:
     def __repr__(self):
         return self.__str__()
 
-    # TODO: check if two objects cannot exist with the same name
     def __le__(self, other):
         return self.__host < other.__host
