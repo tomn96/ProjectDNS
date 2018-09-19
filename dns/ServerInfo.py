@@ -55,18 +55,30 @@ class ServerInfo:
         except Exception:
             self.__ipv6_addresses = None '''
 
-    def addRRData(self, rr):
-        if rr.rdtype == dns.rdatatype.NS:
+    def extend_addresses_no_duplicates(self, rr):
+        """
+        extends the first_list with foreign elements from second_list
+        """
+        in_second = set()
+        for rr_data in rr.items:
+            in_second.add(rr_data.address)
+
+        list_to_extend = self.__ipv4_addresses if rr.rdtype == dns.rdatatype.A else self.__ipv6_addresses
+        new_items = in_second - set(list_to_extend)
+        list_to_extend.extend(list(new_items))
+
+
+
+    def add_rr_data(self, rr):
+        if rr.rdtype == dns.rdatatype.NS and self.__host is None:
             self.__host = rr.target
 
         else:
             if self.__host is None:
                 self.__host = rr.name
-        if rr.rdtype == dns.rdatatype.A:
-            self.__ipv4_addresses.extend(rr.items)
 
-        if rr.rdtype == dns.rdatatype.AAAA:
-            self.__ipv6_addresses.extend(rr.items)
+        if rr.rdtype == dns.rdatatype.A or rr.rdtype == dns.rdatatype.AAAA:
+            self.extend_addresses_no_duplicates(rr)
 
 
     ''' def perform_query(self, type):

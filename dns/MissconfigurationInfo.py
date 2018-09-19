@@ -36,7 +36,7 @@ def build_root_servers_info_objects(servers_info_file_path):
         :returns: {list} list of ServerInfo objects for each root server
     """
     servers_info = get_master_root_servers()
-    servers = list()
+    root_servers_names = set()
     for server_csv_data in servers_info.values:
         server_data = list()
         for i in range(len(server_csv_data)):
@@ -46,8 +46,9 @@ def build_root_servers_info_objects(servers_info_file_path):
             else:
                 server_data.append(server_csv_data[i])
         server_data.append("Root Domain")
-        servers.append(SI.ServerInfo(server_data))
-    return servers
+        name_to_server_info_dict[server_data[SI.HOST_INDEX]] = SI.ServerInfo(server_data)
+        root_servers_names.add(server_data[SI.HOST_INDEX])
+    return root_servers_names
 
 ''' @staticmethod
 def build_foreign_list(lst1, lst2):
@@ -74,6 +75,9 @@ def add_server_data_from_query_response(server_info, response):
             :param server_info: {list} a list of server's data paramaters
             :param response: {DNS.response} a dns response for a 'udp' query
         """
+        if response.rdtype == dns.rdatatype.NS: # TODO: can be called if record was from authority/answer. not sure whether need to add code or not.
+            return server_info
+
         ip_type = None
 
         # checks if IPv4 or IPv6
@@ -81,9 +85,8 @@ def add_server_data_from_query_response(server_info, response):
             ip_type = SI.IPV4_INDEX
         elif response.rdtype == dns.rdatatype.AAAA:
             ip_type = SI.IPV6_INDEX
-
-        # if response.rdtype == dns.rdatatype.NS: # TODO: can be called if record was from authority/answer. not sure whether need to add code or not.
-
+        elif response.rdtype == dns.rdatatype.CNAME:
+            return server_info
         # adds all addresses listed for the server
         for ip in response.items:
             server_info[ip_type].append(ip.address)
@@ -101,13 +104,15 @@ def create_new_server_data_list(server_name):
         server_info.append(list())
         return server_info
 
+
 def get_NS_for_domain(server, domain_to_check):
     """
     querries this server for NS in the given domain
         :param server: {ServerInfo} server to make dns query from
         :param domain_to_check: {string} the domain to query
     """
-    NS_dict = dict() # dictionary in the form of { server's name -> server's data }
+    server_data_dict = dict() # dictionary in the form of { server's name -> server's data }
+    known_servers_names = set() # a set of server names
     response = None
     resolver = dns.resolver.Resolver()
 
@@ -118,7 +123,7 @@ def get_NS_for_domain(server, domain_to_check):
 
     # adds the server's addresses to the servers queried
     # by resolver
-    for address in server[SI.HOST_ADDRESS]:
+    for address in name_to_server_info_dict[server][SI.HOST_ADDRESS]:
         resolver.nameservers.append(address)
 
     try:
@@ -135,56 +140,67 @@ def get_NS_for_domain(server, domain_to_check):
     except Exception as e:
         print(e.__cause__)
 
-    # analyses respone and creates data lists
-    for rr in response.additional:
-        server_name = str(rr.name)
-        if server_name not in NS_dict:
-            NS_dict[server_name] = create_new_server_data_list(server_name)
-            NS_dict[server_name].append(
-                "Name server for domain " + '"' + str(domain_to_check) + '"')
-            NS_dict[server_name].append(str(domain_to_check))
-        add_server_data_from_query_response(NS_dict[server_name], rr)
+    if response is None:
+        return None
 
+    # analyses respone and creates data lists
     if len(response.authority) > 0:
         for rr in response.authority[0].items:
-            server_name = str(rr.target)
-            if server_name not in NS_dict:
-                NS_dict[server_name] = create_new_server_data_list(server_name)
-                NS_dict[server_name].append(
-                    "Name server for domain " + '"' + str(domain_to_check) + '"')
-                NS_dict[server_name].append(str(domain_to_check))
-            add_server_data_from_query_response(NS_dict[server_name], rr)
-
+            server_name = str(rr.mname) if rr.rdtype == dns.rdatatype.SOA else str(rr.target)
+            known_servers_names.add(server_name)
+            if server_name not in name_to_server_info_dict:
+                server_data_dict[server_name] = create_new_server_data_list(server_name)
+                server_data_dict[server_name].append("Name server for domain " + '"' + str(domain_to_check) + '"')
+                server_data_dict[server_name].append(str(domain_to_check))
+                add_server_data_from_query_response(server_data_dict[server_name], rr)
+            else:
+                name_to_server_info_dict[server_name].add_rr_data(rr)
 
     if len(response.answer) > 0:
         for rr in response.answer[0].items:
-        server_name = str(rr.target)
-        if server_name not in NS_dict:
-            NS_dict[server_name] = create_new_server_data_list(server_name)
-            NS_dict[server_name].append(
-                "Name server for domain " + '"' + str(domain_to_check) + '"')
-            NS_dict[server_name].append(str(domain_to_check))
-        add_server_data_from_query_response(NS_dict[server_name], rr)
+            server_name = str(rr.target)
+            known_servers_names.add(server_name)
+            if server_name not in name_to_server_info_dict:
+                server_data_dict[server_name] = create_new_server_data_list(server_name)
+                server_data_dict[server_name].append(
+                    "Name server for domain " + '"' + str(domain_to_check) + '"')
+                server_data_dict[server_name].append(str(domain_to_check))
+                add_server_data_from_query_response(server_data_dict[server_name], rr)
+            else:
+                name_to_server_info_dict[server_name].add_rr_data(rr)
     
+    for rr in response.additional:
+        server_name = str(rr.name)
+        known_servers_names.add(server_name)
+        if server_name not in name_to_server_info_dict:
+            server_data_dict[server_name] = create_new_server_data_list(server_name)
+            server_data_dict[server_name].append(
+                "Name server for domain " + '"' + str(domain_to_check) + '"')
+            server_data_dict[server_name].append(str(domain_to_check))
+            add_server_data_from_query_response(server_data_dict[server_name], rr)
+        else:
+            name_to_server_info_dict[server_name].add_rr_data(rr)
+
+    # builds a ServerInfo object for each server data list
+    for server_data in server_data_dict.values():
+        name_to_server_info_dict[server_data[SI.HOST_INDEX]] = SI.ServerInfo(server_data)
+        known_servers_names.add(server_data[SI.HOST_INDEX])
 
     # TODO: need to check if record comes from NS and then from A/AAAA. then should update instead of creating new object.
 
     # builds a ServerInfo object for each server data list
-    name_servers = list()
-    for server_data in NS_dict.values():
-        name_servers.append(SI.ServerInfo(server_data))
+    return known_servers_names
 
-    return name_servers
 
+# static dictionary in the form of { server_name -> ServerInfo }
+# the key is the server's name, the value is a ServerInfo object that contains the server's data
+name_to_server_info_dict = dict()
 
 # static ServerInfo object list of 13 IANA root name servers
 root_servers = build_root_servers_info_objects(ROOT_SERVERS_FILE_PATH)
 
-# static dictionary in the form of { domain -> list of NS the root servers knows for the domain } 
-# equivalent to the union of all IANA root NS answers for a specific domain
-root_NS_dict = dict()
-
-# static dictionary in the form of { server's name + domain -> list of NS the servers knows for the domain }
+# static dictionary in the form of { (server's name , domain) -> list of NS the servers knows for the domain }
+# the key is a tuple of server's name, domain, the value is a list of known servers to the server with the given server's name
 DNS_dict = dict()
 
 class MisconfigurationInfo:
