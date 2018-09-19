@@ -32,7 +32,7 @@ def get_master_root_servers():
 def build_root_servers_info_objects(servers_info_file_path):
     """
     builds ServerInfo objects for each root server
-        :param servers_info: {list} the servers data paramaeters
+        :param servers_info: {list} the servers data parameters
         :returns: {list} list of server names for each root server
     """
     servers_info = get_master_root_servers()
@@ -89,7 +89,7 @@ def create_new_server_data_list(server_name):
 
 def get_NS_for_domain(server, domain_to_check):
     """
-    querries this server for NS in the given domain
+    queries this server for NS in the given domain
         :param server: {ServerInfo} server to make dns query from
         :param domain_to_check: {string} the domain to query
         :returns: {list} names of servers known to server
