@@ -94,6 +94,7 @@ class ServerInfo:
             HOST_ADDRESS: self.__ipv4_addresses,
             HOST6_ADDRESS: self.__ipv4_addresses,
             DESCRIPTION: self.__description,
+            DOMAIN: self.__domain
             # TEXT_ENTRY: self.__text_entry,
             # MAIL_EXCHANGER: self.__mail_exchanger,
         }[item]

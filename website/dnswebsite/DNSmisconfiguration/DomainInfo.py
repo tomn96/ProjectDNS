@@ -39,7 +39,7 @@ def build_root_servers_info_objects():
     """
     servers_info = get_master_root_servers()
     root_servers_names = set()
-    for server_csv_data in servers_info.values:
+    for server_csv_data in servers_info:
         server_data = list()
         for i in range(len(server_csv_data)):
             if i in LIST_TYPE_ARGS:
