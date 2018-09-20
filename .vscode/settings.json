@@ -1,0 +1,12 @@
+{
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "cSpell.words": [
+        "cname",
+        "iana",
+        "mname",
+        "nxdomain",
+        "rdata",
+        "rdatatype",
+        "rdtype"
+    ]
+}

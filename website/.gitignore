@@ -1,0 +1,6 @@
+ENV
+dnswebsite/dnswebsite/__pycache__
+.idea
+dnswebsite/DNSmisconfiguration/__pycache__
+dnswebsite/DNSmisconfiguration/migrations/__pycache__
+dnswebsite/DNSmisconfiguration/utils/__pycache__
