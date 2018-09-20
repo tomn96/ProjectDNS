@@ -65,11 +65,20 @@ def storeInServer():
 def storeInKnownNameServer():
     for k, v in DI.DNS_dict.items():
         s = Server.objects.get(host_name=k[0])
-        for know_server in v:
-            KnownNameServer.objects.create(server=s, domain=k[1], known_server=know_server)
+        for known_server in v:
+            KnownNameServer.objects.create(server=s, domain=k[1], known_server=known_server)
+
+
+def main_url(url):
+    # TODO - initialize all dictionaries and meta data!!!
+    getDataForURL([url])
+
+    storeInServer()
+    storeInKnownNameServer()
 
 
 def main_csv(file):
+    # TODO - initialize all dictionaries and meta data!!!
     url_list_generator = getURLsFromCSV(file)
     for url_data in url_list_generator:
         getDataForURL(url_data)

@@ -1,0 +1,5 @@
+from django import forms
+
+
+class SingleUrlForm(forms.Form):
+    url = forms.CharField(required=True, max_length=512, label="URL")

@@ -1,5 +1,6 @@
 {% extends "DNSmisconfiguration/base.html" %}
 
+{% load static %}
 
 {% block navbarADDRESS %}
 <a href="{% url 'DNSmisconfiguration:address' %}" class="w3-bar-item w3-button w3-padding-large w3-white">Address</a>
@@ -7,4 +8,16 @@
 
 {% block navbarDemoADDRESS %}
 <a href="{% url 'DNSmisconfiguration:address' %}" class="w3-bar-item w3-button w3-padding-large w3-gray">Address</a>
+{% endblock %}
+
+
+{% block content %}
+<div class="w3-center w3-content w3-container w3-padding-64">
+<form action="{% url 'DNSmisconfiguration:address' %}" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit">
+</form>
+</div>
+
 {% endblock %}
