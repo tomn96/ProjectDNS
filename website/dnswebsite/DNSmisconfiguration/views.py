@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect, HttpResponse
-from .utils.handle_csv import handle_csv_file
+from . import dns_utils
 from django.views.decorators.csrf import csrf_exempt
 
 
@@ -41,7 +41,7 @@ def about(request):
 @csrf_exempt
 def upload_csv(request):
     if request.method == 'POST':
-        result = handle_csv_file(request.FILES['file'])
+        result = dns_utils.main_csv(request.FILES['file'])
         return HttpResponseRedirect("uploaded_csv/" + str(result))
     return csv(request)
 
