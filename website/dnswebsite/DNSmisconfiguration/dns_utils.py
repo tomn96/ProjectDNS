@@ -53,20 +53,6 @@ def getDataForURL(url_data):
         servers = getDNSData(servers, domains[i])
 
 
-def storeInCSV(file_name, dict_to_store, field_names):
-    """
-    stores a dictionary in a CSV format file 
-    :param file_name: {string} the file's name (must end with .csv) 
-    :dict_to_store: {dict} a dictionary to store in a CSV file
-    :field_names: {list} a list of the dictionary's attributes/fields names
-    """
-    with open(file_name, 'w') as f:
-        writer = csv.DictWriter(f, fieldnames=field_names)
-        writer.writeheader()
-        data = [dict(zip(field_names, [k, v])) for k, v in dict_to_store.items()]
-        writer.writerows(data)
-
-
 def storeInServer():
     for k, v in DI.name_to_server_info_dict.items():
         server = Server.objects.create(host_name=v[SI.HOST_NAME], description=v[SI.DESCRIPTION], original_domain=v[SI.DOMAIN])
@@ -88,6 +74,5 @@ def main_csv(file):
     for url_data in url_list_generator:
         getDataForURL(url_data)
 
-    storeInCSV('results_servers.csv', DI.name_to_server_info_dict, ['Server Name', 'Server Information'])
-    storeInCSV('results_records.csv', DI.DNS_dict, ['(Server Name, Domain)', 'Servers known in domain'])
-
+    storeInServer()
+    storeInKnownNameServer()

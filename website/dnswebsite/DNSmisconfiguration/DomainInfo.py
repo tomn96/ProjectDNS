@@ -3,6 +3,7 @@ import dns.name
 import dns.query
 import dns.resolver
 from . import ServerInfo as SI
+from .models import RootDNSServers
 
 TOP_LEVEL_DOMAIN = 0
 
@@ -14,7 +15,6 @@ UDP_QUERY_TIME_OUT = 4
 # server data that should be handled as a list
 LIST_TYPE_ARGS = {SI.IPV4_INDEX, SI.IPV6_INDEX, SI}
 
-ROOT_SERVERS_FILE_PATH = 'C:\\Users\\Tomeriq\\Documents\\Visual Code\\Python\\ProjectDNS\\dns\\IANA Root Servers.csv'
 
 
 def get_master_root_servers():
@@ -23,12 +23,15 @@ def get_master_root_servers():
     (see https://www.iana.org/domains/root/servers)
         :returns: {array} the raw data read from csv file
     """
-    # raw_data = PD.read_csv(ROOT_SERVERS_FILE_PATH, names=[
-    #     'Server Name', 'IPv4 Address', 'IPv6 Address', 'Owner Description'])  # FIXME
-    # return raw_data
+    roots = RootDNSServers.objects.all()
+    result = []
+    for root in roots:
+        result.append([root.host_name, root.ipv4_address, root.ipv6_address, root.description])
+
+    return result
 
 
-def build_root_servers_info_objects(servers_info_file_path):
+def build_root_servers_info_objects():
     """
     builds ServerInfo objects for each root server
         :param servers_info: {list} the servers data parameters
@@ -117,7 +120,7 @@ def get_NS_for_domain(server, domain_to_check):
         print("No such Domain" + domain_to_check)
     except dns.resolver.Timeout:
         print(str(server) + " was queried for the domain " + domain_to_check + " and request timeout")
-        DNS_dict[(str(server), domain_to_check)] = set()  # TODO - check if works okay
+        # DNS_dict[(str(server), domain_to_check)] = set()  # TODO - check if works okay
         return None
     except dns.exception.DNSException:
         print("Unhandled DNS exception")
@@ -179,7 +182,7 @@ def get_NS_for_domain(server, domain_to_check):
 name_to_server_info_dict = dict()
 
 # static ServerInfo object list of 13 IANA root name servers
-root_servers = build_root_servers_info_objects(ROOT_SERVERS_FILE_PATH)
+root_servers = build_root_servers_info_objects()
 
 # static dictionary in the form of { (server's name , domain) -> list of NS the servers knows for the domain }
 # the key is a tuple of server's name, domain, the value is a list of known servers to the server with the given server's name
