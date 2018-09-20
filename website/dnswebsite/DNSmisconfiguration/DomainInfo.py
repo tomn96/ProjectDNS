@@ -59,7 +59,7 @@ def add_server_data_from_query_response(server_info, response):
             :param server_info: {list} a list of server's data paramaters
             :param response: {DNS.response} a dns response for a 'udp' query
         """
-        if response.rdtype == dns.rdatatype.NS: # TODO: can be called if record was from authority/answer. not sure whether need to add code or not.
+        if response.rdtype == dns.rdatatype.NS:  # TODO: can be called if record was from authority/answer. not sure whether need to add code or not.
             return
 
         ip_type = None
@@ -120,7 +120,7 @@ def get_NS_for_domain(server, domain_to_check):
         print("No such Domain" + domain_to_check)
     except dns.resolver.Timeout:
         print(str(server) + " was queried for the domain " + domain_to_check + " and request timeout")
-        # DNS_dict[(str(server), domain_to_check)] = set()  # TODO - check if works okay
+        # DNS_dict[(str(server), domain_to_check)] = set()
         return None
     except dns.exception.DNSException:
         print("Unhandled DNS exception")

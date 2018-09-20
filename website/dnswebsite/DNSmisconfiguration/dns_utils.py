@@ -9,7 +9,7 @@ GET_URL = 0
 def getURLsFromCSV(file):
     """
     reads a csv file
-    :returns: {pandas data list} the raw data read from the given csv file  #FIXME
+    :returns: {generator} the raw data read from the given csv file
     """
     utf8 = (line.decode('utf-8') for line in file)
     file_reader = csv.reader(utf8)
@@ -69,8 +69,15 @@ def storeInKnownNameServer():
             KnownNameServer.objects.create(server=s, domain=k[1], known_server=known_server)
 
 
+def initialize_domainInfo():
+    DI.name_to_server_info_dict = dict()
+    DI.root_servers = DI.build_root_servers_info_objects()
+    DI.DNS_dict = dict()
+
+
 def main_url(url):
-    # TODO - initialize all dictionaries and meta data!!!
+    initialize_domainInfo()  # TODO - check if works
+
     getDataForURL([url])
 
     storeInServer()
@@ -78,7 +85,8 @@ def main_url(url):
 
 
 def main_csv(file):
-    # TODO - initialize all dictionaries and meta data!!!
+    initialize_domainInfo()  # TODO - check if works
+
     url_list_generator = getURLsFromCSV(file)
     for url_data in url_list_generator:
         getDataForURL(url_data)
