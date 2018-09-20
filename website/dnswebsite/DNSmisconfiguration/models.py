@@ -33,3 +33,10 @@ class KnownNameServer(models.Model):
 
     def __str__(self):
         return "(" + str(self.server.host_name) + ", " + str(self.domain) + ") --> " + str(self.known_server)
+
+
+class RootDNSServers(models.Model):
+    host_name = models.CharField(primary_key=True, max_length=256, default="")
+    ipv4_address = models.GenericIPAddressField(protocol='IPv4')
+    ipv6_address = models.GenericIPAddressField(protocol='IPv6')
+    description = models.CharField(max_length=512, default="")

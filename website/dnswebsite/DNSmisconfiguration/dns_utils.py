@@ -1,4 +1,6 @@
 from . import DomainInfo as DI
+from . import ServerInfo as SI
+from .models import Server, AddressIPv4, AddressIPv6, KnownNameServer
 import csv
 
 GET_URL = 0
@@ -65,11 +67,23 @@ def storeInCSV(file_name, dict_to_store, field_names):
         writer.writerows(data)
 
 
-# def storeInDB():
-#     for k in DI.name_to_server_info_dict.keys():
+def storeInServer():
+    for k, v in DI.name_to_server_info_dict.items():
+        server = Server.objects.create(host_name=v[SI.HOST_NAME], description=v[SI.DESCRIPTION], original_domain=v[SI.DOMAIN])
+        for ipv4address in v[SI.HOST_ADDRESS]:
+            server.addressipv4_set.create(ip_address=ipv4address)
+        for ipv6address in v[SI.HOST6_ADDRESS]:
+            server.addressipv6_set.create(ip_address=ipv6address)
 
 
-def main(file):
+def storeInKnownNameServer():
+    for k, v in DI.DNS_dict.items():
+        s = Server.objects.get(host_name=k[0])
+        for know_server in v:
+            KnownNameServer.objects.create(server=s, domain=k[1], known_server=know_server)
+
+
+def main_csv(file):
     url_list_generator = getURLsFromCSV(file)
     for url_data in url_list_generator:
         getDataForURL(url_data)

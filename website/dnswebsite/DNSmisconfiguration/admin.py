@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Server, AddressIPv4, AddressIPv6, KnownNameServer
+from .models import Server, AddressIPv4, AddressIPv6, KnownNameServer, RootDNSServers
 
 
 class IPv4Inline(admin.TabularInline):
@@ -30,3 +30,4 @@ admin.site.register(Server, ServerAdmin)
 admin.site.register(AddressIPv4)
 admin.site.register(AddressIPv6)
 admin.site.register(KnownNameServer)
+admin.site.register(RootDNSServers)
