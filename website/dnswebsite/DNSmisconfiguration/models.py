@@ -6,15 +6,24 @@ class Server(models.Model):
     description = models.CharField(max_length=512, default="")
     original_domain = models.CharField(max_length=256, default="")
 
+    def __str__(self):
+        return str(self.host_name)
+
 
 class AddressIPv4(models.Model):
     server = models.ForeignKey(Server, on_delete=models.CASCADE)
     ip_address = models.GenericIPAddressField(protocol='IPv4')
 
+    def __str__(self):
+        return str(self.ip_address) + " (" + str(self.server.host_name) + ")"
+
 
 class AddressIPv6(models.Model):
     server = models.ForeignKey(Server, on_delete=models.CASCADE)
     ip_address = models.GenericIPAddressField(protocol='IPv6')
+
+    def __str__(self):
+        return str(self.ip_address) + " (" + str(self.server.host_name) + ")"
 
 
 class KnownNameServer(models.Model):
@@ -22,5 +31,5 @@ class KnownNameServer(models.Model):
     domain = models.CharField(max_length=512, default="")
     known_server = models.CharField(max_length=256, default="")
 
-    class Meta:
-        unique_together = (('server', 'domain'),)
+    def __str__(self):
+        return "(" + str(self.server.host_name) + ", " + str(self.domain) + ") --> " + str(self.known_server)
