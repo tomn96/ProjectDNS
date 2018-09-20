@@ -2,9 +2,7 @@ import dns
 import dns.name
 import dns.query
 import dns.resolver
-import DomainInfo as DI
-import ServerInfo as SI
-import pandas as PD
+from . import ServerInfo as SI
 
 TOP_LEVEL_DOMAIN = 0
 
@@ -14,9 +12,10 @@ RESOLVER_ORIGIN = True
 UDP_QUERY_TIME_OUT = 4
 
 # server data that should be handled as a list
-LIST_TYPE_ARGS = {SI.IPV4_INDEX,SI.IPV6_INDEX,SI}
+LIST_TYPE_ARGS = {SI.IPV4_INDEX, SI.IPV6_INDEX, SI}
 
 ROOT_SERVERS_FILE_PATH = 'C:\\Users\\Tomeriq\\Documents\\Visual Code\\Python\\ProjectDNS\\dns\\IANA Root Servers.csv'
+
 
 def get_master_root_servers():
     """
@@ -24,9 +23,9 @@ def get_master_root_servers():
     (see https://www.iana.org/domains/root/servers)
         :returns: {array} the raw data read from csv file
     """
-    raw_data = PD.read_csv(ROOT_SERVERS_FILE_PATH, names=[
-        'Server Name', 'IPv4 Address', 'IPv6 Address', 'Owner Description'])
-    return raw_data
+    # raw_data = PD.read_csv(ROOT_SERVERS_FILE_PATH, names=[
+    #     'Server Name', 'IPv4 Address', 'IPv6 Address', 'Owner Description'])  # FIXME
+    # return raw_data
 
 
 def build_root_servers_info_objects(servers_info_file_path):
@@ -75,6 +74,7 @@ def add_server_data_from_query_response(server_info, response):
 
         return
 
+
 def create_new_server_data_list(server_name):
         """
         creates a new list of server's data paramaters
@@ -117,6 +117,7 @@ def get_NS_for_domain(server, domain_to_check):
         print("No such Domain" + domain_to_check)
     except dns.resolver.Timeout:
         print(str(server) + " was queried for the domain " + domain_to_check + " and request timeout")
+        DNS_dict[(str(server), domain_to_check)] = set()  # TODO - check if works okay
         return None
     except dns.exception.DNSException:
         print("Unhandled DNS exception")
@@ -184,6 +185,7 @@ root_servers = build_root_servers_info_objects(ROOT_SERVERS_FILE_PATH)
 # the key is a tuple of server's name, domain, the value is a list of known servers to the server with the given server's name
 DNS_dict = dict()
 
+
 class DomainInfo:
     """
     stores data related to the domain
@@ -225,8 +227,3 @@ class DomainInfo:
                         for new_server in answer:
                             servers_to_check.add(new_server)
                 servers_to_check.remove(server)
-
-
-        
-            
-                                  

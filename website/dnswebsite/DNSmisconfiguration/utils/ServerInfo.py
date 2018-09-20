@@ -19,6 +19,7 @@ DOMAIN = 4
 
 RESOLVER_ORIGIN = True
 
+
 class ServerInfo:
 
     def __init__(self, data):
@@ -53,7 +54,6 @@ class ServerInfo:
         new_items = in_second - set(list_to_extend)
         list_to_extend.extend(list(new_items))
 
-
     def add_rr_data(self, rr):
         """
         updates the server information with information received in the DNS response record
@@ -68,7 +68,6 @@ class ServerInfo:
 
         if rr.rdtype == dns.rdatatype.A or rr.rdtype == dns.rdatatype.AAAA:
             self.extend_addresses_no_duplicates(rr)
-
 
     def get_record_str(self, item):
         s = ""

@@ -1,18 +1,18 @@
-import DomainInfo as DI
-import pandas as PD
+from . import DomainInfo as DI
 import csv
-
-DEFAULT_URLS_FILE = "C:\\Users\\Tomeriq\\Documents\\Visual Code\\Python\\ProjectDNS\\dns\\URLs.csv"
 
 GET_URL = 0
 
-def getURLsFromCSV():
+
+def getURLsFromCSV(file):
     """
-    reads a csv file using Pandas library
-    :returns: {pandas data list} the raw data read from the given csv file
+    reads a csv file
+    :returns: {pandas data list} the raw data read from the given csv file  #FIXME
     """
-    raw_data = PD.read_csv(DEFAULT_URLS_FILE, names=['URL'])
-    return raw_data
+    utf8 = (line.decode('utf-8') for line in file)
+    file_reader = csv.reader(utf8)
+    return file_reader
+
 
 def getDNSData(servers_to_check, designated_domain):
     """
@@ -50,6 +50,7 @@ def getDataForURL(url_data):
     for i in range(len(domains)-1):
         servers = getDNSData(servers, domains[i])
 
+
 def storeInCSV(file_name, dict_to_store, field_names):
     """
     stores a dictionary in a CSV format file 
@@ -63,11 +64,16 @@ def storeInCSV(file_name, dict_to_store, field_names):
         data = [dict(zip(field_names, [k, v])) for k, v in dict_to_store.items()]
         writer.writerows(data)
 
-if __name__ == '__main__':
-    url_list = getURLsFromCSV()
-    for url_data in url_list.values:
+
+# def storeInDB():
+#     for k in DI.name_to_server_info_dict.keys():
+
+
+def main(file):
+    url_list_generator = getURLsFromCSV(file)
+    for url_data in url_list_generator:
         getDataForURL(url_data)
-    
+
     storeInCSV('results_servers.csv', DI.name_to_server_info_dict, ['Server Name', 'Server Information'])
     storeInCSV('results_records.csv', DI.DNS_dict, ['(Server Name, Domain)', 'Servers known in domain'])
 
