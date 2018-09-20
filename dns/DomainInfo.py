@@ -116,7 +116,7 @@ def get_NS_for_domain(server, domain_to_check):
     except dns.resolver.NXDOMAIN:
         print("No such Domain" + domain_to_check)
     except dns.resolver.Timeout:
-        print(str(server) + " was queried for the domain " + domain_to_check + "and request timeout")
+        print(str(server) + " was queried for the domain " + domain_to_check + " and request timeout")
         return None
     except dns.exception.DNSException:
         print("Unhandled DNS exception")
