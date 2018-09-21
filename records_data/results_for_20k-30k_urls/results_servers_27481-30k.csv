@@ -1,0 +1,4879 @@
+Server Name,Server Information
+a.root-servers.net,"DNS information
+Domain: Root Domain
+Host: a.root-servers.net
+IPv4 Addresses: 198.41.0.4 
+IPv6 Addresses :2001:503:ba3e::2:30 
+Description: VeriSign Inc."
+b.root-servers.net,"DNS information
+Domain: Root Domain
+Host: b.root-servers.net
+IPv4 Addresses: 199.9.14.201 
+IPv6 Addresses :2001:500:200::b 
+Description: University of Southern California (ISI)"
+c.root-servers.net,"DNS information
+Domain: Root Domain
+Host: c.root-servers.net
+IPv4 Addresses: 192.33.4.12 
+IPv6 Addresses :2001:500:2::c 
+Description: Cogent Communications"
+d.root-servers.net,"DNS information
+Domain: Root Domain
+Host: d.root-servers.net
+IPv4 Addresses: 199.7.91.13 
+IPv6 Addresses :2001:500:2d::d 
+Description: University of Maryland"
+e.root-servers.net,"DNS information
+Domain: Root Domain
+Host: e.root-servers.net
+IPv4 Addresses: 192.203.230.10 
+IPv6 Addresses :2001:500:a8::e 
+Description: NASA (Ames Research Center)"
+f.root-servers.net,"DNS information
+Domain: Root Domain
+Host: f.root-servers.net
+IPv4 Addresses: 192.5.5.241 
+IPv6 Addresses :2001:500:2f::f 
+Description: Internet Systems Consortium Inc."
+g.root-servers.net,"DNS information
+Domain: Root Domain
+Host: g.root-servers.net
+IPv4 Addresses: 192.112.36.4 
+IPv6 Addresses :2001:500:12::d0d 
+Description: US Department of Defense (NIC)"
+h.root-servers.net,"DNS information
+Domain: Root Domain
+Host: h.root-servers.net
+IPv4 Addresses: 198.97.190.53 
+IPv6 Addresses :2001:500:1::53 
+Description: US Army (Research Lab)"
+i.root-servers.net,"DNS information
+Domain: Root Domain
+Host: i.root-servers.net
+IPv4 Addresses: 192.36.148.17 
+IPv6 Addresses :2001:7fe::53 
+Description: Netnod"
+j.root-servers.net,"DNS information
+Domain: Root Domain
+Host: j.root-servers.net
+IPv4 Addresses: 192.58.128.30 
+IPv6 Addresses :2001:503:c27::2:30 
+Description: VeriSign Inc."
+k.root-servers.net,"DNS information
+Domain: Root Domain
+Host: k.root-servers.net
+IPv4 Addresses: 193.0.14.129 
+IPv6 Addresses :2001:7fd::1 
+Description: RIPE NCC"
+l.root-servers.net,"DNS information
+Domain: Root Domain
+Host: l.root-servers.net
+IPv4 Addresses: 199.7.83.42 
+IPv6 Addresses :2001:500:9f::42 
+Description: ICANN"
+m.root-servers.net,"DNS information
+Domain: Root Domain
+Host: m.root-servers.net
+IPv4 Addresses: 202.12.27.33 
+IPv6 Addresses :2001:dc3::35 
+Description: WIDE Project"
+fork.sth.dnsnode.net.,"DNS information
+Domain: ps
+Host: fork.sth.dnsnode.net.
+IPv4 Addresses: 77.72.229.254 
+IPv6 Addresses :2a01:3f0:0:306::53 
+Description: Name server for domain ""ps"""
+dns1.gov.ps.,"DNS information
+Domain: ps
+Host: dns1.gov.ps.
+IPv4 Addresses: 213.244.82.147 
+IPv6 Addresses : No information
+Description: Name server for domain ""ps"""
+ps-ns.anycast.pch.net.,"DNS information
+Domain: ps
+Host: ps-ns.anycast.pch.net.
+IPv4 Addresses: 204.61.216.29 
+IPv6 Addresses :2001:500:14:6029:ad::1 
+Description: Name server for domain ""ps"""
+ns1.pnina.ps.,"DNS information
+Domain: ps
+Host: ns1.pnina.ps.
+IPv4 Addresses: 194.6.225.20 
+IPv6 Addresses : No information
+Description: Name server for domain ""ps"""
+rip.psg.com.,"DNS information
+Domain: ps
+Host: rip.psg.com.
+IPv4 Addresses: 147.28.0.39 
+IPv6 Addresses :2001:418:1::39 
+Description: Name server for domain ""ps"""
+ps.cctld.authdns.ripe.net.,"DNS information
+Domain: ps
+Host: ps.cctld.authdns.ripe.net.
+IPv4 Addresses: 193.0.9.105 
+IPv6 Addresses :2001:67c:e0::105 
+Description: Name server for domain ""ps"""
+ote.pnina.ps.,"DNS information
+Domain: ps
+Host: ote.pnina.ps.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""ps"""
+e.gtld-servers.net.,"DNS information
+Domain: com
+Host: e.gtld-servers.net.
+IPv4 Addresses: 192.12.94.30 
+IPv6 Addresses :2001:502:1ca1::30 
+Description: Name server for domain ""com"""
+a.gtld-servers.net.,"DNS information
+Domain: com
+Host: a.gtld-servers.net.
+IPv4 Addresses: 192.5.6.30 
+IPv6 Addresses :2001:503:a83e::2:30 
+Description: Name server for domain ""com"""
+d.gtld-servers.net.,"DNS information
+Domain: com
+Host: d.gtld-servers.net.
+IPv4 Addresses: 192.31.80.30 
+IPv6 Addresses :2001:500:856e::30 
+Description: Name server for domain ""com"""
+h.gtld-servers.net.,"DNS information
+Domain: com
+Host: h.gtld-servers.net.
+IPv4 Addresses: 192.54.112.30 
+IPv6 Addresses :2001:502:8cc::30 
+Description: Name server for domain ""com"""
+b.gtld-servers.net.,"DNS information
+Domain: com
+Host: b.gtld-servers.net.
+IPv4 Addresses: 192.33.14.30 
+IPv6 Addresses :2001:503:231d::2:30 
+Description: Name server for domain ""com"""
+c.gtld-servers.net.,"DNS information
+Domain: com
+Host: c.gtld-servers.net.
+IPv4 Addresses: 192.26.92.30 
+IPv6 Addresses :2001:503:83eb::30 
+Description: Name server for domain ""com"""
+l.gtld-servers.net.,"DNS information
+Domain: com
+Host: l.gtld-servers.net.
+IPv4 Addresses: 192.41.162.30 
+IPv6 Addresses :2001:500:d937::30 
+Description: Name server for domain ""com"""
+k.gtld-servers.net.,"DNS information
+Domain: com
+Host: k.gtld-servers.net.
+IPv4 Addresses: 192.52.178.30 
+IPv6 Addresses :2001:503:d2d::30 
+Description: Name server for domain ""com"""
+g.gtld-servers.net.,"DNS information
+Domain: com
+Host: g.gtld-servers.net.
+IPv4 Addresses: 192.42.93.30 
+IPv6 Addresses :2001:503:eea3::30 
+Description: Name server for domain ""com"""
+i.gtld-servers.net.,"DNS information
+Domain: com
+Host: i.gtld-servers.net.
+IPv4 Addresses: 192.43.172.30 
+IPv6 Addresses :2001:503:39c1::30 
+Description: Name server for domain ""com"""
+f.gtld-servers.net.,"DNS information
+Domain: com
+Host: f.gtld-servers.net.
+IPv4 Addresses: 192.35.51.30 
+IPv6 Addresses :2001:503:d414::30 
+Description: Name server for domain ""com"""
+j.gtld-servers.net.,"DNS information
+Domain: com
+Host: j.gtld-servers.net.
+IPv4 Addresses: 192.48.79.30 
+IPv6 Addresses :2001:502:7094::30 
+Description: Name server for domain ""com"""
+m.gtld-servers.net.,"DNS information
+Domain: com
+Host: m.gtld-servers.net.
+IPv4 Addresses: 192.55.83.30 
+IPv6 Addresses :2001:501:b1f9::30 
+Description: Name server for domain ""com"""
+d.ext.nic.fr.,"DNS information
+Domain: fr
+Host: d.ext.nic.fr.
+IPv4 Addresses: 192.5.4.2 
+IPv6 Addresses :2001:500:2e::2 
+Description: Name server for domain ""fr"""
+d.nic.fr.,"DNS information
+Domain: fr
+Host: d.nic.fr.
+IPv4 Addresses: 194.0.9.1 
+IPv6 Addresses :2001:678:c::1 
+Description: Name server for domain ""fr"""
+e.ext.nic.fr.,"DNS information
+Domain: fr
+Host: e.ext.nic.fr.
+IPv4 Addresses: 193.176.144.22 
+IPv6 Addresses :2a00:d78:0:102:193:176:144:22 
+Description: Name server for domain ""fr"""
+g.ext.nic.fr.,"DNS information
+Domain: fr
+Host: g.ext.nic.fr.
+IPv4 Addresses: 194.0.36.1 
+IPv6 Addresses :2001:678:4c::1 
+Description: Name server for domain ""fr"""
+f.ext.nic.fr.,"DNS information
+Domain: fr
+Host: f.ext.nic.fr.
+IPv4 Addresses: 194.146.106.46 
+IPv6 Addresses :2001:67c:1010:11::53 
+Description: Name server for domain ""fr"""
+c.dns.cn.,"DNS information
+Domain: cn
+Host: c.dns.cn.
+IPv4 Addresses: 203.119.27.1 
+IPv6 Addresses : No information
+Description: Name server for domain ""cn"""
+d.dns.cn.,"DNS information
+Domain: cn
+Host: d.dns.cn.
+IPv4 Addresses: 203.119.28.1 
+IPv6 Addresses :2001:dc7:1000::1 
+Description: Name server for domain ""cn"""
+b.dns.cn.,"DNS information
+Domain: cn
+Host: b.dns.cn.
+IPv4 Addresses: 203.119.26.1 
+IPv6 Addresses : No information
+Description: Name server for domain ""cn"""
+f.dns.cn.,"DNS information
+Domain: cn
+Host: f.dns.cn.
+IPv4 Addresses: 195.219.8.90 
+IPv6 Addresses : No information
+Description: Name server for domain ""cn"""
+g.dns.cn.,"DNS information
+Domain: cn
+Host: g.dns.cn.
+IPv4 Addresses: 66.198.183.65 
+IPv6 Addresses : No information
+Description: Name server for domain ""cn"""
+e.dns.cn.,"DNS information
+Domain: cn
+Host: e.dns.cn.
+IPv4 Addresses: 203.119.29.1 
+IPv6 Addresses : No information
+Description: Name server for domain ""cn"""
+ns.cernet.net.,"DNS information
+Domain: cn
+Host: ns.cernet.net.
+IPv4 Addresses: 202.112.0.44 
+IPv6 Addresses : No information
+Description: Name server for domain ""cn"""
+a.dns.cn.,"DNS information
+Domain: cn
+Host: a.dns.cn.
+IPv4 Addresses: 203.119.25.1 
+IPv6 Addresses :2001:dc7::1 
+Description: Name server for domain ""cn"""
+e.dns.ripn.net.,"DNS information
+Domain: ru
+Host: e.dns.ripn.net.
+IPv4 Addresses: 193.232.142.17 
+IPv6 Addresses :2001:678:15:0:193:232:142:17 
+Description: Name server for domain ""ru"""
+f.dns.ripn.net.,"DNS information
+Domain: ru
+Host: f.dns.ripn.net.
+IPv4 Addresses: 193.232.156.17 
+IPv6 Addresses :2001:678:14:0:193:232:156:17 
+Description: Name server for domain ""ru"""
+d.dns.ripn.net.,"DNS information
+Domain: ru
+Host: d.dns.ripn.net.
+IPv4 Addresses: 194.190.124.17 
+IPv6 Addresses :2001:678:18:0:194:190:124:17 
+Description: Name server for domain ""ru"""
+a.dns.ripn.net.,"DNS information
+Domain: ru
+Host: a.dns.ripn.net.
+IPv4 Addresses: 193.232.128.6 
+IPv6 Addresses :2001:678:17:0:193:232:128:6 
+Description: Name server for domain ""ru"""
+b.dns.ripn.net.,"DNS information
+Domain: ru
+Host: b.dns.ripn.net.
+IPv4 Addresses: 194.85.252.62 
+IPv6 Addresses :2001:678:16:0:194:85:252:62 
+Description: Name server for domain ""ru"""
+a.dns.RIPN.net.,"DNS information
+Domain: ru
+Host: a.dns.RIPN.net.
+IPv4 Addresses: 193.232.128.6 
+IPv6 Addresses :2001:678:17:0:193:232:128:6 
+Description: Name server for domain ""ru"""
+b.dns.RIPN.net.,"DNS information
+Domain: ru
+Host: b.dns.RIPN.net.
+IPv4 Addresses: 194.85.252.62 
+IPv6 Addresses :2001:678:16:0:194:85:252:62 
+Description: Name server for domain ""ru"""
+d.dns.RIPN.net.,"DNS information
+Domain: ru
+Host: d.dns.RIPN.net.
+IPv4 Addresses: 194.190.124.17 
+IPv6 Addresses :2001:678:18:0:194:190:124:17 
+Description: Name server for domain ""ru"""
+e.dns.RIPN.net.,"DNS information
+Domain: ru
+Host: e.dns.RIPN.net.
+IPv4 Addresses: 193.232.142.17 
+IPv6 Addresses :2001:678:15:0:193:232:142:17 
+Description: Name server for domain ""ru"""
+f.dns.RIPN.net.,"DNS information
+Domain: ru
+Host: f.dns.RIPN.net.
+IPv4 Addresses: 193.232.156.17 
+IPv6 Addresses :2001:678:14:0:193:232:156:17 
+Description: Name server for domain ""ru"""
+b.ns.se.,"DNS information
+Domain: se
+Host: b.ns.se.
+IPv4 Addresses: 192.36.133.107 
+IPv6 Addresses :2001:67c:254c:301::53 
+Description: Name server for domain ""se"""
+j.ns.se.,"DNS information
+Domain: se
+Host: j.ns.se.
+IPv4 Addresses: 199.254.63.1 
+IPv6 Addresses :2001:500:2c::1 
+Description: Name server for domain ""se"""
+i.ns.se.,"DNS information
+Domain: se
+Host: i.ns.se.
+IPv4 Addresses: 194.146.106.22 
+IPv6 Addresses :2001:67c:1010:5::53 
+Description: Name server for domain ""se"""
+a.ns.se.,"DNS information
+Domain: se
+Host: a.ns.se.
+IPv4 Addresses: 192.36.144.107 
+IPv6 Addresses :2a01:3f0:0:301::53 
+Description: Name server for domain ""se"""
+f.ns.se.,"DNS information
+Domain: se
+Host: f.ns.se.
+IPv4 Addresses: 192.71.53.53 
+IPv6 Addresses :2a01:3f0:0:305::53 
+Description: Name server for domain ""se"""
+z.ns.se.,"DNS information
+Domain: se
+Host: z.ns.se.
+IPv4 Addresses: 185.159.198.150 
+IPv6 Addresses : No information
+Description: Name server for domain ""se"""
+x.ns.se.,"DNS information
+Domain: se
+Host: x.ns.se.
+IPv4 Addresses: 213.108.25.4 
+IPv6 Addresses :2001:67c:124c:e000::4 
+Description: Name server for domain ""se"""
+c.ns.se.,"DNS information
+Domain: se
+Host: c.ns.se.
+IPv4 Addresses: 192.36.135.107 
+IPv6 Addresses :2001:67c:2554:301::53 
+Description: Name server for domain ""se"""
+y.ns.se.,"DNS information
+Domain: se
+Host: y.ns.se.
+IPv4 Addresses: 185.159.197.150 
+IPv6 Addresses :2620:10a:80aa::150 
+Description: Name server for domain ""se"""
+g.ns.se.,"DNS information
+Domain: se
+Host: g.ns.se.
+IPv4 Addresses: 130.239.5.114 
+IPv6 Addresses :2001:6b0:e:3::1 
+Description: Name server for domain ""se"""
+ns30.cdns.net.,"DNS information
+Domain: my
+Host: ns30.cdns.net.
+IPv4 Addresses: 194.0.1.30 
+IPv6 Addresses :2001:678:4::1e 
+Description: Name server for domain ""my"""
+a1.mynic.my.,"DNS information
+Domain: my
+Host: a1.mynic.my.
+IPv4 Addresses: 202.171.47.204 
+IPv6 Addresses : No information
+Description: Name server for domain ""my"""
+a.mynic.net.my.,"DNS information
+Domain: my
+Host: a.mynic.net.my.
+IPv4 Addresses: 49.236.194.202 
+IPv6 Addresses :2401:b000:602:1001::11 
+Description: Name server for domain ""my"""
+ns2.cuhk.edu.hk.,"DNS information
+Domain: my
+Host: ns2.cuhk.edu.hk.
+IPv4 Addresses: 137.189.6.21 
+IPv6 Addresses :2405:3000:3:6::15 
+Description: Name server for domain ""my"""
+ns-my.nic.fr.,"DNS information
+Domain: my
+Host: ns-my.nic.fr.
+IPv4 Addresses: 192.134.0.49 
+IPv6 Addresses :2001:660:3006:1::1:1 
+Description: Name server for domain ""my"""
+b.mynic.net.my.,"DNS information
+Domain: edu.my
+Host: b.mynic.net.my.
+IPv4 Addresses: 49.236.194.203 
+IPv6 Addresses :2401:b000:602:1001::12 
+Description: Name server for domain ""edu.my"""
+b1.mynic.my.,"DNS information
+Domain: edu.my
+Host: b1.mynic.my.
+IPv4 Addresses: 202.171.47.205 
+IPv6 Addresses : No information
+Description: Name server for domain ""edu.my"""
+ns-a3.io.,"DNS information
+Domain: io
+Host: ns-a3.io.
+IPv4 Addresses: 74.116.178.1 
+IPv6 Addresses : No information
+Description: Name server for domain ""io"""
+a2.nic.io.,"DNS information
+Domain: io
+Host: a2.nic.io.
+IPv4 Addresses: 65.22.163.17 
+IPv6 Addresses :2a01:8840:a1::17 
+Description: Name server for domain ""io"""
+c0.nic.io.,"DNS information
+Domain: io
+Host: c0.nic.io.
+IPv4 Addresses: 65.22.162.17 
+IPv6 Addresses :2a01:8840:a0::17 
+Description: Name server for domain ""io"""
+a0.nic.io.,"DNS information
+Domain: io
+Host: a0.nic.io.
+IPv4 Addresses: 65.22.160.17 
+IPv6 Addresses :2a01:8840:9e::17 
+Description: Name server for domain ""io"""
+b0.nic.io.,"DNS information
+Domain: io
+Host: b0.nic.io.
+IPv4 Addresses: 65.22.161.17 
+IPv6 Addresses :2a01:8840:9f::17 
+Description: Name server for domain ""io"""
+ns-a1.io.,"DNS information
+Domain: io
+Host: ns-a1.io.
+IPv4 Addresses: 194.0.1.1 
+IPv6 Addresses :2001:678:4::1 
+Description: Name server for domain ""io"""
+d.gov-servers.net.,"DNS information
+Domain: gov
+Host: d.gov-servers.net.
+IPv4 Addresses: 81.19.194.30 
+IPv6 Addresses :2620:74:29::2:30 
+Description: Name server for domain ""gov"""
+c.gov-servers.net.,"DNS information
+Domain: gov
+Host: c.gov-servers.net.
+IPv4 Addresses: 69.36.153.30 
+IPv6 Addresses :2620:74:28::2:30 
+Description: Name server for domain ""gov"""
+a.gov-servers.net.,"DNS information
+Domain: gov
+Host: a.gov-servers.net.
+IPv4 Addresses: 69.36.157.30 
+IPv6 Addresses :2001:500:4431::2:30 
+Description: Name server for domain ""gov"""
+b.gov-servers.net.,"DNS information
+Domain: gov
+Host: b.gov-servers.net.
+IPv4 Addresses: 209.112.123.30 
+IPv6 Addresses :2620:74:27::2:30 
+Description: Name server for domain ""gov"""
+s.de.net.,"DNS information
+Domain: de
+Host: s.de.net.
+IPv4 Addresses: 195.243.137.26 
+IPv6 Addresses :2003:8:14::53 
+Description: Name server for domain ""de"""
+a.nic.de.,"DNS information
+Domain: de
+Host: a.nic.de.
+IPv4 Addresses: 194.0.0.53 
+IPv6 Addresses :2001:678:2::53 
+Description: Name server for domain ""de"""
+f.nic.de.,"DNS information
+Domain: de
+Host: f.nic.de.
+IPv4 Addresses: 81.91.164.5 
+IPv6 Addresses :2a02:568:0:2::53 
+Description: Name server for domain ""de"""
+l.de.net.,"DNS information
+Domain: de
+Host: l.de.net.
+IPv4 Addresses: 77.67.63.105 
+IPv6 Addresses :2001:668:1f:11::105 
+Description: Name server for domain ""de"""
+z.nic.de.,"DNS information
+Domain: de
+Host: z.nic.de.
+IPv4 Addresses: 194.246.96.1 
+IPv6 Addresses : No information
+Description: Name server for domain ""de"""
+n.de.net.,"DNS information
+Domain: de
+Host: n.de.net.
+IPv4 Addresses: 194.146.107.6 
+IPv6 Addresses :2001:67c:1011:1::53 
+Description: Name server for domain ""de"""
+anycast23.irondns.net.,"DNS information
+Domain: scot
+Host: anycast23.irondns.net.
+IPv4 Addresses: 195.253.65.11 
+IPv6 Addresses :2a01:5b0:5::b 
+Description: Name server for domain ""scot"""
+anycast24.irondns.net.,"DNS information
+Domain: scot
+Host: anycast24.irondns.net.
+IPv4 Addresses: 195.253.65.12 
+IPv6 Addresses :2a01:5b0:5::c 
+Description: Name server for domain ""scot"""
+anycast10.irondns.net.,"DNS information
+Domain: scot
+Host: anycast10.irondns.net.
+IPv4 Addresses: 195.253.64.12 
+IPv6 Addresses :2a01:5b0:4::c 
+Description: Name server for domain ""scot"""
+anycast9.irondns.net.,"DNS information
+Domain: scot
+Host: anycast9.irondns.net.
+IPv4 Addresses: 195.253.64.11 
+IPv6 Addresses :2a01:5b0:4::b 
+Description: Name server for domain ""scot"""
+ns.msu.ru.,"DNS information
+Domain: edu.ru
+Host: ns.msu.ru.
+IPv4 Addresses: 93.180.0.1 
+IPv6 Addresses : No information
+Description: Name server for domain ""edu.ru"""
+ns.runnet.ru.,"DNS information
+Domain: edu.ru
+Host: ns.runnet.ru.
+IPv4 Addresses: 194.85.32.18 
+IPv6 Addresses : No information
+Description: Name server for domain ""edu.ru"""
+ns.informika.ru.,"DNS information
+Domain: edu.ru
+Host: ns.informika.ru.
+IPv4 Addresses: 194.226.215.65 
+IPv6 Addresses : No information
+Description: Name server for domain ""edu.ru"""
+ns2.free.net.,"DNS information
+Domain: edu.ru
+Host: ns2.free.net.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""edu.ru"""
+ns2.informika.ru.,"DNS information
+Domain: edu.ru
+Host: ns2.informika.ru.
+IPv4 Addresses: 194.190.241.65 
+IPv6 Addresses : No information
+Description: Name server for domain ""edu.ru"""
+ns.informika.RU.,"DNS information
+Domain: edu.ru
+Host: ns.informika.RU.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""edu.ru"""
+ns.runnet.RU.,"DNS information
+Domain: edu.ru
+Host: ns.runnet.RU.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""edu.ru"""
+ns2.informika.RU.,"DNS information
+Domain: edu.ru
+Host: ns2.informika.RU.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""edu.ru"""
+ns.msu.RU.,"DNS information
+Domain: edu.ru
+Host: ns.msu.RU.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""edu.ru"""
+ns.MSU.RU.,"DNS information
+Domain: edu.ru
+Host: ns.MSU.RU.
+IPv4 Addresses: 93.180.0.1 
+IPv6 Addresses : No information
+Description: Name server for domain ""edu.ru"""
+ns.RUNNET.RU.,"DNS information
+Domain: edu.ru
+Host: ns.RUNNET.RU.
+IPv4 Addresses: 194.85.32.18 
+IPv6 Addresses : No information
+Description: Name server for domain ""edu.ru"""
+ns.INFORMIKA.RU.,"DNS information
+Domain: edu.ru
+Host: ns.INFORMIKA.RU.
+IPv4 Addresses: 194.226.215.65 
+IPv6 Addresses : No information
+Description: Name server for domain ""edu.ru"""
+ns2.INFORMIKA.RU.,"DNS information
+Domain: edu.ru
+Host: ns2.INFORMIKA.RU.
+IPv4 Addresses: 194.190.241.65 
+IPv6 Addresses : No information
+Description: Name server for domain ""edu.ru"""
+a0.org.afilias-nst.info.,"DNS information
+Domain: org
+Host: a0.org.afilias-nst.info.
+IPv4 Addresses: 199.19.56.1 
+IPv6 Addresses :2001:500:e::1 
+Description: Name server for domain ""org"""
+c0.org.afilias-nst.info.,"DNS information
+Domain: org
+Host: c0.org.afilias-nst.info.
+IPv4 Addresses: 199.19.53.1 
+IPv6 Addresses :2001:500:b::1 
+Description: Name server for domain ""org"""
+a2.org.afilias-nst.info.,"DNS information
+Domain: org
+Host: a2.org.afilias-nst.info.
+IPv4 Addresses: 199.249.112.1 
+IPv6 Addresses :2001:500:40::1 
+Description: Name server for domain ""org"""
+b0.org.afilias-nst.org.,"DNS information
+Domain: org
+Host: b0.org.afilias-nst.org.
+IPv4 Addresses: 199.19.54.1 
+IPv6 Addresses :2001:500:c::1 
+Description: Name server for domain ""org"""
+b2.org.afilias-nst.org.,"DNS information
+Domain: org
+Host: b2.org.afilias-nst.org.
+IPv4 Addresses: 199.249.120.1 
+IPv6 Addresses :2001:500:48::1 
+Description: Name server for domain ""org"""
+d0.org.afilias-nst.org.,"DNS information
+Domain: org
+Host: d0.org.afilias-nst.org.
+IPv4 Addresses: 199.19.57.1 
+IPv6 Addresses :2001:500:f::1 
+Description: Name server for domain ""org"""
+cns.cernet.net.,"DNS information
+Domain: gov.cn
+Host: cns.cernet.net.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""gov.cn"""
+ns1.cctld.co.,"DNS information
+Domain: co
+Host: ns1.cctld.co.
+IPv4 Addresses: 156.154.100.25 
+IPv6 Addresses :2001:502:2eda::21 
+Description: Name server for domain ""co"""
+ns5.cctld.co.,"DNS information
+Domain: co
+Host: ns5.cctld.co.
+IPv4 Addresses: 156.154.104.25 
+IPv6 Addresses :2610:a1:1011::21 
+Description: Name server for domain ""co"""
+ns6.cctld.co.,"DNS information
+Domain: co
+Host: ns6.cctld.co.
+IPv4 Addresses: 156.154.105.25 
+IPv6 Addresses :2610:a1:1012::21 
+Description: Name server for domain ""co"""
+ns2.cctld.co.,"DNS information
+Domain: co
+Host: ns2.cctld.co.
+IPv4 Addresses: 156.154.101.25 
+IPv6 Addresses :2001:502:ad09::21 
+Description: Name server for domain ""co"""
+ns3.cctld.co.,"DNS information
+Domain: co
+Host: ns3.cctld.co.
+IPv4 Addresses: 156.154.102.25 
+IPv6 Addresses :2610:a1:1009::21 
+Description: Name server for domain ""co"""
+ns4.cctld.co.,"DNS information
+Domain: co
+Host: ns4.cctld.co.
+IPv4 Addresses: 156.154.103.25 
+IPv6 Addresses :2610:a1:1010::21 
+Description: Name server for domain ""co"""
+a.au.,"DNS information
+Domain: au
+Host: a.au.
+IPv4 Addresses: 58.65.254.73 
+IPv6 Addresses :2407:6e00:254:306::73 
+Description: Name server for domain ""au"""
+b.au.,"DNS information
+Domain: au
+Host: b.au.
+IPv4 Addresses: 58.65.253.73 
+IPv6 Addresses :2407:6e00:253:306::73 
+Description: Name server for domain ""au"""
+q.au.,"DNS information
+Domain: au
+Host: q.au.
+IPv4 Addresses: 65.22.196.1 
+IPv6 Addresses :2a01:8840:be::1 
+Description: Name server for domain ""au"""
+r.au.,"DNS information
+Domain: au
+Host: r.au.
+IPv4 Addresses: 65.22.197.1 
+IPv6 Addresses :2a01:8840:bf::1 
+Description: Name server for domain ""au"""
+s.au.,"DNS information
+Domain: au
+Host: s.au.
+IPv4 Addresses: 65.22.198.1 
+IPv6 Addresses :2a01:8840:c0::1 
+Description: Name server for domain ""au"""
+t.au.,"DNS information
+Domain: au
+Host: t.au.
+IPv4 Addresses: 65.22.199.1 
+IPv6 Addresses :2a01:8840:c1::1 
+Description: Name server for domain ""au"""
+u.au.,"DNS information
+Domain: au
+Host: u.au.
+IPv4 Addresses: 211.29.133.32 
+IPv6 Addresses : No information
+Description: Name server for domain ""au"""
+v.au.,"DNS information
+Domain: au
+Host: v.au.
+IPv4 Addresses: 202.12.31.53 
+IPv6 Addresses :2001:dd8:12::53 
+Description: Name server for domain ""au"""
+c.au.,"DNS information
+Domain: au
+Host: c.au.
+IPv4 Addresses: 162.159.24.179 
+IPv6 Addresses :2400:cb00:2049:1::a29f:18b3 
+Description: Name server for domain ""au"""
+d.au.,"DNS information
+Domain: au
+Host: d.au.
+IPv4 Addresses: 162.159.25.38 
+IPv6 Addresses :2400:cb00:2049:1::a29f:1926 
+Description: Name server for domain ""au"""
+nsa.nic.uk.,"DNS information
+Domain: uk
+Host: nsa.nic.uk.
+IPv4 Addresses: 156.154.100.3 
+IPv6 Addresses :2001:502:ad09::3 
+Description: Name server for domain ""uk"""
+nsb.nic.uk.,"DNS information
+Domain: uk
+Host: nsb.nic.uk.
+IPv4 Addresses: 156.154.101.3 
+IPv6 Addresses : No information
+Description: Name server for domain ""uk"""
+nsc.nic.uk.,"DNS information
+Domain: uk
+Host: nsc.nic.uk.
+IPv4 Addresses: 156.154.102.3 
+IPv6 Addresses : No information
+Description: Name server for domain ""uk"""
+nsd.nic.uk.,"DNS information
+Domain: uk
+Host: nsd.nic.uk.
+IPv4 Addresses: 156.154.103.3 
+IPv6 Addresses : No information
+Description: Name server for domain ""uk"""
+dns1.nic.uk.,"DNS information
+Domain: uk
+Host: dns1.nic.uk.
+IPv4 Addresses: 213.248.216.1 
+IPv6 Addresses :2a01:618:400::1 
+Description: Name server for domain ""uk"""
+dns2.nic.uk.,"DNS information
+Domain: uk
+Host: dns2.nic.uk.
+IPv4 Addresses: 103.49.80.1 
+IPv6 Addresses :2401:fd80:400::1 
+Description: Name server for domain ""uk"""
+dns3.nic.uk.,"DNS information
+Domain: uk
+Host: dns3.nic.uk.
+IPv4 Addresses: 213.248.220.1 
+IPv6 Addresses :2a01:618:404::1 
+Description: Name server for domain ""uk"""
+dns4.nic.uk.,"DNS information
+Domain: uk
+Host: dns4.nic.uk.
+IPv4 Addresses: 43.230.48.1 
+IPv6 Addresses :2401:fd80:404::1 
+Description: Name server for domain ""uk"""
+cd1.ns.ua.,"DNS information
+Domain: ua
+Host: cd1.ns.ua.
+IPv4 Addresses: 194.0.1.9 
+IPv6 Addresses :2001:678:4::9 
+Description: Name server for domain ""ua"""
+pch.ns.ua.,"DNS information
+Domain: ua
+Host: pch.ns.ua.
+IPv4 Addresses: 204.61.216.12 
+IPv6 Addresses :2001:500:14:6012:ad::1 
+Description: Name server for domain ""ua"""
+sns-pb.isc.org.,"DNS information
+Domain: ua
+Host: sns-pb.isc.org.
+IPv4 Addresses: 192.5.4.1 
+IPv6 Addresses :2001:500:2e::1 
+Description: Name server for domain ""ua"""
+ho1.ns.ua.,"DNS information
+Domain: ua
+Host: ho1.ns.ua.
+IPv4 Addresses: 195.47.253.1 
+IPv6 Addresses :2001:67c:258::1 
+Description: Name server for domain ""ua"""
+he1.ns.ua.,"DNS information
+Domain: ua
+Host: he1.ns.ua.
+IPv4 Addresses: 216.218.215.27 
+IPv6 Addresses :2001:470:2e:1::27 
+Description: Name server for domain ""ua"""
+a.edu-servers.net.,"DNS information
+Domain: edu
+Host: a.edu-servers.net.
+IPv4 Addresses: 192.5.6.30 
+IPv6 Addresses : No information
+Description: Name server for domain ""edu"""
+f.edu-servers.net.,"DNS information
+Domain: edu
+Host: f.edu-servers.net.
+IPv4 Addresses: 192.35.51.30 
+IPv6 Addresses : No information
+Description: Name server for domain ""edu"""
+l.edu-servers.net.,"DNS information
+Domain: edu
+Host: l.edu-servers.net.
+IPv4 Addresses: 192.41.162.30 
+IPv6 Addresses : No information
+Description: Name server for domain ""edu"""
+g.edu-servers.net.,"DNS information
+Domain: edu
+Host: g.edu-servers.net.
+IPv4 Addresses: 192.42.93.30 
+IPv6 Addresses :2001:503:cc2c::2:36 
+Description: Name server for domain ""edu"""
+c.edu-servers.net.,"DNS information
+Domain: edu
+Host: c.edu-servers.net.
+IPv4 Addresses: 192.26.92.30 
+IPv6 Addresses : No information
+Description: Name server for domain ""edu"""
+d.edu-servers.net.,"DNS information
+Domain: edu
+Host: d.edu-servers.net.
+IPv4 Addresses: 192.31.80.30 
+IPv6 Addresses : No information
+Description: Name server for domain ""edu"""
+c.dns-servers.vn.,"DNS information
+Domain: vn
+Host: c.dns-servers.vn.
+IPv4 Addresses: 203.119.38.105 
+IPv6 Addresses :2001:dc8:c000:7::105 
+Description: Name server for domain ""vn"""
+d.dns-servers.vn.,"DNS information
+Domain: vn
+Host: d.dns-servers.vn.
+IPv4 Addresses: 203.119.44.105 
+IPv6 Addresses : No information
+Description: Name server for domain ""vn"""
+b.dns-servers.vn.,"DNS information
+Domain: vn
+Host: b.dns-servers.vn.
+IPv4 Addresses: 203.119.73.105 
+IPv6 Addresses :2001:dc8:1:2::105 
+Description: Name server for domain ""vn"""
+e.dns-servers.vn.,"DNS information
+Domain: vn
+Host: e.dns-servers.vn.
+IPv4 Addresses: 203.119.60.105 
+IPv6 Addresses : No information
+Description: Name server for domain ""vn"""
+a.dns-servers.vn.,"DNS information
+Domain: vn
+Host: a.dns-servers.vn.
+IPv4 Addresses: 194.0.1.18 
+IPv6 Addresses :2001:678:4::12 
+Description: Name server for domain ""vn"""
+g.dns-servers.vn.,"DNS information
+Domain: vn
+Host: g.dns-servers.vn.
+IPv4 Addresses: 204.61.216.115 
+IPv6 Addresses :2001:500:14:6115:ad::1 
+Description: Name server for domain ""vn"""
+f.dns-servers.vn.,"DNS information
+Domain: vn
+Host: f.dns-servers.vn.
+IPv4 Addresses: 203.119.68.105 
+IPv6 Addresses :2001:dc8:d000:2::105 
+Description: Name server for domain ""vn"""
+deneb.dfn.de.,"DNS information
+Domain: edu.cn
+Host: deneb.dfn.de.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""edu.cn"""
+ns2.cuhk.hk.,"DNS information
+Domain: edu.cn
+Host: ns2.cuhk.hk.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""edu.cn"""
+ns2.cernet.net.,"DNS information
+Domain: edu.cn
+Host: ns2.cernet.net.
+IPv4 Addresses: 101.4.126.203 
+IPv6 Addresses :2001:250:c006::35 2001:da8:1:100::22 
+Description: Name server for domain ""edu.cn"""
+dns.edu.cn.,"DNS information
+Domain: edu.cn
+Host: dns.edu.cn.
+IPv4 Addresses: 202.112.0.35 
+IPv6 Addresses :2001:250:c006::35 
+Description: Name server for domain ""edu.cn"""
+dns2.edu.cn.,"DNS information
+Domain: edu.cn
+Host: dns2.edu.cn.
+IPv4 Addresses: 202.112.0.13 
+IPv6 Addresses :2001:da8:1:100::22 
+Description: Name server for domain ""edu.cn"""
+f.dns.br.,"DNS information
+Domain: br
+Host: f.dns.br.
+IPv4 Addresses: 200.219.159.10 
+IPv6 Addresses :2001:12f8:c::10 
+Description: Name server for domain ""br"""
+d.dns.br.,"DNS information
+Domain: br
+Host: d.dns.br.
+IPv4 Addresses: 200.219.154.10 
+IPv6 Addresses :2001:12f8:4::10 
+Description: Name server for domain ""br"""
+e.dns.br.,"DNS information
+Domain: br
+Host: e.dns.br.
+IPv4 Addresses: 200.229.248.10 
+IPv6 Addresses :2001:12f8:1::10 
+Description: Name server for domain ""br"""
+c.dns.br.,"DNS information
+Domain: br
+Host: c.dns.br.
+IPv4 Addresses: 200.192.233.10 
+IPv6 Addresses : No information
+Description: Name server for domain ""br"""
+b.dns.br.,"DNS information
+Domain: br
+Host: b.dns.br.
+IPv4 Addresses: 200.189.41.10 
+IPv6 Addresses : No information
+Description: Name server for domain ""br"""
+a.dns.br.,"DNS information
+Domain: br
+Host: a.dns.br.
+IPv4 Addresses: 200.160.0.10 
+IPv6 Addresses :2001:12ff::10 
+Description: Name server for domain ""br"""
+d.dns.tw.,"DNS information
+Domain: tw
+Host: d.dns.tw.
+IPv4 Addresses: 60.199.165.186 
+IPv6 Addresses :2001:4541:9010:7::186 
+Description: Name server for domain ""tw"""
+i.dns.tw.,"DNS information
+Domain: tw
+Host: i.dns.tw.
+IPv4 Addresses: 194.0.11.105 
+IPv6 Addresses :2001:678:e:105::53 
+Description: Name server for domain ""tw"""
+g.dns.tw.,"DNS information
+Domain: tw
+Host: g.dns.tw.
+IPv4 Addresses: 220.229.225.195 
+IPv6 Addresses :2001:cd8:400::195 
+Description: Name server for domain ""tw"""
+f.dns.tw.,"DNS information
+Domain: tw
+Host: f.dns.tw.
+IPv4 Addresses: 163.28.1.10 
+IPv6 Addresses : No information
+Description: Name server for domain ""tw"""
+anytld.apnic.net.,"DNS information
+Domain: tw
+Host: anytld.apnic.net.
+IPv4 Addresses: 202.12.31.53 
+IPv6 Addresses :2001:dd8:12::53 
+Description: Name server for domain ""tw"""
+b.dns.tw.,"DNS information
+Domain: tw
+Host: b.dns.tw.
+IPv4 Addresses: 210.201.138.58 
+IPv6 Addresses :2404:0:10a0::58 
+Description: Name server for domain ""tw"""
+ns.twnic.net.,"DNS information
+Domain: tw
+Host: ns.twnic.net.
+IPv4 Addresses: 192.83.166.11 
+IPv6 Addresses :2001:288:1:1006::11 
+Description: Name server for domain ""tw"""
+e.dns.tw.,"DNS information
+Domain: tw
+Host: e.dns.tw.
+IPv4 Addresses: 211.20.231.11 
+IPv6 Addresses :2001:b000:1e0:c000::11 
+Description: Name server for domain ""tw"""
+a.dns.tw.,"DNS information
+Domain: tw
+Host: a.dns.tw.
+IPv4 Addresses: 203.73.24.25 
+IPv6 Addresses :2001:45b1:0:5::25 
+Description: Name server for domain ""tw"""
+h.dns.tw.,"DNS information
+Domain: tw
+Host: h.dns.tw.
+IPv4 Addresses: 204.61.216.119 
+IPv6 Addresses :2001:500:14:6119:ad::1 
+Description: Name server for domain ""tw"""
+c.dns.tw.,"DNS information
+Domain: tw
+Host: c.dns.tw.
+IPv4 Addresses: 203.66.87.201 
+IPv6 Addresses :2001:b020:0:77::1 
+Description: Name server for domain ""tw"""
+c0.pro.afilias-nst.info.,"DNS information
+Domain: pro
+Host: c0.pro.afilias-nst.info.
+IPv4 Addresses: 199.182.16.1 
+IPv6 Addresses :2001:500:d0::1 
+Description: Name server for domain ""pro"""
+a2.pro.afilias-nst.info.,"DNS information
+Domain: pro
+Host: a2.pro.afilias-nst.info.
+IPv4 Addresses: 199.182.32.1 
+IPv6 Addresses :2001:500:e0::1 
+Description: Name server for domain ""pro"""
+b0.pro.afilias-nst.org.,"DNS information
+Domain: pro
+Host: b0.pro.afilias-nst.org.
+IPv4 Addresses: 199.182.1.1 
+IPv6 Addresses :2001:500:c1::1 
+Description: Name server for domain ""pro"""
+b2.pro.afilias-nst.org.,"DNS information
+Domain: pro
+Host: b2.pro.afilias-nst.org.
+IPv4 Addresses: 199.182.40.1 
+IPv6 Addresses :2001:500:e1::1 
+Description: Name server for domain ""pro"""
+d0.pro.afilias-nst.org.,"DNS information
+Domain: pro
+Host: d0.pro.afilias-nst.org.
+IPv4 Addresses: 199.182.17.1 
+IPv6 Addresses :2001:500:d1::1 
+Description: Name server for domain ""pro"""
+a0.pro.afilias-nst.info.,"DNS information
+Domain: pro
+Host: a0.pro.afilias-nst.info.
+IPv4 Addresses: 199.182.0.1 
+IPv6 Addresses :2001:500:c0::1 
+Description: Name server for domain ""pro"""
+dns.nic.it.,"DNS information
+Domain: it
+Host: dns.nic.it.
+IPv4 Addresses: 192.12.192.5 
+IPv6 Addresses :2a00:d40:1:1::5 
+Description: Name server for domain ""it"""
+nameserver.cnr.it.,"DNS information
+Domain: it
+Host: nameserver.cnr.it.
+IPv4 Addresses: 194.119.192.34 
+IPv6 Addresses :2a00:1620:c0:220:194:119:192:34 
+Description: Name server for domain ""it"""
+s.dns.it.,"DNS information
+Domain: it
+Host: s.dns.it.
+IPv4 Addresses: 194.146.106.30 
+IPv6 Addresses :2001:67c:1010:7::53 
+Description: Name server for domain ""it"""
+r.dns.it.,"DNS information
+Domain: it
+Host: r.dns.it.
+IPv4 Addresses: 193.206.141.46 
+IPv6 Addresses :2001:760:ffff:ffff::ca 
+Description: Name server for domain ""it"""
+m.dns.it.,"DNS information
+Domain: it
+Host: m.dns.it.
+IPv4 Addresses: 217.29.76.4 
+IPv6 Addresses :2001:1ac0:0:200:0:a5d1:6004:2 
+Description: Name server for domain ""it"""
+a.dns.it.,"DNS information
+Domain: it
+Host: a.dns.it.
+IPv4 Addresses: 194.0.16.215 
+IPv6 Addresses :2001:678:12:0:194:0:16:215 
+Description: Name server for domain ""it"""
+g.dns.jp.,"DNS information
+Domain: jp
+Host: g.dns.jp.
+IPv4 Addresses: 203.119.40.1 
+IPv6 Addresses : No information
+Description: Name server for domain ""jp"""
+d.dns.jp.,"DNS information
+Domain: jp
+Host: d.dns.jp.
+IPv4 Addresses: 210.138.175.244 
+IPv6 Addresses :2001:240::53 
+Description: Name server for domain ""jp"""
+b.dns.jp.,"DNS information
+Domain: jp
+Host: b.dns.jp.
+IPv4 Addresses: 202.12.30.131 
+IPv6 Addresses :2001:dc2::1 
+Description: Name server for domain ""jp"""
+h.dns.jp.,"DNS information
+Domain: jp
+Host: h.dns.jp.
+IPv4 Addresses: 65.22.40.25 
+IPv6 Addresses :2a01:8840:1ba::25 
+Description: Name server for domain ""jp"""
+e.dns.jp.,"DNS information
+Domain: jp
+Host: e.dns.jp.
+IPv4 Addresses: 192.50.43.53 
+IPv6 Addresses :2001:200:c000::35 
+Description: Name server for domain ""jp"""
+f.dns.jp.,"DNS information
+Domain: jp
+Host: f.dns.jp.
+IPv4 Addresses: 150.100.6.8 
+IPv6 Addresses :2001:2f8:0:100::153 
+Description: Name server for domain ""jp"""
+a.dns.jp.,"DNS information
+Domain: jp
+Host: a.dns.jp.
+IPv4 Addresses: 203.119.1.1 
+IPv6 Addresses :2001:dc4::1 
+Description: Name server for domain ""jp"""
+c.dns.jp.,"DNS information
+Domain: jp
+Host: c.dns.jp.
+IPv4 Addresses: 156.154.100.5 
+IPv6 Addresses :2001:502:ad09::5 
+Description: Name server for domain ""jp"""
+z.dns.jp.,"DNS information
+Domain: co.jp
+Host: z.dns.jp.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""co.jp"""
+c.ca-servers.ca.,"DNS information
+Domain: ca
+Host: c.ca-servers.ca.
+IPv4 Addresses: 185.159.196.2 
+IPv6 Addresses :2620:10a:8053::2 
+Description: Name server for domain ""ca"""
+j.ca-servers.ca.,"DNS information
+Domain: ca
+Host: j.ca-servers.ca.
+IPv4 Addresses: 198.182.167.1 
+IPv6 Addresses :2001:500:83::1 
+Description: Name server for domain ""ca"""
+x.ca-servers.ca.,"DNS information
+Domain: ca
+Host: x.ca-servers.ca.
+IPv4 Addresses: 199.253.250.68 
+IPv6 Addresses :2620:10a:80ba::68 
+Description: Name server for domain ""ca"""
+any.ca-servers.ca.,"DNS information
+Domain: ca
+Host: any.ca-servers.ca.
+IPv4 Addresses: 199.4.144.2 
+IPv6 Addresses :2001:500:a7::2 
+Description: Name server for domain ""ca"""
+y.dns.eu.,"DNS information
+Domain: eu
+Host: y.dns.eu.
+IPv4 Addresses: 194.146.106.90 
+IPv6 Addresses :2001:67c:1010:23::53 
+Description: Name server for domain ""eu"""
+uk.dns.eu.,"DNS information
+Domain: eu
+Host: uk.dns.eu.
+IPv4 Addresses: 195.66.241.178 
+IPv6 Addresses : No information
+Description: Name server for domain ""eu"""
+cz.dns.eu.,"DNS information
+Domain: eu
+Host: cz.dns.eu.
+IPv4 Addresses: 93.190.128.138 
+IPv6 Addresses : No information
+Description: Name server for domain ""eu"""
+nl.dns.eu.,"DNS information
+Domain: eu
+Host: nl.dns.eu.
+IPv4 Addresses: 91.200.16.100 
+IPv6 Addresses : No information
+Description: Name server for domain ""eu"""
+z.dns.eu.,"DNS information
+Domain: eu
+Host: z.dns.eu.
+IPv4 Addresses: 162.88.56.1 
+IPv6 Addresses :2600:2000:3004::1 
+Description: Name server for domain ""eu"""
+si.dns.eu.,"DNS information
+Domain: eu
+Host: si.dns.eu.
+IPv4 Addresses: 193.2.221.60 
+IPv6 Addresses :2001:1470:8000:100::1 
+Description: Name server for domain ""eu"""
+x.dns.eu.,"DNS information
+Domain: eu
+Host: x.dns.eu.
+IPv4 Addresses: 185.151.141.1 
+IPv6 Addresses :2a02:568:fe00::6575 
+Description: Name server for domain ""eu"""
+h.twnic.net.tw.,"DNS information
+Domain: com.tw
+Host: h.twnic.net.tw.
+IPv4 Addresses: 163.28.4.10 220.229.225.196 
+IPv6 Addresses :2001:cd8:400::196 
+Description: Name server for domain ""com.tw"""
+f.twnic.net.tw.,"DNS information
+Domain: com.tw
+Host: f.twnic.net.tw.
+IPv4 Addresses: 203.66.87.200 
+IPv6 Addresses : No information
+Description: Name server for domain ""com.tw"""
+g.twnic.net.tw.,"DNS information
+Domain: com.tw
+Host: g.twnic.net.tw.
+IPv4 Addresses: 60.199.165.184 
+IPv6 Addresses :2001:c50:ffff:1::184 
+Description: Name server for domain ""com.tw"""
+d.twnic.net.tw.,"DNS information
+Domain: com.tw
+Host: d.twnic.net.tw.
+IPv4 Addresses: 202.169.175.130 60.199.165.187 
+IPv6 Addresses :2001:c08:175:128::175:128 2001:4541:9010:7::187 
+Description: Name server for domain ""com.tw"""
+b.twnic.net.tw.,"DNS information
+Domain: com.tw
+Host: b.twnic.net.tw.
+IPv4 Addresses: 203.73.24.24 
+IPv6 Addresses :2001:45b1:0:5::24 
+Description: Name server for domain ""com.tw"""
+a.twnic.net.tw.,"DNS information
+Domain: com.tw
+Host: a.twnic.net.tw.
+IPv4 Addresses: 130.211.241.105 192.83.166.9 211.73.64.22 
+IPv6 Addresses :2001:288:1:1006::9 
+Description: Name server for domain ""com.tw"""
+c.twnic.net.tw.,"DNS information
+Domain: com.tw
+Host: c.twnic.net.tw.
+IPv4 Addresses: 168.95.192.10 
+IPv6 Addresses : No information
+Description: Name server for domain ""com.tw"""
+e.twnic.net.tw.,"DNS information
+Domain: com.tw
+Host: e.twnic.net.tw.
+IPv4 Addresses: 211.20.231.7 211.20.231.12 
+IPv6 Addresses :2001:b000:1e0:c000::12 
+Description: Name server for domain ""com.tw"""
+ns2.ns.il.,"DNS information
+Domain: il
+Host: ns2.ns.il.
+IPv4 Addresses: 162.88.57.1 
+IPv6 Addresses :2600:2000:3005::1 
+Description: Name server for domain ""il"""
+ns3.ns.il.,"DNS information
+Domain: il
+Host: ns3.ns.il.
+IPv4 Addresses: 194.0.11.103 
+IPv6 Addresses :2001:678:e:103::53 
+Description: Name server for domain ""il"""
+nsb.ns.il.,"DNS information
+Domain: il
+Host: nsb.ns.il.
+IPv4 Addresses: 192.115.7.60 
+IPv6 Addresses : No information
+Description: Name server for domain ""il"""
+ilns.ilan.net.il.,"DNS information
+Domain: il
+Host: ilns.ilan.net.il.
+IPv4 Addresses: 128.139.35.5 
+IPv6 Addresses : No information
+Description: Name server for domain ""il"""
+nsa.ns.il.,"DNS information
+Domain: il
+Host: nsa.ns.il.
+IPv4 Addresses: 192.115.7.53 
+IPv6 Addresses : No information
+Description: Name server for domain ""il"""
+nse.ns.il.,"DNS information
+Domain: il
+Host: nse.ns.il.
+IPv4 Addresses: 192.115.141.253 
+IPv6 Addresses : No information
+Description: Name server for domain ""il"""
+lookup.iucc.ac.il.,"DNS information
+Domain: il
+Host: lookup.iucc.ac.il.
+IPv4 Addresses: 128.139.34.240 
+IPv6 Addresses :2001:bf8:900:6::808b:22f0 
+Description: Name server for domain ""il"""
+ns1.ns.il.,"DNS information
+Domain: il
+Host: ns1.ns.il.
+IPv4 Addresses: 194.146.106.122 
+IPv6 Addresses :2001:67c:1010:31::53 
+Description: Name server for domain ""il"""
+ns2.centralnic.net.,"DNS information
+Domain: com.de
+Host: ns2.centralnic.net.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""com.de"""
+ns4.centralnic.net.,"DNS information
+Domain: com.de
+Host: ns4.centralnic.net.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""com.de"""
+ns1.centralnic.net.,"DNS information
+Domain: com.de
+Host: ns1.centralnic.net.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""com.de"""
+ns3.centralnic.net.,"DNS information
+Domain: com.de
+Host: ns3.centralnic.net.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""com.de"""
+a.cctld.us.,"DNS information
+Domain: us
+Host: a.cctld.us.
+IPv4 Addresses: 156.154.124.70 
+IPv6 Addresses : No information
+Description: Name server for domain ""us"""
+k.cctld.us.,"DNS information
+Domain: us
+Host: k.cctld.us.
+IPv4 Addresses: 156.154.128.70 
+IPv6 Addresses :2001:503:e239::3:1 
+Description: Name server for domain ""us"""
+c.cctld.us.,"DNS information
+Domain: us
+Host: c.cctld.us.
+IPv4 Addresses: 156.154.127.70 
+IPv6 Addresses : No information
+Description: Name server for domain ""us"""
+e.cctld.us.,"DNS information
+Domain: us
+Host: e.cctld.us.
+IPv4 Addresses: 156.154.126.70 
+IPv6 Addresses : No information
+Description: Name server for domain ""us"""
+f.cctld.us.,"DNS information
+Domain: us
+Host: f.cctld.us.
+IPv4 Addresses: 209.173.58.70 
+IPv6 Addresses :2001:500:3682::11 
+Description: Name server for domain ""us"""
+b.cctld.us.,"DNS information
+Domain: us
+Host: b.cctld.us.
+IPv4 Addresses: 156.154.125.70 
+IPv6 Addresses :2001:502:ad09::29 
+Description: Name server for domain ""us"""
+ns41.nic.tr.,"DNS information
+Domain: tr
+Host: ns41.nic.tr.
+IPv4 Addresses: 185.7.0.2 
+IPv6 Addresses :2001:a98:10:eeee::41 
+Description: Name server for domain ""tr"""
+ns91.nic.tr.,"DNS information
+Domain: tr
+Host: ns91.nic.tr.
+IPv4 Addresses: 162.88.54.1 
+IPv6 Addresses :2600:2000:3002::1 
+Description: Name server for domain ""tr"""
+ns31.nic.tr.,"DNS information
+Domain: tr
+Host: ns31.nic.tr.
+IPv4 Addresses: 31.210.155.2 
+IPv6 Addresses : No information
+Description: Name server for domain ""tr"""
+ns92.nic.tr.,"DNS information
+Domain: tr
+Host: ns92.nic.tr.
+IPv4 Addresses: 162.88.55.1 
+IPv6 Addresses :2600:2000:3003::1 
+Description: Name server for domain ""tr"""
+ns21.nic.tr.,"DNS information
+Domain: tr
+Host: ns21.nic.tr.
+IPv4 Addresses: 213.14.246.2 
+IPv6 Addresses : No information
+Description: Name server for domain ""tr"""
+ns42.nic.tr.,"DNS information
+Domain: tr
+Host: ns42.nic.tr.
+IPv4 Addresses: 185.7.0.3 
+IPv6 Addresses :2001:a98:10:eeee::42 
+Description: Name server for domain ""tr"""
+ns22.nic.tr.,"DNS information
+Domain: tr
+Host: ns22.nic.tr.
+IPv4 Addresses: 213.14.246.6 
+IPv6 Addresses : No information
+Description: Name server for domain ""tr"""
+lns41.nic.tr.,"DNS information
+Domain: edu.tr
+Host: lns41.nic.tr.
+IPv4 Addresses: 185.7.0.2 
+IPv6 Addresses :2001:a98:10:eeee::41 
+Description: Name server for domain ""edu.tr"""
+lns42.nic.tr.,"DNS information
+Domain: edu.tr
+Host: lns42.nic.tr.
+IPv4 Addresses: 185.7.0.3 
+IPv6 Addresses :2001:a98:10:eeee::42 
+Description: Name server for domain ""edu.tr"""
+lns5.nic.tr.,"DNS information
+Domain: edu.tr
+Host: lns5.nic.tr.
+IPv4 Addresses: 178.251.42.18 
+IPv6 Addresses : No information
+Description: Name server for domain ""edu.tr"""
+lns21.nic.tr.,"DNS information
+Domain: edu.tr
+Host: lns21.nic.tr.
+IPv4 Addresses: 213.14.246.2 
+IPv6 Addresses : No information
+Description: Name server for domain ""edu.tr"""
+lns22.nic.tr.,"DNS information
+Domain: edu.tr
+Host: lns22.nic.tr.
+IPv4 Addresses: 213.14.246.6 
+IPv6 Addresses : No information
+Description: Name server for domain ""edu.tr"""
+c-dns.pl.,"DNS information
+Domain: pl
+Host: c-dns.pl.
+IPv4 Addresses: 93.190.128.146 
+IPv6 Addresses :2a02:38:14::146 
+Description: Name server for domain ""pl"""
+a-dns.pl.,"DNS information
+Domain: pl
+Host: a-dns.pl.
+IPv4 Addresses: 194.181.87.156 
+IPv6 Addresses :2001:a10:121:1::156 
+Description: Name server for domain ""pl"""
+g-dns.pl.,"DNS information
+Domain: pl
+Host: g-dns.pl.
+IPv4 Addresses: 149.156.1.252 
+IPv6 Addresses :2001:6d8:1001:1::252 
+Description: Name server for domain ""pl"""
+e-dns.pl.,"DNS information
+Domain: pl
+Host: e-dns.pl.
+IPv4 Addresses: 46.28.245.82 
+IPv6 Addresses : No information
+Description: Name server for domain ""pl"""
+f-dns.pl.,"DNS information
+Domain: pl
+Host: f-dns.pl.
+IPv4 Addresses: 77.79.212.238 
+IPv6 Addresses :2001:1a68:0:17::238 
+Description: Name server for domain ""pl"""
+b-dns.pl.,"DNS information
+Domain: pl
+Host: b-dns.pl.
+IPv4 Addresses: 192.195.72.53 
+IPv6 Addresses :2001:7f9:c::53 
+Description: Name server for domain ""pl"""
+i-dns.pl.,"DNS information
+Domain: pl
+Host: i-dns.pl.
+IPv4 Addresses: 156.154.100.15 
+IPv6 Addresses : No information
+Description: Name server for domain ""pl"""
+d-dns.pl.,"DNS information
+Domain: pl
+Host: d-dns.pl.
+IPv4 Addresses: 81.15.133.186 
+IPv6 Addresses :2a00:4120:8000:2::186 
+Description: Name server for domain ""pl"""
+h-dns.pl.,"DNS information
+Domain: pl
+Host: h-dns.pl.
+IPv4 Addresses: 194.0.1.2 
+IPv6 Addresses :2001:678:4::2 
+Description: Name server for domain ""pl"""
+lns92.nic.tr.,"DNS information
+Domain: com.tr
+Host: lns92.nic.tr.
+IPv4 Addresses: 162.88.55.1 
+IPv6 Addresses : No information
+Description: Name server for domain ""com.tr"""
+lns31.nic.tr.,"DNS information
+Domain: com.tr
+Host: lns31.nic.tr.
+IPv4 Addresses: 31.210.155.2 
+IPv6 Addresses : No information
+Description: Name server for domain ""com.tr"""
+lns34.nic.tr.,"DNS information
+Domain: com.tr
+Host: lns34.nic.tr.
+IPv4 Addresses: 31.145.139.99 
+IPv6 Addresses : No information
+Description: Name server for domain ""com.tr"""
+lns35.nic.tr.,"DNS information
+Domain: com.tr
+Host: lns35.nic.tr.
+IPv4 Addresses: 31.145.139.119 
+IPv6 Addresses : No information
+Description: Name server for domain ""com.tr"""
+lns61.nic.tr.,"DNS information
+Domain: com.tr
+Host: lns61.nic.tr.
+IPv4 Addresses: 206.51.254.1 
+IPv6 Addresses :2620:171:804:ad2::1 
+Description: Name server for domain ""com.tr"""
+lns91.nic.tr.,"DNS information
+Domain: com.tr
+Host: lns91.nic.tr.
+IPv4 Addresses: 162.88.54.1 
+IPv6 Addresses : No information
+Description: Name server for domain ""com.tr"""
+dns3.tld.tutby.com.,"DNS information
+Domain: by
+Host: dns3.tld.tutby.com.
+IPv4 Addresses: 195.209.35.70 195.137.160.10 
+IPv6 Addresses :2a05:4800:1:100:: 2a01:d8:2:1::2 
+Description: Name server for domain ""by"""
+dns7.tld.tutby.com.,"DNS information
+Domain: by
+Host: dns7.tld.tutby.com.
+IPv4 Addresses: 128.199.68.43 103.23.93.36 
+IPv6 Addresses :2400:6180:0:d0::3d:b001 
+Description: Name server for domain ""by"""
+dns2.tld.tutby.com.,"DNS information
+Domain: by
+Host: dns2.tld.tutby.com.
+IPv4 Addresses: 93.125.30.44 
+IPv6 Addresses :2a04:2e80:7:1::2 
+Description: Name server for domain ""by"""
+dns6.tld.tutby.com.,"DNS information
+Domain: by
+Host: dns6.tld.tutby.com.
+IPv4 Addresses: 108.59.8.66 
+IPv6 Addresses :2604:9a00:2010:a013:2:: 
+Description: Name server for domain ""by"""
+dns4.tld.tutby.com.,"DNS information
+Domain: by
+Host: dns4.tld.tutby.com.
+IPv4 Addresses: 62.212.73.101 
+IPv6 Addresses :2001:1af8:4010:a049:1:: 
+Description: Name server for domain ""by"""
+dns1.tld.tutby.com.,"DNS information
+Domain: by
+Host: dns1.tld.tutby.com.
+IPv4 Addresses: 178.172.160.20 178.124.133.53 
+IPv6 Addresses :2a04:2e80:7::2 
+Description: Name server for domain ""by"""
+dns5.tld.tutby.com.,"DNS information
+Domain: by
+Host: dns5.tld.tutby.com.
+IPv4 Addresses: 46.165.217.94 
+IPv6 Addresses :2a00:c98:2200:a012:1:: 
+Description: Name server for domain ""by"""
+d0.info.afilias-nst.org.,"DNS information
+Domain: info
+Host: d0.info.afilias-nst.org.
+IPv4 Addresses: 199.254.50.1 
+IPv6 Addresses :2001:500:1c::1 
+Description: Name server for domain ""info"""
+b0.info.afilias-nst.org.,"DNS information
+Domain: info
+Host: b0.info.afilias-nst.org.
+IPv4 Addresses: 199.254.48.1 
+IPv6 Addresses :2001:500:1a::1 
+Description: Name server for domain ""info"""
+a2.info.afilias-nst.info.,"DNS information
+Domain: info
+Host: a2.info.afilias-nst.info.
+IPv4 Addresses: 199.249.113.1 
+IPv6 Addresses :2001:500:41::1 
+Description: Name server for domain ""info"""
+c0.info.afilias-nst.info.,"DNS information
+Domain: info
+Host: c0.info.afilias-nst.info.
+IPv4 Addresses: 199.254.49.1 
+IPv6 Addresses :2001:500:1b::1 
+Description: Name server for domain ""info"""
+a0.info.afilias-nst.info.,"DNS information
+Domain: info
+Host: a0.info.afilias-nst.info.
+IPv4 Addresses: 199.254.31.1 
+IPv6 Addresses :2001:500:19::1 
+Description: Name server for domain ""info"""
+b2.info.afilias-nst.org.,"DNS information
+Domain: info
+Host: b2.info.afilias-nst.org.
+IPv4 Addresses: 199.249.121.1 
+IPv6 Addresses :2001:500:49::1 
+Description: Name server for domain ""info"""
+a0.nic.me.,"DNS information
+Domain: me
+Host: a0.nic.me.
+IPv4 Addresses: 199.253.59.1 
+IPv6 Addresses :2001:500:53::1 
+Description: Name server for domain ""me"""
+b2.nic.me.,"DNS information
+Domain: me
+Host: b2.nic.me.
+IPv4 Addresses: 199.249.127.1 
+IPv6 Addresses :2001:500:4f::1 
+Description: Name server for domain ""me"""
+a2.nic.me.,"DNS information
+Domain: me
+Host: a2.nic.me.
+IPv4 Addresses: 199.249.119.1 
+IPv6 Addresses :2001:500:47::1 
+Description: Name server for domain ""me"""
+b0.nic.me.,"DNS information
+Domain: me
+Host: b0.nic.me.
+IPv4 Addresses: 199.253.60.1 
+IPv6 Addresses :2001:500:54::1 
+Description: Name server for domain ""me"""
+c0.nic.me.,"DNS information
+Domain: me
+Host: c0.nic.me.
+IPv4 Addresses: 199.253.61.1 
+IPv6 Addresses :2001:500:55::1 
+Description: Name server for domain ""me"""
+g.dns.pt.,"DNS information
+Domain: pt
+Host: g.dns.pt.
+IPv4 Addresses: 193.136.2.226 
+IPv6 Addresses :2001:690:a80:4001::100 
+Description: Name server for domain ""pt"""
+ns2.nic.fr.,"DNS information
+Domain: pt
+Host: ns2.nic.fr.
+IPv4 Addresses: 192.93.0.4 
+IPv6 Addresses :2001:660:3005:1::1:2 
+Description: Name server for domain ""pt"""
+a.dns.pt.,"DNS information
+Domain: pt
+Host: a.dns.pt.
+IPv4 Addresses: 185.39.208.1 
+IPv6 Addresses :2a04:6d80::1 
+Description: Name server for domain ""pt"""
+d.dns.pt.,"DNS information
+Domain: pt
+Host: d.dns.pt.
+IPv4 Addresses: 185.39.210.1 
+IPv6 Addresses :2a04:6d82::1 
+Description: Name server for domain ""pt"""
+b.dns.pt.,"DNS information
+Domain: pt
+Host: b.dns.pt.
+IPv4 Addresses: 194.0.25.23 
+IPv6 Addresses :2001:678:20::23 
+Description: Name server for domain ""pt"""
+c.dns.pt.,"DNS information
+Domain: pt
+Host: c.dns.pt.
+IPv4 Addresses: 204.61.216.105 
+IPv6 Addresses :2001:500:14:6105:ad::1 
+Description: Name server for domain ""pt"""
+f.dns.pt.,"DNS information
+Domain: pt
+Host: f.dns.pt.
+IPv4 Addresses: 162.88.45.1 
+IPv6 Addresses :2600:2000:3009::1 
+Description: Name server for domain ""pt"""
+e.dns.pt.,"DNS information
+Domain: pt
+Host: e.dns.pt.
+IPv4 Addresses: 193.136.192.64 
+IPv6 Addresses :2001:690:a00:4001::64 
+Description: Name server for domain ""pt"""
+ns.dns.br.,"DNS information
+Domain: pt
+Host: ns.dns.br.
+IPv4 Addresses: 200.160.0.5 
+IPv6 Addresses :2001:12ff:0:a20::5 
+Description: Name server for domain ""pt"""
+sg-ns.anycast.pch.net.,"DNS information
+Domain: sg
+Host: sg-ns.anycast.pch.net.
+IPv4 Addresses: 204.61.216.57 
+IPv6 Addresses :2001:500:14:6057:ad::1 
+Description: Name server for domain ""sg"""
+dsany3.sgnic.sg.,"DNS information
+Domain: sg
+Host: dsany3.sgnic.sg.
+IPv4 Addresses: 185.159.198.170 
+IPv6 Addresses :2620:10a:80ab::170 
+Description: Name server for domain ""sg"""
+dsany.sgnic.sg.,"DNS information
+Domain: sg
+Host: dsany.sgnic.sg.
+IPv4 Addresses: 194.0.11.106 
+IPv6 Addresses :2001:678:e:106::53 
+Description: Name server for domain ""sg"""
+ns4.apnic.net.,"DNS information
+Domain: sg
+Host: ns4.apnic.net.
+IPv4 Addresses: 202.12.31.53 
+IPv6 Addresses :2001:dd8:12::53 
+Description: Name server for domain ""sg"""
+dsany2.sgnic.sg.,"DNS information
+Domain: sg
+Host: dsany2.sgnic.sg.
+IPv4 Addresses: 185.159.197.170 
+IPv6 Addresses :2620:10a:80aa::170 
+Description: Name server for domain ""sg"""
+NS2.CUHK.EDU.HK.,"DNS information
+Domain: sg
+Host: NS2.CUHK.EDU.HK.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""sg"""
+NS4.APNIC.NET.,"DNS information
+Domain: sg
+Host: NS4.APNIC.NET.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""sg"""
+DSANY.SGNIC.SG.,"DNS information
+Domain: sg
+Host: DSANY.SGNIC.SG.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""sg"""
+SG-NS.ANYCAST.PCH.NET.,"DNS information
+Domain: sg
+Host: SG-NS.ANYCAST.PCH.NET.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""sg"""
+DSANY2.SGNIC.SG.,"DNS information
+Domain: sg
+Host: DSANY2.SGNIC.SG.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""sg"""
+DSANY3.SGNIC.SG.,"DNS information
+Domain: sg
+Host: DSANY3.SGNIC.SG.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""sg"""
+g.registry.qa.,"DNS information
+Domain: qa
+Host: g.registry.qa.
+IPv4 Addresses: 37.209.194.6 
+IPv6 Addresses :2001:dcd:2::6 
+Description: Name server for domain ""qa"""
+d.registry.qa.,"DNS information
+Domain: qa
+Host: d.registry.qa.
+IPv4 Addresses: 212.77.192.13 
+IPv6 Addresses : No information
+Description: Name server for domain ""qa"""
+i.registry.qa.,"DNS information
+Domain: qa
+Host: i.registry.qa.
+IPv4 Addresses: 204.61.216.62 
+IPv6 Addresses :2001:500:14:6062:ad::1 
+Description: Name server for domain ""qa"""
+a.registry.qa.,"DNS information
+Domain: qa
+Host: a.registry.qa.
+IPv4 Addresses: 178.23.16.104 
+IPv6 Addresses : No information
+Description: Name server for domain ""qa"""
+c.registry.qa.,"DNS information
+Domain: qa
+Host: c.registry.qa.
+IPv4 Addresses: 212.77.192.10 
+IPv6 Addresses : No information
+Description: Name server for domain ""qa"""
+e.registry.qa.,"DNS information
+Domain: qa
+Host: e.registry.qa.
+IPv4 Addresses: 178.23.20.60 
+IPv6 Addresses : No information
+Description: Name server for domain ""qa"""
+f.registry.qa.,"DNS information
+Domain: qa
+Host: f.registry.qa.
+IPv4 Addresses: 37.209.192.6 
+IPv6 Addresses :2001:dcd:1::6 
+Description: Name server for domain ""qa"""
+b.registry.qa.,"DNS information
+Domain: qa
+Host: b.registry.qa.
+IPv4 Addresses: 178.23.17.104 
+IPv6 Addresses : No information
+Description: Name server for domain ""qa"""
+h.registry.qa.,"DNS information
+Domain: qa
+Host: h.registry.qa.
+IPv4 Addresses: 178.23.22.60 
+IPv6 Addresses : No information
+Description: Name server for domain ""qa"""
+ns5.nic.net.ng.,"DNS information
+Domain: ng
+Host: ns5.nic.net.ng.
+IPv4 Addresses: 196.216.168.41 
+IPv6 Addresses :2001:43f8:120::41 
+Description: Name server for domain ""ng"""
+ns2.nic.net.ng.,"DNS information
+Domain: ng
+Host: ns2.nic.net.ng.
+IPv4 Addresses: 204.61.216.40 
+IPv6 Addresses : No information
+Description: Name server for domain ""ng"""
+nsa.nic.net.ng.,"DNS information
+Domain: ng
+Host: nsa.nic.net.ng.
+IPv4 Addresses: 41.222.79.3 
+IPv6 Addresses : No information
+Description: Name server for domain ""ng"""
+ns1.nic.net.ng.,"DNS information
+Domain: ng
+Host: ns1.nic.net.ng.
+IPv4 Addresses: 194.0.1.29 
+IPv6 Addresses :2001:678:4::1d 
+Description: Name server for domain ""ng"""
+g.nic.es.,"DNS information
+Domain: es
+Host: g.nic.es.
+IPv4 Addresses: 204.61.217.1 
+IPv6 Addresses :2001:500:14:7001:ad::1 
+Description: Name server for domain ""es"""
+a.nic.es.,"DNS information
+Domain: es
+Host: a.nic.es.
+IPv4 Addresses: 194.69.254.1 
+IPv6 Addresses :2001:67c:21cc:2000::64:41 
+Description: Name server for domain ""es"""
+ns1.cesca.es.,"DNS information
+Domain: es
+Host: ns1.cesca.es.
+IPv4 Addresses: 84.88.0.3 
+IPv6 Addresses :2001:40b0:1:1122:ce5c:a000:0:3 
+Description: Name server for domain ""es"""
+ns-ext.nic.cl.,"DNS information
+Domain: es
+Host: ns-ext.nic.cl.
+IPv4 Addresses: 200.1.123.14 
+IPv6 Addresses : No information
+Description: Name server for domain ""es"""
+ns3.nic.fr.,"DNS information
+Domain: es
+Host: ns3.nic.fr.
+IPv4 Addresses: 192.134.0.49 
+IPv6 Addresses :2001:660:3006:1::1:1 
+Description: Name server for domain ""es"""
+f.nic.es.,"DNS information
+Domain: es
+Host: f.nic.es.
+IPv4 Addresses: 130.206.1.7 
+IPv6 Addresses :2001:720:418:caf1::7 
+Description: Name server for domain ""es"""
+dns2.fweds-spc.it.,"DNS information
+Domain: gov.it
+Host: dns2.fweds-spc.it.
+IPv4 Addresses: 89.97.102.37 
+IPv6 Addresses : No information
+Description: Name server for domain ""gov.it"""
+dns1.fweds-spc.it.,"DNS information
+Domain: gov.it
+Host: dns1.fweds-spc.it.
+IPv4 Addresses: 89.97.102.36 
+IPv6 Addresses : No information
+Description: Name server for domain ""gov.it"""
+ns1.nic.la.,"DNS information
+Domain: la
+Host: ns1.nic.la.
+IPv4 Addresses: 185.24.64.15 
+IPv6 Addresses :2a04:2b00:13cc::1:15 
+Description: Name server for domain ""la"""
+ns4.nic.la.,"DNS information
+Domain: la
+Host: ns4.nic.la.
+IPv4 Addresses: 194.169.218.15 
+IPv6 Addresses :2001:67c:13cc::1:15 
+Description: Name server for domain ""la"""
+ns3.nic.la.,"DNS information
+Domain: la
+Host: ns3.nic.la.
+IPv4 Addresses: 185.24.64.14 
+IPv6 Addresses :2a04:2b00:13cc::1:14 
+Description: Name server for domain ""la"""
+ns2.nic.la.,"DNS information
+Domain: la
+Host: ns2.nic.la.
+IPv4 Addresses: 194.169.218.14 
+IPv6 Addresses :2001:67c:13cc::1:14 
+Description: Name server for domain ""la"""
+a.dns.ar.,"DNS information
+Domain: ar
+Host: a.dns.ar.
+IPv4 Addresses: 200.108.145.50 
+IPv6 Addresses :2801:140::10 
+Description: Name server for domain ""ar"""
+ns2.switch.ch.,"DNS information
+Domain: ar
+Host: ns2.switch.ch.
+IPv4 Addresses: 130.59.31.29 
+IPv6 Addresses :2001:620:0:ff::2f 
+Description: Name server for domain ""ar"""
+b.dns.ar.,"DNS information
+Domain: ar
+Host: b.dns.ar.
+IPv4 Addresses: 200.108.147.50 
+IPv6 Addresses :2801:140:11::50 
+Description: Name server for domain ""ar"""
+c.dns.ar.,"DNS information
+Domain: ar
+Host: c.dns.ar.
+IPv4 Addresses: 200.108.148.50 
+IPv6 Addresses :2801:140:10::10 
+Description: Name server for domain ""ar"""
+e.dns.ar.,"DNS information
+Domain: ar
+Host: e.dns.ar.
+IPv4 Addresses: 170.238.66.50 
+IPv6 Addresses :2801:140:eeee::50 
+Description: Name server for domain ""ar"""
+ar.cctld.authdns.ripe.net.,"DNS information
+Domain: ar
+Host: ar.cctld.authdns.ripe.net.
+IPv4 Addresses: 193.0.9.59 
+IPv6 Addresses :2001:67c:e0::59 
+Description: Name server for domain ""ar"""
+d.dns.ar.,"DNS information
+Domain: ar
+Host: d.dns.ar.
+IPv4 Addresses: 192.140.126.50 
+IPv6 Addresses :2801:140:dddd::50 
+Description: Name server for domain ""ar"""
+ns4.dns.net.nz.,"DNS information
+Domain: nz
+Host: ns4.dns.net.nz.
+IPv4 Addresses: 202.46.189.130 
+IPv6 Addresses :2001:dce:d454::53 
+Description: Name server for domain ""nz"""
+ns5.dns.net.nz.,"DNS information
+Domain: nz
+Host: ns5.dns.net.nz.
+IPv4 Addresses: 185.159.197.130 
+IPv6 Addresses :2620:10a:80aa::130 
+Description: Name server for domain ""nz"""
+ns3.dns.net.nz.,"DNS information
+Domain: nz
+Host: ns3.dns.net.nz.
+IPv4 Addresses: 202.46.188.130 
+IPv6 Addresses :2001:dce:d453::53 
+Description: Name server for domain ""nz"""
+ns7.dns.net.nz.,"DNS information
+Domain: nz
+Host: ns7.dns.net.nz.
+IPv4 Addresses: 194.146.106.54 
+IPv6 Addresses :2001:67c:1010:13::53 
+Description: Name server for domain ""nz"""
+ns2.dns.net.nz.,"DNS information
+Domain: nz
+Host: ns2.dns.net.nz.
+IPv4 Addresses: 202.46.187.130 
+IPv6 Addresses :2001:dce:7000:2::130 
+Description: Name server for domain ""nz"""
+ns6.dns.net.nz.,"DNS information
+Domain: nz
+Host: ns6.dns.net.nz.
+IPv4 Addresses: 185.159.198.130 
+IPv6 Addresses :2620:10a:80ab::130 
+Description: Name server for domain ""nz"""
+ns1.dns.net.nz.,"DNS information
+Domain: nz
+Host: ns1.dns.net.nz.
+IPv4 Addresses: 202.46.190.130 
+IPv6 Addresses :2001:dce:2000:2::130 
+Description: Name server for domain ""nz"""
+ns0.ja.net.,"DNS information
+Domain: ac.uk
+Host: ns0.ja.net.
+IPv4 Addresses: 128.86.1.20 193.63.94.20 
+IPv6 Addresses :2001:630:0:9::14 2001:630:0:8::14 
+Description: Name server for domain ""ac.uk"""
+ns1.surfnet.nl.,"DNS information
+Domain: ac.uk
+Host: ns1.surfnet.nl.
+IPv4 Addresses: 192.87.106.101 
+IPv6 Addresses :2001:610:1:800a:192:87:106:101 
+Description: Name server for domain ""ac.uk"""
+ns2.ja.net.,"DNS information
+Domain: ac.uk
+Host: ns2.ja.net.
+IPv4 Addresses: 193.63.105.17 
+IPv6 Addresses :2001:630:0:45::11 
+Description: Name server for domain ""ac.uk"""
+ns3.ja.net.,"DNS information
+Domain: ac.uk
+Host: ns3.ja.net.
+IPv4 Addresses: 193.63.106.103 
+IPv6 Addresses :2001:630:0:46::67 
+Description: Name server for domain ""ac.uk"""
+ns4.ja.net.,"DNS information
+Domain: ac.uk
+Host: ns4.ja.net.
+IPv4 Addresses: 193.62.157.66 
+IPv6 Addresses :2001:630:0:47::42 
+Description: Name server for domain ""ac.uk"""
+auth03.ns.uu.net.,"DNS information
+Domain: ac.uk
+Host: auth03.ns.uu.net.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""ac.uk"""
+dns-3.dfn.de.,"DNS information
+Domain: ac.uk
+Host: dns-3.dfn.de.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""ac.uk"""
+ba1.ns.ua.,"DNS information
+Domain: com.ua
+Host: ba1.ns.ua.
+IPv4 Addresses: 74.123.224.37 
+IPv6 Addresses :2604:ee00:0:101::37 
+Description: Name server for domain ""com.ua"""
+nix.ns.ua.,"DNS information
+Domain: com.ua
+Host: nix.ns.ua.
+IPv4 Addresses: 62.149.7.77 
+IPv6 Addresses :2a03:6300:1:102::3 
+Description: Name server for domain ""com.ua"""
+ho1.ns.com.ua.,"DNS information
+Domain: com.ua
+Host: ho1.ns.com.ua.
+IPv4 Addresses: 195.47.253.3 
+IPv6 Addresses :2001:67c:258::3 
+Description: Name server for domain ""com.ua"""
+k.ns.com.ua.,"DNS information
+Domain: com.ua
+Host: k.ns.com.ua.
+IPv4 Addresses: 216.218.215.123 
+IPv6 Addresses :2001:470:2e:46::3 
+Description: Name server for domain ""com.ua"""
+d.nic.lk.,"DNS information
+Domain: lk
+Host: d.nic.lk.
+IPv4 Addresses: 123.231.6.18 
+IPv6 Addresses : No information
+Description: Name server for domain ""lk"""
+c.nic.lk.,"DNS information
+Domain: lk
+Host: c.nic.lk.
+IPv4 Addresses: 203.143.29.3 
+IPv6 Addresses :2405:5400:3:1:203:143:29:3 
+Description: Name server for domain ""lk"""
+t.nic.lk.,"DNS information
+Domain: lk
+Host: t.nic.lk.
+IPv4 Addresses: 203.94.66.129 
+IPv6 Addresses :2402:d000:100c::129 
+Description: Name server for domain ""lk"""
+l.nic.lk.,"DNS information
+Domain: lk
+Host: l.nic.lk.
+IPv4 Addresses: 192.248.8.17 
+IPv6 Addresses : No information
+Description: Name server for domain ""lk"""
+ns1.ac.lk.,"DNS information
+Domain: lk
+Host: ns1.ac.lk.
+IPv4 Addresses: 192.248.1.162 
+IPv6 Addresses :2401:dd00:1::162 
+Description: Name server for domain ""lk"""
+m.nic.lk.,"DNS information
+Domain: lk
+Host: m.nic.lk.
+IPv4 Addresses: 202.129.235.229 
+IPv6 Addresses : No information
+Description: Name server for domain ""lk"""
+pendragon.cs.purdue.edu.,"DNS information
+Domain: lk
+Host: pendragon.cs.purdue.edu.
+IPv4 Addresses: 128.10.2.5 
+IPv6 Addresses : No information
+Description: Name server for domain ""lk"""
+p.nic.lk.,"DNS information
+Domain: lk
+Host: p.nic.lk.
+IPv4 Addresses: 204.61.216.27 
+IPv6 Addresses :2001:500:14:6027:ad::1 
+Description: Name server for domain ""lk"""
+a.ns.ml.,"DNS information
+Domain: ml
+Host: a.ns.ml.
+IPv4 Addresses: 185.21.168.1 
+IPv6 Addresses :2a04:1b00::1 
+Description: Name server for domain ""ml"""
+c.ns.ml.,"DNS information
+Domain: ml
+Host: c.ns.ml.
+IPv4 Addresses: 185.21.170.1 
+IPv6 Addresses :2a04:1b00:2::1 
+Description: Name server for domain ""ml"""
+b.ns.ml.,"DNS information
+Domain: ml
+Host: b.ns.ml.
+IPv4 Addresses: 185.21.169.1 
+IPv6 Addresses :2a04:1b00:1::1 
+Description: Name server for domain ""ml"""
+d.ns.ml.,"DNS information
+Domain: ml
+Host: d.ns.ml.
+IPv4 Addresses: 185.21.171.1 
+IPv6 Addresses :2a04:1b00:3::1 
+Description: Name server for domain ""ml"""
+hr-ns-1.carnet.hr.,"DNS information
+Domain: hr
+Host: hr-ns-1.carnet.hr.
+IPv4 Addresses: 161.53.160.100 
+IPv6 Addresses :2001:b68:ff:1::100 
+Description: Name server for domain ""hr"""
+pch.carnet.hr.,"DNS information
+Domain: hr
+Host: pch.carnet.hr.
+IPv4 Addresses: 204.61.216.90 
+IPv6 Addresses :2001:500:14:6090:ad::1 
+Description: Name server for domain ""hr"""
+b0.mobi.afilias-nst.org.,"DNS information
+Domain: mobi
+Host: b0.mobi.afilias-nst.org.
+IPv4 Addresses: 199.254.56.1 
+IPv6 Addresses :2001:500:22::1 
+Description: Name server for domain ""mobi"""
+c0.mobi.afilias-nst.info.,"DNS information
+Domain: mobi
+Host: c0.mobi.afilias-nst.info.
+IPv4 Addresses: 199.254.57.1 
+IPv6 Addresses :2001:500:23::1 
+Description: Name server for domain ""mobi"""
+d0.mobi.afilias-nst.org.,"DNS information
+Domain: mobi
+Host: d0.mobi.afilias-nst.org.
+IPv4 Addresses: 199.254.58.1 
+IPv6 Addresses :2001:500:24::1 
+Description: Name server for domain ""mobi"""
+a0.mobi.afilias-nst.info.,"DNS information
+Domain: mobi
+Host: a0.mobi.afilias-nst.info.
+IPv4 Addresses: 199.254.55.1 
+IPv6 Addresses :2001:500:21::1 
+Description: Name server for domain ""mobi"""
+a2.mobi.afilias-nst.info.,"DNS information
+Domain: mobi
+Host: a2.mobi.afilias-nst.info.
+IPv4 Addresses: 199.249.118.1 
+IPv6 Addresses :2001:500:46::1 
+Description: Name server for domain ""mobi"""
+b2.mobi.afilias-nst.org.,"DNS information
+Domain: mobi
+Host: b2.mobi.afilias-nst.org.
+IPv4 Addresses: 199.249.126.1 
+IPv6 Addresses :2001:500:4e::1 
+Description: Name server for domain ""mobi"""
+ns1.dns.nl.,"DNS information
+Domain: nl
+Host: ns1.dns.nl.
+IPv4 Addresses: 194.0.28.53 
+IPv6 Addresses :2001:678:2c:0:194:0:28:53 
+Description: Name server for domain ""nl"""
+ns3.dns.nl.,"DNS information
+Domain: nl
+Host: ns3.dns.nl.
+IPv4 Addresses: 194.0.25.24 
+IPv6 Addresses :2001:678:20::24 
+Description: Name server for domain ""nl"""
+ns2.dns.nl.,"DNS information
+Domain: nl
+Host: ns2.dns.nl.
+IPv4 Addresses: 194.146.106.42 
+IPv6 Addresses :2001:67c:1010:10::53 
+Description: Name server for domain ""nl"""
+ac1.nstld.com.,"DNS information
+Domain: tv
+Host: ac1.nstld.com.
+IPv4 Addresses: 192.42.173.30 
+IPv6 Addresses :2001:500:120::30 
+Description: Name server for domain ""tv"""
+ac3.nstld.com.,"DNS information
+Domain: tv
+Host: ac3.nstld.com.
+IPv4 Addresses: 192.42.175.30 
+IPv6 Addresses :2001:500:122::30 
+Description: Name server for domain ""tv"""
+ac2.nstld.com.,"DNS information
+Domain: tv
+Host: ac2.nstld.com.
+IPv4 Addresses: 192.42.174.30 
+IPv6 Addresses :2001:500:121::30 
+Description: Name server for domain ""tv"""
+ac4.nstld.com.,"DNS information
+Domain: tv
+Host: ac4.nstld.com.
+IPv4 Addresses: 192.42.176.30 
+IPv6 Addresses :2001:500:123::30 
+Description: Name server for domain ""tv"""
+d.dns.kr.,"DNS information
+Domain: kr
+Host: d.dns.kr.
+IPv4 Addresses: 203.83.159.1 
+IPv6 Addresses :2001:dcc:4::1 
+Description: Name server for domain ""kr"""
+f.dns.kr.,"DNS information
+Domain: kr
+Host: f.dns.kr.
+IPv4 Addresses: 218.38.181.90 
+IPv6 Addresses : No information
+Description: Name server for domain ""kr"""
+e.dns.kr.,"DNS information
+Domain: kr
+Host: e.dns.kr.
+IPv4 Addresses: 202.30.124.100 
+IPv6 Addresses :2001:dcc:5::100 
+Description: Name server for domain ""kr"""
+g.dns.kr.,"DNS information
+Domain: kr
+Host: g.dns.kr.
+IPv4 Addresses: 202.31.190.1 
+IPv6 Addresses :2001:dc5:a::1 
+Description: Name server for domain ""kr"""
+b.dns.kr.,"DNS information
+Domain: kr
+Host: b.dns.kr.
+IPv4 Addresses: 61.74.75.1 
+IPv6 Addresses : No information
+Description: Name server for domain ""kr"""
+c.dns.kr.,"DNS information
+Domain: kr
+Host: c.dns.kr.
+IPv4 Addresses: 203.248.246.220 
+IPv6 Addresses : No information
+Description: Name server for domain ""kr"""
+c0.in.afilias-nst.info.,"DNS information
+Domain: in
+Host: c0.in.afilias-nst.info.
+IPv4 Addresses: 199.253.57.1 
+IPv6 Addresses :2001:500:51::1 
+Description: Name server for domain ""in"""
+b2.in.afilias-nst.org.,"DNS information
+Domain: in
+Host: b2.in.afilias-nst.org.
+IPv4 Addresses: 199.249.125.1 
+IPv6 Addresses :2001:500:4d::1 
+Description: Name server for domain ""in"""
+b1.in.afilias-nst.in.,"DNS information
+Domain: in
+Host: b1.in.afilias-nst.in.
+IPv4 Addresses: 180.179.215.70 
+IPv6 Addresses :2401:8800:411:8::70 
+Description: Name server for domain ""in"""
+a1.in.afilias-nst.in.,"DNS information
+Domain: in
+Host: a1.in.afilias-nst.in.
+IPv4 Addresses: 115.249.164.142 
+IPv6 Addresses :2001:4528:fff:13::142 
+Description: Name server for domain ""in"""
+a0.in.afilias-nst.info.,"DNS information
+Domain: in
+Host: a0.in.afilias-nst.info.
+IPv4 Addresses: 199.7.87.1 
+IPv6 Addresses :2001:500:29::1 
+Description: Name server for domain ""in"""
+a2.in.afilias-nst.info.,"DNS information
+Domain: in
+Host: a2.in.afilias-nst.info.
+IPv4 Addresses: 199.249.117.1 
+IPv6 Addresses :2001:500:45::1 
+Description: Name server for domain ""in"""
+b0.in.afilias-nst.org.,"DNS information
+Domain: in
+Host: b0.in.afilias-nst.org.
+IPv4 Addresses: 199.253.56.1 
+IPv6 Addresses :2001:500:50::1 
+Description: Name server for domain ""in"""
+demand.delta.aridns.net.au.,"DNS information
+Domain: solutions
+Host: demand.delta.aridns.net.au.
+IPv4 Addresses: 37.209.198.7 
+IPv6 Addresses :2001:dcd:4::7 
+Description: Name server for domain ""solutions"""
+demand.gamma.aridns.net.au.,"DNS information
+Domain: solutions
+Host: demand.gamma.aridns.net.au.
+IPv4 Addresses: 37.209.196.7 
+IPv6 Addresses :2001:dcd:3::7 
+Description: Name server for domain ""solutions"""
+demand.alpha.aridns.net.au.,"DNS information
+Domain: solutions
+Host: demand.alpha.aridns.net.au.
+IPv4 Addresses: 37.209.192.7 
+IPv6 Addresses :2001:dcd:1::7 
+Description: Name server for domain ""solutions"""
+demand.beta.aridns.net.au.,"DNS information
+Domain: solutions
+Host: demand.beta.aridns.net.au.
+IPv4 Addresses: 37.209.194.7 
+IPv6 Addresses :2001:dcd:2::7 
+Description: Name server for domain ""solutions"""
+ns1.univie.ac.at.,"DNS information
+Domain: at
+Host: ns1.univie.ac.at.
+IPv4 Addresses: 78.104.144.2 
+IPv6 Addresses :2001:628:2030:4301::2 
+Description: Name server for domain ""at"""
+j.ns.at.,"DNS information
+Domain: at
+Host: j.ns.at.
+IPv4 Addresses: 194.146.106.50 
+IPv6 Addresses :2001:67c:1010:12::53 
+Description: Name server for domain ""at"""
+r.ns.at.,"DNS information
+Domain: at
+Host: r.ns.at.
+IPv4 Addresses: 194.0.25.10 
+IPv6 Addresses :2001:678:20::10 
+Description: Name server for domain ""at"""
+ns2.univie.ac.at.,"DNS information
+Domain: at
+Host: ns2.univie.ac.at.
+IPv4 Addresses: 192.92.125.2 
+IPv6 Addresses :2001:678:1c::2 
+Description: Name server for domain ""at"""
+d.ns.at.,"DNS information
+Domain: at
+Host: d.ns.at.
+IPv4 Addresses: 81.91.161.98 
+IPv6 Addresses :2a02:568:20:1::d 
+Description: Name server for domain ""at"""
+n.ns.at.,"DNS information
+Domain: at
+Host: n.ns.at.
+IPv4 Addresses: 81.91.173.130 
+IPv6 Addresses :2a02:568:281::130 
+Description: Name server for domain ""at"""
+ns9.univie.ac.at.,"DNS information
+Domain: at
+Host: ns9.univie.ac.at.
+IPv4 Addresses: 194.0.10.100 
+IPv6 Addresses :2001:678:d::cafe 
+Description: Name server for domain ""at"""
+u.ns.at.,"DNS information
+Domain: at
+Host: u.ns.at.
+IPv4 Addresses: 185.102.12.2 
+IPv6 Addresses :2a02:850:ffff::2 
+Description: Name server for domain ""at"""
+a.lactld.org.,"DNS information
+Domain: cr
+Host: a.lactld.org.
+IPv4 Addresses: 200.0.68.10 
+IPv6 Addresses :2801:14:a000::10 
+Description: Name server for domain ""cr"""
+ca2.nic.cr.,"DNS information
+Domain: cr
+Host: ca2.nic.cr.
+IPv4 Addresses: 185.159.198.100 
+IPv6 Addresses :2620:10a:80ab::100 
+Description: Name server for domain ""cr"""
+p.nic.cr.,"DNS information
+Domain: cr
+Host: p.nic.cr.
+IPv4 Addresses: 204.61.216.89 
+IPv6 Addresses :2001:500:14:6089:ad::1 
+Description: Name server for domain ""cr"""
+ca1.nic.cr.,"DNS information
+Domain: cr
+Host: ca1.nic.cr.
+IPv4 Addresses: 185.159.197.100 
+IPv6 Addresses :2620:10a:80aa::100 
+Description: Name server for domain ""cr"""
+de.nic.cr.,"DNS information
+Domain: cr
+Host: de.nic.cr.
+IPv4 Addresses: 194.0.11.107 
+IPv6 Addresses :2001:678:e:107::53 
+Description: Name server for domain ""cr"""
+ns3.nic.mx.,"DNS information
+Domain: cr
+Host: ns3.nic.mx.
+IPv4 Addresses: 200.33.111.1 
+IPv6 Addresses : No information
+Description: Name server for domain ""cr"""
+a.ns.cr.,"DNS information
+Domain: cr
+Host: a.ns.cr.
+IPv4 Addresses: 200.107.82.100 
+IPv6 Addresses :2001:13c7:7004:1::d100 
+Description: Name server for domain ""cr"""
+njet.norid.no.,"DNS information
+Domain: no
+Host: njet.norid.no.
+IPv4 Addresses: 156.154.101.12 
+IPv6 Addresses : No information
+Description: Name server for domain ""no"""
+i.nic.no.,"DNS information
+Domain: no
+Host: i.nic.no.
+IPv4 Addresses: 194.146.106.6 
+IPv6 Addresses :2001:67c:1010:1::53 
+Description: Name server for domain ""no"""
+not.norid.no.,"DNS information
+Domain: no
+Host: not.norid.no.
+IPv4 Addresses: 156.154.100.12 
+IPv6 Addresses :2001:502:ad09::12 
+Description: Name server for domain ""no"""
+z.nic.no.,"DNS information
+Domain: no
+Host: z.nic.no.
+IPv4 Addresses: 158.38.8.133 
+IPv6 Addresses :2001:700:0:52d:158:38:8:133 
+Description: Name server for domain ""no"""
+x.nic.no.,"DNS information
+Domain: no
+Host: x.nic.no.
+IPv4 Addresses: 128.39.8.40 
+IPv6 Addresses :2001:700:0:412f::40 
+Description: Name server for domain ""no"""
+y.nic.no.,"DNS information
+Domain: no
+Host: y.nic.no.
+IPv4 Addresses: 193.75.4.22 
+IPv6 Addresses :2001:8c0:8200:1::2 
+Description: Name server for domain ""no"""
+estia.ics.forth.gr.,"DNS information
+Domain: gr
+Host: estia.ics.forth.gr.
+IPv4 Addresses: 139.91.191.3 
+IPv6 Addresses :2001:648:2c30::191:3 
+Description: Name server for domain ""gr"""
+gr-c.ics.forth.gr.,"DNS information
+Domain: gr
+Host: gr-c.ics.forth.gr.
+IPv4 Addresses: 194.0.1.25 
+IPv6 Addresses :2001:678:4::19 
+Description: Name server for domain ""gr"""
+grdns.ics.forth.gr.,"DNS information
+Domain: gr
+Host: grdns.ics.forth.gr.
+IPv4 Addresses: 139.91.1.1 
+IPv6 Addresses : No information
+Description: Name server for domain ""gr"""
+gr-at.ics.forth.gr.,"DNS information
+Domain: gr
+Host: gr-at.ics.forth.gr.
+IPv4 Addresses: 78.104.145.227 
+IPv6 Addresses : No information
+Description: Name server for domain ""gr"""
+gr-d.ics.forth.gr.,"DNS information
+Domain: gr
+Host: gr-d.ics.forth.gr.
+IPv4 Addresses: 194.0.11.102 
+IPv6 Addresses :2001:678:e:102::53 
+Description: Name server for domain ""gr"""
+gr-m.ics.forth.gr.,"DNS information
+Domain: gr
+Host: gr-m.ics.forth.gr.
+IPv4 Addresses: 194.0.4.10 
+IPv6 Addresses :2001:678:7::4:10 
+Description: Name server for domain ""gr"""
+a0.cctld.afilias-nst.info.,"DNS information
+Domain: ac.in
+Host: a0.cctld.afilias-nst.info.
+IPv4 Addresses: 199.254.59.1 
+IPv6 Addresses :2001:500:25::1 
+Description: Name server for domain ""ac.in"""
+b0.cctld.afilias-nst.org.,"DNS information
+Domain: ac.in
+Host: b0.cctld.afilias-nst.org.
+IPv4 Addresses: 199.254.60.1 
+IPv6 Addresses :2001:500:26::1 
+Description: Name server for domain ""ac.in"""
+c0.cctld.afilias-nst.info.,"DNS information
+Domain: ac.in
+Host: c0.cctld.afilias-nst.info.
+IPv4 Addresses: 199.254.61.1 
+IPv6 Addresses :2001:500:27::1 
+Description: Name server for domain ""ac.in"""
+d0.cctld.afilias-nst.org.,"DNS information
+Domain: ac.in
+Host: d0.cctld.afilias-nst.org.
+IPv4 Addresses: 199.254.62.1 
+IPv6 Addresses :2001:500:28::1 
+Description: Name server for domain ""ac.in"""
+i.fi.,"DNS information
+Domain: fi
+Host: i.fi.
+IPv4 Addresses: 162.88.44.1 
+IPv6 Addresses :2600:2000:3008::1 
+Description: Name server for domain ""fi"""
+h.fi.,"DNS information
+Domain: fi
+Host: h.fi.
+IPv4 Addresses: 87.239.120.11 
+IPv6 Addresses :2001:678:a0::aaaa 
+Description: Name server for domain ""fi"""
+g.fi.,"DNS information
+Domain: fi
+Host: g.fi.
+IPv4 Addresses: 204.61.216.98 
+IPv6 Addresses :2001:500:14:6098:ad::1 
+Description: Name server for domain ""fi"""
+a.fi.,"DNS information
+Domain: fi
+Host: a.fi.
+IPv4 Addresses: 193.166.4.1 
+IPv6 Addresses :2001:708:10:53::53 
+Description: Name server for domain ""fi"""
+c.fi.,"DNS information
+Domain: fi
+Host: c.fi.
+IPv4 Addresses: 194.0.11.104 
+IPv6 Addresses :2001:678:e:104::53 
+Description: Name server for domain ""fi"""
+e.fi.,"DNS information
+Domain: fi
+Host: e.fi.
+IPv4 Addresses: 194.0.1.14 
+IPv6 Addresses :2001:678:4::e 
+Description: Name server for domain ""fi"""
+d.fi.,"DNS information
+Domain: fi
+Host: d.fi.
+IPv4 Addresses: 77.72.229.253 
+IPv6 Addresses :2a01:3f0:0:302::53 
+Description: Name server for domain ""fi"""
+f.fi.,"DNS information
+Domain: fi
+Host: f.fi.
+IPv4 Addresses: 87.239.127.198 
+IPv6 Addresses :2a00:13f0:0:3::aaaa 
+Description: Name server for domain ""fi"""
+b.fi.,"DNS information
+Domain: fi
+Host: b.fi.
+IPv4 Addresses: 194.146.106.26 
+IPv6 Addresses :2001:67c:1010:6::53 
+Description: Name server for domain ""fi"""
+i.FI.,"DNS information
+Domain: fi
+Host: i.FI.
+IPv4 Addresses: 162.88.44.1 
+IPv6 Addresses : No information
+Description: Name server for domain ""fi"""
+h.FI.,"DNS information
+Domain: fi
+Host: h.FI.
+IPv4 Addresses: 87.239.120.11 
+IPv6 Addresses : No information
+Description: Name server for domain ""fi"""
+b.FI.,"DNS information
+Domain: fi
+Host: b.FI.
+IPv4 Addresses: 194.146.106.26 
+IPv6 Addresses :2001:67c:1010:6::53 
+Description: Name server for domain ""fi"""
+c.FI.,"DNS information
+Domain: fi
+Host: c.FI.
+IPv4 Addresses: 194.0.11.104 
+IPv6 Addresses :2001:678:e:104::53 
+Description: Name server for domain ""fi"""
+a.FI.,"DNS information
+Domain: fi
+Host: a.FI.
+IPv4 Addresses: 193.166.4.1 
+IPv6 Addresses :2001:708:10:53::53 
+Description: Name server for domain ""fi"""
+f.FI.,"DNS information
+Domain: fi
+Host: f.FI.
+IPv4 Addresses: 87.239.127.198 
+IPv6 Addresses :2a00:13f0:0:3::aaaa 
+Description: Name server for domain ""fi"""
+e.FI.,"DNS information
+Domain: fi
+Host: e.FI.
+IPv4 Addresses: 194.0.1.14 
+IPv6 Addresses :2001:678:4::e 
+Description: Name server for domain ""fi"""
+d.FI.,"DNS information
+Domain: fi
+Host: d.FI.
+IPv4 Addresses: 77.72.229.253 
+IPv6 Addresses :2a01:3f0:0:302::53 
+Description: Name server for domain ""fi"""
+g.FI.,"DNS information
+Domain: fi
+Host: g.FI.
+IPv4 Addresses: 204.61.216.98 
+IPv6 Addresses :2001:500:14:6098:ad::1 
+Description: Name server for domain ""fi"""
+b.tld.sk.,"DNS information
+Domain: sk
+Host: b.tld.sk.
+IPv4 Addresses: 84.245.96.1 
+IPv6 Addresses :2001:678:90::1 
+Description: Name server for domain ""sk"""
+h.tld.sk.,"DNS information
+Domain: sk
+Host: h.tld.sk.
+IPv4 Addresses: 212.18.249.16 
+IPv6 Addresses :2a04:2b00:13ff::16 
+Description: Name server for domain ""sk"""
+c.tld.sk.,"DNS information
+Domain: sk
+Host: c.tld.sk.
+IPv4 Addresses: 195.12.159.1 
+IPv6 Addresses :2001:678:9c::1 
+Description: Name server for domain ""sk"""
+a.tld.sk.,"DNS information
+Domain: sk
+Host: a.tld.sk.
+IPv4 Addresses: 194.0.45.1 
+IPv6 Addresses :2001:678:70::1 
+Description: Name server for domain ""sk"""
+g.tld.sk.,"DNS information
+Domain: sk
+Host: g.tld.sk.
+IPv4 Addresses: 212.18.248.16 
+IPv6 Addresses :2a04:2b00:13ee::16 
+Description: Name server for domain ""sk"""
+e.tld.sk.,"DNS information
+Domain: sk
+Host: e.tld.sk.
+IPv4 Addresses: 194.169.218.16 
+IPv6 Addresses :2001:67c:13cc::1:16 
+Description: Name server for domain ""sk"""
+f.tld.sk.,"DNS information
+Domain: sk
+Host: f.tld.sk.
+IPv4 Addresses: 185.24.64.16 
+IPv6 Addresses :2a04:2b00:13cc::1:16 
+Description: Name server for domain ""sk"""
+e.gtld.biz.,"DNS information
+Domain: biz
+Host: e.gtld.biz.
+IPv4 Addresses: 156.154.126.65 
+IPv6 Addresses : No information
+Description: Name server for domain ""biz"""
+c.gtld.biz.,"DNS information
+Domain: biz
+Host: c.gtld.biz.
+IPv4 Addresses: 156.154.127.65 
+IPv6 Addresses : No information
+Description: Name server for domain ""biz"""
+k.gtld.biz.,"DNS information
+Domain: biz
+Host: k.gtld.biz.
+IPv4 Addresses: 156.154.128.65 
+IPv6 Addresses :2001:503:e239::3:2 
+Description: Name server for domain ""biz"""
+a.gtld.biz.,"DNS information
+Domain: biz
+Host: a.gtld.biz.
+IPv4 Addresses: 156.154.124.65 
+IPv6 Addresses :2001:502:ad09::30 
+Description: Name server for domain ""biz"""
+f.gtld.biz.,"DNS information
+Domain: biz
+Host: f.gtld.biz.
+IPv4 Addresses: 209.173.58.66 
+IPv6 Addresses :2001:500:3682::12 
+Description: Name server for domain ""biz"""
+b.gtld.biz.,"DNS information
+Domain: biz
+Host: b.gtld.biz.
+IPv4 Addresses: 156.154.125.65 
+IPv6 Addresses : No information
+Description: Name server for domain ""biz"""
+sec-dns-b.rotld.ro.,"DNS information
+Domain: ro
+Host: sec-dns-b.rotld.ro.
+IPv4 Addresses: 193.230.31.230 
+IPv6 Addresses :2a03:5e80:0:5:193:230:31:230 
+Description: Name server for domain ""ro"""
+dns-at.rotld.ro.,"DNS information
+Domain: ro
+Host: dns-at.rotld.ro.
+IPv4 Addresses: 78.104.145.6 
+IPv6 Addresses :2001:628:453:bb::6 
+Description: Name server for domain ""ro"""
+sec-dns-a.rotld.ro.,"DNS information
+Domain: ro
+Host: sec-dns-a.rotld.ro.
+IPv4 Addresses: 192.162.16.20 
+IPv6 Addresses :2a03:5e80:0:4:192:162:16:20 
+Description: Name server for domain ""ro"""
+primary.rotld.ro.,"DNS information
+Domain: ro
+Host: primary.rotld.ro.
+IPv4 Addresses: 192.162.16.18 
+IPv6 Addresses :2a03:5e80:0:4:192:162:16:18 
+Description: Name server for domain ""ro"""
+dns-ro.denic.de.,"DNS information
+Domain: ro
+Host: dns-ro.denic.de.
+IPv4 Addresses: 81.91.161.99 
+IPv6 Addresses : No information
+Description: Name server for domain ""ro"""
+b.nic.dk.,"DNS information
+Domain: dk
+Host: b.nic.dk.
+IPv4 Addresses: 193.163.102.222 
+IPv6 Addresses :2a01:630:0:80::53 
+Description: Name server for domain ""dk"""
+p.nic.dk.,"DNS information
+Domain: dk
+Host: p.nic.dk.
+IPv4 Addresses: 194.0.47.42 
+IPv6 Addresses :2001:678:78:42:ad::53 
+Description: Name server for domain ""dk"""
+s.nic.dk.,"DNS information
+Domain: dk
+Host: s.nic.dk.
+IPv4 Addresses: 193.176.144.15 
+IPv6 Addresses :2a00:d78:0:102:193:176:144:15 
+Description: Name server for domain ""dk"""
+l.nic.dk.,"DNS information
+Domain: dk
+Host: l.nic.dk.
+IPv4 Addresses: 192.38.7.242 
+IPv6 Addresses :2001:7f8:1f::1835:242:0 
+Description: Name server for domain ""dk"""
+c.nic.dk.,"DNS information
+Domain: dk
+Host: c.nic.dk.
+IPv4 Addresses: 194.0.46.53 
+IPv6 Addresses :2001:678:74::53 
+Description: Name server for domain ""dk"""
+a.nic.dk.,"DNS information
+Domain: dk
+Host: a.nic.dk.
+IPv4 Addresses: 212.88.78.122 
+IPv6 Addresses : No information
+Description: Name server for domain ""dk"""
+a.nic.rs.,"DNS information
+Domain: rs
+Host: a.nic.rs.
+IPv4 Addresses: 91.199.17.59 
+IPv6 Addresses :2001:67c:69c::59 
+Description: Name server for domain ""rs"""
+l.nic.rs.,"DNS information
+Domain: rs
+Host: l.nic.rs.
+IPv4 Addresses: 194.146.106.114 
+IPv6 Addresses :2001:67c:1010:29::53 
+Description: Name server for domain ""rs"""
+f.nic.rs.,"DNS information
+Domain: rs
+Host: f.nic.rs.
+IPv4 Addresses: 204.61.216.32 
+IPv6 Addresses :2001:500:14:6032:ad::1 
+Description: Name server for domain ""rs"""
+b.nic.rs.,"DNS information
+Domain: rs
+Host: b.nic.rs.
+IPv4 Addresses: 195.178.32.2 
+IPv6 Addresses : No information
+Description: Name server for domain ""rs"""
+k.nic.rs.,"DNS information
+Domain: rs
+Host: k.nic.rs.
+IPv4 Addresses: 192.5.4.1 
+IPv6 Addresses :2001:500:2e::1 
+Description: Name server for domain ""rs"""
+g.nic.rs.,"DNS information
+Domain: rs
+Host: g.nic.rs.
+IPv4 Addresses: 147.91.8.6 
+IPv6 Addresses : No information
+Description: Name server for domain ""rs"""
+h.nic.rs.,"DNS information
+Domain: rs
+Host: h.nic.rs.
+IPv4 Addresses: 91.199.17.60 
+IPv6 Addresses :2001:67c:69c::60 
+Description: Name server for domain ""rs"""
+nsa.nhs.uk.,"DNS information
+Domain: nhs.uk
+Host: nsa.nhs.uk.
+IPv4 Addresses: 194.176.105.223 
+IPv6 Addresses : No information
+Description: Name server for domain ""nhs.uk"""
+nsb.nhs.uk.,"DNS information
+Domain: nhs.uk
+Host: nsb.nhs.uk.
+IPv4 Addresses: 80.2.101.230 
+IPv6 Addresses : No information
+Description: Name server for domain ""nhs.uk"""
+i.dns.si.,"DNS information
+Domain: si
+Host: i.dns.si.
+IPv4 Addresses: 194.0.25.22 
+IPv6 Addresses :2001:678:20::22 
+Description: Name server for domain ""si"""
+h.dns.si.,"DNS information
+Domain: si
+Host: h.dns.si.
+IPv4 Addresses: 204.61.216.54 
+IPv6 Addresses :2001:500:14:6054:ad::1 
+Description: Name server for domain ""si"""
+f.dns.si.,"DNS information
+Domain: si
+Host: f.dns.si.
+IPv4 Addresses: 194.146.106.62 
+IPv6 Addresses :2001:67c:1010:15::53 
+Description: Name server for domain ""si"""
+b.dns.si.,"DNS information
+Domain: si
+Host: b.dns.si.
+IPv4 Addresses: 194.249.4.44 
+IPv6 Addresses :2001:1470:8000:53::44 
+Description: Name server for domain ""si"""
+c.dns.si.,"DNS information
+Domain: si
+Host: c.dns.si.
+IPv4 Addresses: 192.93.0.4 
+IPv6 Addresses :2001:660:3005:1::1:2 
+Description: Name server for domain ""si"""
+g.dns.si.,"DNS information
+Domain: si
+Host: g.dns.si.
+IPv4 Addresses: 194.0.1.20 
+IPv6 Addresses :2001:678:4::14 
+Description: Name server for domain ""si"""
+j.dns.si.,"DNS information
+Domain: si
+Host: j.dns.si.
+IPv4 Addresses: 108.59.164.1 
+IPv6 Addresses :2a02:e180:7::1 
+Description: Name server for domain ""si"""
+b.dns.SI.,"DNS information
+Domain: si
+Host: b.dns.SI.
+IPv4 Addresses:  No information
+IPv6 Addresses :2001:1470:8000:53::44 
+Description: Name server for domain ""si"""
+c.dns.SI.,"DNS information
+Domain: si
+Host: c.dns.SI.
+IPv4 Addresses:  No information
+IPv6 Addresses :2001:660:3005:1::1:2 
+Description: Name server for domain ""si"""
+f.dns.SI.,"DNS information
+Domain: si
+Host: f.dns.SI.
+IPv4 Addresses:  No information
+IPv6 Addresses :2001:67c:1010:15::53 
+Description: Name server for domain ""si"""
+g.dns.SI.,"DNS information
+Domain: si
+Host: g.dns.SI.
+IPv4 Addresses:  No information
+IPv6 Addresses :2001:678:4::14 
+Description: Name server for domain ""si"""
+h.dns.SI.,"DNS information
+Domain: si
+Host: h.dns.SI.
+IPv4 Addresses:  No information
+IPv6 Addresses :2001:500:14:6054:ad::1 
+Description: Name server for domain ""si"""
+i.dns.SI.,"DNS information
+Domain: si
+Host: i.dns.SI.
+IPv4 Addresses:  No information
+IPv6 Addresses :2001:678:20::22 
+Description: Name server for domain ""si"""
+j.dns.SI.,"DNS information
+Domain: si
+Host: j.dns.SI.
+IPv4 Addresses:  No information
+IPv6 Addresses :2a02:e180:7::1 
+Description: Name server for domain ""si"""
+a.ns.nic.cz.,"DNS information
+Domain: cz
+Host: a.ns.nic.cz.
+IPv4 Addresses: 194.0.12.1 
+IPv6 Addresses :2001:678:f::1 
+Description: Name server for domain ""cz"""
+b.ns.nic.cz.,"DNS information
+Domain: cz
+Host: b.ns.nic.cz.
+IPv4 Addresses: 194.0.13.1 
+IPv6 Addresses :2001:678:10::1 
+Description: Name server for domain ""cz"""
+c.ns.nic.cz.,"DNS information
+Domain: cz
+Host: c.ns.nic.cz.
+IPv4 Addresses: 194.0.14.1 
+IPv6 Addresses :2001:678:11::1 
+Description: Name server for domain ""cz"""
+d.ns.nic.cz.,"DNS information
+Domain: cz
+Host: d.ns.nic.cz.
+IPv4 Addresses: 193.29.206.1 
+IPv6 Addresses :2001:678:1::1 
+Description: Name server for domain ""cz"""
+ns1.nic.al.,"DNS information
+Domain: al
+Host: ns1.nic.al.
+IPv4 Addresses: 194.1.149.230 
+IPv6 Addresses : No information
+Description: Name server for domain ""al"""
+nsx.nic.al.,"DNS information
+Domain: al
+Host: nsx.nic.al.
+IPv4 Addresses: 194.0.11.108 
+IPv6 Addresses :2001:678:e:108::53 
+Description: Name server for domain ""al"""
+munnari.oz.au.,"DNS information
+Domain: al
+Host: munnari.oz.au.
+IPv4 Addresses: 202.29.151.3 
+IPv6 Addresses :2001:3c8:9007:1::21 2001:3c8:9009:181::2 
+Description: Name server for domain ""al"""
+a.nic.co.nl.,"DNS information
+Domain: co.nl
+Host: a.nic.co.nl.
+IPv4 Addresses: 194.169.218.24 
+IPv6 Addresses :2001:67c:13cc::1:24 
+Description: Name server for domain ""co.nl"""
+b.nic.co.nl.,"DNS information
+Domain: co.nl
+Host: b.nic.co.nl.
+IPv4 Addresses: 185.24.64.10 
+IPv6 Addresses :2a04:2b00:13cc::1:10 
+Description: Name server for domain ""co.nl"""
+c.nic.co.nl.,"DNS information
+Domain: co.nl
+Host: c.nic.co.nl.
+IPv4 Addresses: 212.18.248.10 
+IPv6 Addresses :2a04:2b00:13ee::10 
+Description: Name server for domain ""co.nl"""
+d.nic.co.nl.,"DNS information
+Domain: co.nl
+Host: d.nic.co.nl.
+IPv4 Addresses: 212.18.249.24 
+IPv6 Addresses :2a04:2b00:13ff::24 
+Description: Name server for domain ""co.nl"""
+za1.dnsnode.net.,"DNS information
+Domain: za
+Host: za1.dnsnode.net.
+IPv4 Addresses: 194.146.106.78 
+IPv6 Addresses :2001:67c:1010:19::53 
+Description: Name server for domain ""za"""
+za-ns.anycast.pch.net.,"DNS information
+Domain: za
+Host: za-ns.anycast.pch.net.
+IPv4 Addresses: 204.61.216.55 
+IPv6 Addresses :2001:500:14:6055:ad::1 
+Description: Name server for domain ""za"""
+nsza.is.co.za.,"DNS information
+Domain: za
+Host: nsza.is.co.za.
+IPv4 Addresses: 196.4.160.27 
+IPv6 Addresses : No information
+Description: Name server for domain ""za"""
+ns3.iafrica.com.,"DNS information
+Domain: co.za
+Host: ns3.iafrica.com.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""co.za"""
+ns2.dns.business.,"DNS information
+Domain: co.za
+Host: ns2.dns.business.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""co.za"""
+ns0.is.co.za.,"DNS information
+Domain: co.za
+Host: ns0.is.co.za.
+IPv4 Addresses: 196.4.160.17 
+IPv6 Addresses : No information
+Description: Name server for domain ""co.za"""
+coza1.dnsnode.net.,"DNS information
+Domain: co.za
+Host: coza1.dnsnode.net.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""co.za"""
+ns.coza.net.za.,"DNS information
+Domain: co.za
+Host: ns.coza.net.za.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""co.za"""
+x.nic.xyz.,"DNS information
+Domain: xyz
+Host: x.nic.xyz.
+IPv4 Addresses: 194.169.218.42 
+IPv6 Addresses :2001:67c:13cc::1:42 
+Description: Name server for domain ""xyz"""
+z.nic.xyz.,"DNS information
+Domain: xyz
+Host: z.nic.xyz.
+IPv4 Addresses: 212.18.248.42 
+IPv6 Addresses :2a04:2b00:13ee::42 
+Description: Name server for domain ""xyz"""
+y.nic.xyz.,"DNS information
+Domain: xyz
+Host: y.nic.xyz.
+IPv4 Addresses: 185.24.64.42 
+IPv6 Addresses :2a04:2b00:13cc::1:42 
+Description: Name server for domain ""xyz"""
+generationxyz.nic.xyz.,"DNS information
+Domain: xyz
+Host: generationxyz.nic.xyz.
+IPv4 Addresses: 212.18.249.42 
+IPv6 Addresses :2a04:2b00:13ff::42 
+Description: Name server for domain ""xyz"""
+con1.nipr.mil.,"DNS information
+Domain: mil
+Host: con1.nipr.mil.
+IPv4 Addresses: 199.252.157.234 
+IPv6 Addresses : No information
+Description: Name server for domain ""mil"""
+eur2.nipr.mil.,"DNS information
+Domain: mil
+Host: eur2.nipr.mil.
+IPv4 Addresses: 199.252.143.234 
+IPv6 Addresses : No information
+Description: Name server for domain ""mil"""
+eur1.nipr.mil.,"DNS information
+Domain: mil
+Host: eur1.nipr.mil.
+IPv4 Addresses: 199.252.154.234 
+IPv6 Addresses : No information
+Description: Name server for domain ""mil"""
+pac2.nipr.mil.,"DNS information
+Domain: mil
+Host: pac2.nipr.mil.
+IPv4 Addresses: 199.252.155.234 
+IPv6 Addresses : No information
+Description: Name server for domain ""mil"""
+con2.nipr.mil.,"DNS information
+Domain: mil
+Host: con2.nipr.mil.
+IPv4 Addresses: 199.252.162.234 
+IPv6 Addresses : No information
+Description: Name server for domain ""mil"""
+pac1.nipr.mil.,"DNS information
+Domain: mil
+Host: pac1.nipr.mil.
+IPv4 Addresses: 199.252.180.234 
+IPv6 Addresses : No information
+Description: Name server for domain ""mil"""
+PAC2.NIPR.MIL.,"DNS information
+Domain: mil
+Host: PAC2.NIPR.MIL.
+IPv4 Addresses: 199.252.155.234 
+IPv6 Addresses : No information
+Description: Name server for domain ""mil"""
+PAC1.NIPR.MIL.,"DNS information
+Domain: mil
+Host: PAC1.NIPR.MIL.
+IPv4 Addresses: 199.252.180.234 
+IPv6 Addresses : No information
+Description: Name server for domain ""mil"""
+EUR1.NIPR.MIL.,"DNS information
+Domain: mil
+Host: EUR1.NIPR.MIL.
+IPv4 Addresses: 199.252.154.234 
+IPv6 Addresses : No information
+Description: Name server for domain ""mil"""
+EUR2.NIPR.MIL.,"DNS information
+Domain: mil
+Host: EUR2.NIPR.MIL.
+IPv4 Addresses: 199.252.143.234 
+IPv6 Addresses : No information
+Description: Name server for domain ""mil"""
+CON1.NIPR.MIL.,"DNS information
+Domain: mil
+Host: CON1.NIPR.MIL.
+IPv4 Addresses: 199.252.157.234 
+IPv6 Addresses : No information
+Description: Name server for domain ""mil"""
+CON2.NIPR.MIL.,"DNS information
+Domain: mil
+Host: CON2.NIPR.MIL.
+IPv4 Addresses: 199.252.162.234 
+IPv6 Addresses : No information
+Description: Name server for domain ""mil"""
+CON1.NIPR.mil.,"DNS information
+Domain: mil
+Host: CON1.NIPR.mil.
+IPv4 Addresses: 199.252.157.234 
+IPv6 Addresses : No information
+Description: Name server for domain ""mil"""
+CON2.NIPR.mil.,"DNS information
+Domain: mil
+Host: CON2.NIPR.mil.
+IPv4 Addresses: 199.252.162.234 
+IPv6 Addresses : No information
+Description: Name server for domain ""mil"""
+EUR2.NIPR.mil.,"DNS information
+Domain: mil
+Host: EUR2.NIPR.mil.
+IPv4 Addresses: 199.252.143.234 
+IPv6 Addresses : No information
+Description: Name server for domain ""mil"""
+PAC1.NIPR.mil.,"DNS information
+Domain: mil
+Host: PAC1.NIPR.mil.
+IPv4 Addresses: 199.252.180.234 
+IPv6 Addresses : No information
+Description: Name server for domain ""mil"""
+EUR1.NIPR.mil.,"DNS information
+Domain: mil
+Host: EUR1.NIPR.mil.
+IPv4 Addresses: 199.252.154.234 
+IPv6 Addresses : No information
+Description: Name server for domain ""mil"""
+PAC2.NIPR.mil.,"DNS information
+Domain: mil
+Host: PAC2.NIPR.mil.
+IPv4 Addresses: 199.252.155.234 
+IPv6 Addresses : No information
+Description: Name server for domain ""mil"""
+d.ns.dns.be.,"DNS information
+Domain: be
+Host: d.ns.dns.be.
+IPv4 Addresses: 194.0.44.1 
+IPv6 Addresses :2001:678:6c::1 
+Description: Name server for domain ""be"""
+c.ns.dns.be.,"DNS information
+Domain: be
+Host: c.ns.dns.be.
+IPv4 Addresses: 194.0.43.1 
+IPv6 Addresses :2001:678:68::1 
+Description: Name server for domain ""be"""
+a.ns.dns.be.,"DNS information
+Domain: be
+Host: a.ns.dns.be.
+IPv4 Addresses: 194.0.6.1 
+IPv6 Addresses :2001:678:9::1 
+Description: Name server for domain ""be"""
+y.ns.dns.be.,"DNS information
+Domain: be
+Host: y.ns.dns.be.
+IPv4 Addresses: 120.29.253.8 
+IPv6 Addresses :2001:dcd:7::8 
+Description: Name server for domain ""be"""
+x.ns.dns.be.,"DNS information
+Domain: be
+Host: x.ns.dns.be.
+IPv4 Addresses: 194.0.1.10 
+IPv6 Addresses :2001:678:4::a 
+Description: Name server for domain ""be"""
+b.ns.dns.be.,"DNS information
+Domain: be
+Host: b.ns.dns.be.
+IPv4 Addresses: 194.0.37.1 
+IPv6 Addresses :2001:678:64::1 
+Description: Name server for domain ""be"""
+ns2.nic.ve.,"DNS information
+Domain: ve
+Host: ns2.nic.ve.
+IPv4 Addresses: 150.188.228.5 
+IPv6 Addresses :2001:1338::3 
+Description: Name server for domain ""ve"""
+azmodan.ula.ve.,"DNS information
+Domain: ve
+Host: azmodan.ula.ve.
+IPv4 Addresses: 150.185.130.16 
+IPv6 Addresses : No information
+Description: Name server for domain ""ve"""
+ns4.nic.ve.,"DNS information
+Domain: ve
+Host: ns4.nic.ve.
+IPv4 Addresses: 190.202.128.43 
+IPv6 Addresses : No information
+Description: Name server for domain ""ve"""
+ns1.nic.ve.,"DNS information
+Domain: ve
+Host: ns1.nic.ve.
+IPv4 Addresses: 150.188.228.4 
+IPv6 Addresses :2001:1338::2 
+Description: Name server for domain ""ve"""
+ns3.nic.ve.,"DNS information
+Domain: ve
+Host: ns3.nic.ve.
+IPv4 Addresses: 190.9.129.56 
+IPv6 Addresses : No information
+Description: Name server for domain ""ve"""
+cm.cctld.authdns.ripe.net.,"DNS information
+Domain: cm
+Host: cm.cctld.authdns.ripe.net.
+IPv4 Addresses: 193.0.9.68 
+IPv6 Addresses :2001:67c:e0::68 
+Description: Name server for domain ""cm"""
+kim.camnet.cm.,"DNS information
+Domain: cm
+Host: kim.camnet.cm.
+IPv4 Addresses: 195.24.192.35 
+IPv6 Addresses : No information
+Description: Name server for domain ""cm"""
+lom.camnet.cm.,"DNS information
+Domain: cm
+Host: lom.camnet.cm.
+IPv4 Addresses: 195.24.192.34 195.24.192.17 
+IPv6 Addresses : No information
+Description: Name server for domain ""cm"""
+sanaga.camnet.cm.,"DNS information
+Domain: cm
+Host: sanaga.camnet.cm.
+IPv4 Addresses: 195.24.192.17 
+IPv6 Addresses : No information
+Description: Name server for domain ""cm"""
+auth02.ns.uu.net.,"DNS information
+Domain: cm
+Host: auth02.ns.uu.net.
+IPv4 Addresses: 198.6.1.82 
+IPv6 Addresses : No information
+Description: Name server for domain ""cm"""
+ns.itu.ch.,"DNS information
+Domain: cm
+Host: ns.itu.ch.
+IPv4 Addresses: 156.106.192.121 
+IPv6 Addresses :2a00:7580:60:2141::10 
+Description: Name server for domain ""cm"""
+phloem.uoregon.edu.,"DNS information
+Domain: cm
+Host: phloem.uoregon.edu.
+IPv4 Addresses: 128.223.32.35 
+IPv6 Addresses :2001:468:d01:20::80df:2023 
+Description: Name server for domain ""cm"""
+ns1.nic.cm.,"DNS information
+Domain: cm
+Host: ns1.nic.cm.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""cm"""
+ns2.nic.cm.,"DNS information
+Domain: cm
+Host: ns2.nic.cm.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""cm"""
+mbam.camnet.cm.,"DNS information
+Domain: cm
+Host: mbam.camnet.cm.
+IPv4 Addresses: 195.24.192.33 
+IPv6 Addresses : No information
+Description: Name server for domain ""cm"""
+ns-cm.nic.fr.,"DNS information
+Domain: cm
+Host: ns-cm.nic.fr.
+IPv4 Addresses: 194.0.9.1 
+IPv6 Addresses :2001:678:c::1 
+Description: Name server for domain ""cm"""
+benoue.camnet.cm.,"DNS information
+Domain: cm
+Host: benoue.camnet.cm.
+IPv4 Addresses: 195.24.208.2 
+IPv6 Addresses : No information
+Description: Name server for domain ""cm"""
+x.mx-ns.mx.,"DNS information
+Domain: mx
+Host: x.mx-ns.mx.
+IPv4 Addresses: 201.131.252.1 
+IPv6 Addresses : No information
+Description: Name server for domain ""mx"""
+o.mx-ns.mx.,"DNS information
+Domain: mx
+Host: o.mx-ns.mx.
+IPv4 Addresses: 200.23.1.1 
+IPv6 Addresses : No information
+Description: Name server for domain ""mx"""
+c.mx-ns.mx.,"DNS information
+Domain: mx
+Host: c.mx-ns.mx.
+IPv4 Addresses: 192.100.224.1 
+IPv6 Addresses :2001:1258::1 
+Description: Name server for domain ""mx"""
+e.mx-ns.mx.,"DNS information
+Domain: mx
+Host: e.mx-ns.mx.
+IPv4 Addresses: 189.201.244.1 
+IPv6 Addresses : No information
+Description: Name server for domain ""mx"""
+i.mx-ns.mx.,"DNS information
+Domain: mx
+Host: i.mx-ns.mx.
+IPv4 Addresses: 207.248.68.1 
+IPv6 Addresses : No information
+Description: Name server for domain ""mx"""
+m.mx-ns.mx.,"DNS information
+Domain: mx
+Host: m.mx-ns.mx.
+IPv4 Addresses: 200.94.176.1 
+IPv6 Addresses :2001:13c7:7000::1 
+Description: Name server for domain ""mx"""
+d.dns.id.,"DNS information
+Domain: id
+Host: d.dns.id.
+IPv4 Addresses: 45.126.57.57 
+IPv6 Addresses :2402:ee80:d::d 
+Description: Name server for domain ""id"""
+c.dns.id.,"DNS information
+Domain: id
+Host: c.dns.id.
+IPv4 Addresses: 103.19.178.178 
+IPv6 Addresses :2402:ee80:c::c 
+Description: Name server for domain ""id"""
+e.dns.id.,"DNS information
+Domain: id
+Host: e.dns.id.
+IPv4 Addresses: 103.19.177.177 
+IPv6 Addresses :2001:df5:4000:4::4 
+Description: Name server for domain ""id"""
+b.dns.id.,"DNS information
+Domain: id
+Host: b.dns.id.
+IPv4 Addresses: 103.19.179.179 
+IPv6 Addresses :2402:ee80:b::b 
+Description: Name server for domain ""id"""
+u.hkirc.net.hk.,"DNS information
+Domain: hk
+Host: u.hkirc.net.hk.
+IPv4 Addresses: 210.201.138.58 
+IPv6 Addresses :2404:0:10a0::58 
+Description: Name server for domain ""hk"""
+d.hkirc.net.hk.,"DNS information
+Domain: hk
+Host: d.hkirc.net.hk.
+IPv4 Addresses: 203.119.87.218 
+IPv6 Addresses :2001:dca:2000::cb77:57da 
+Description: Name server for domain ""hk"""
+y.hkirc.net.hk.,"DNS information
+Domain: hk
+Host: y.hkirc.net.hk.
+IPv4 Addresses: 137.189.6.21 
+IPv6 Addresses :2405:3000:3:6::15 
+Description: Name server for domain ""hk"""
+v.hkirc.net.hk.,"DNS information
+Domain: hk
+Host: v.hkirc.net.hk.
+IPv4 Addresses: 204.61.216.46 
+IPv6 Addresses :2001:500:14:6046:ad::1 
+Description: Name server for domain ""hk"""
+x.hkirc.net.hk.,"DNS information
+Domain: hk
+Host: x.hkirc.net.hk.
+IPv4 Addresses: 202.45.188.39 
+IPv6 Addresses :2405:3001:1:3a::27 
+Description: Name server for domain ""hk"""
+c.hkirc.net.hk.,"DNS information
+Domain: hk
+Host: c.hkirc.net.hk.
+IPv4 Addresses: 203.119.2.218 
+IPv6 Addresses :2001:dca:4000::cb77:2da 
+Description: Name server for domain ""hk"""
+t.hkirc.net.hk.,"DNS information
+Domain: hk
+Host: t.hkirc.net.hk.
+IPv4 Addresses: 202.12.31.53 
+IPv6 Addresses :2001:dd8:12::53 
+Description: Name server for domain ""hk"""
+w.hkirc.net.hk.,"DNS information
+Domain: hk
+Host: w.hkirc.net.hk.
+IPv4 Addresses: 202.12.28.140 
+IPv6 Addresses :2001:dc0:1:0:4777::140 
+Description: Name server for domain ""hk"""
+z.hkirc.net.hk.,"DNS information
+Domain: hk
+Host: z.hkirc.net.hk.
+IPv4 Addresses: 194.146.106.70 
+IPv6 Addresses :2001:67c:1010:17::53 
+Description: Name server for domain ""hk"""
+b.tld.lt.,"DNS information
+Domain: lt
+Host: b.tld.lt.
+IPv4 Addresses: 194.0.20.1 
+IPv6 Addresses :2001:678:19::1 
+Description: Name server for domain ""lt"""
+e.tld.lt.,"DNS information
+Domain: lt
+Host: e.tld.lt.
+IPv4 Addresses: 194.0.18.1 
+IPv6 Addresses : No information
+Description: Name server for domain ""lt"""
+d.tld.lt.,"DNS information
+Domain: lt
+Host: d.tld.lt.
+IPv4 Addresses: 194.0.3.1 
+IPv6 Addresses :2001:678:6::1 
+Description: Name server for domain ""lt"""
+c.tld.lt.,"DNS information
+Domain: lt
+Host: c.tld.lt.
+IPv4 Addresses: 194.0.1.4 
+IPv6 Addresses :2001:678:4::4 
+Description: Name server for domain ""lt"""
+f.tld.lt.,"DNS information
+Domain: lt
+Host: f.tld.lt.
+IPv4 Addresses: 194.0.19.1 
+IPv6 Addresses :2001:678:8c::1 
+Description: Name server for domain ""lt"""
+a.tld.lt.,"DNS information
+Domain: lt
+Host: a.tld.lt.
+IPv4 Addresses: 195.8.218.131 
+IPv6 Addresses : No information
+Description: Name server for domain ""lt"""
+tonic.to.,"DNS information
+Domain: to
+Host: tonic.to.
+IPv4 Addresses: 216.74.32.100 
+IPv6 Addresses : No information
+Description: Name server for domain ""to"""
+newyork.tonic.to.,"DNS information
+Domain: to
+Host: newyork.tonic.to.
+IPv4 Addresses: 162.243.211.202 
+IPv6 Addresses : No information
+Description: Name server for domain ""to"""
+frankfurt.tonic.to.,"DNS information
+Domain: to
+Host: frankfurt.tonic.to.
+IPv4 Addresses: 46.101.233.168 
+IPv6 Addresses : No information
+Description: Name server for domain ""to"""
+singapore.tonic.to.,"DNS information
+Domain: to
+Host: singapore.tonic.to.
+IPv4 Addresses: 188.166.187.0 
+IPv6 Addresses : No information
+Description: Name server for domain ""to"""
+colo.to.,"DNS information
+Domain: to
+Host: colo.to.
+IPv4 Addresses: 216.74.32.104 
+IPv6 Addresses : No information
+Description: Name server for domain ""to"""
+ns.dangdang.com.,"DNS information
+Domain: dangdang.com
+Host: ns.dangdang.com.
+IPv4 Addresses: 221.122.85.84 119.90.58.227 
+IPv6 Addresses : No information
+Description: Name server for domain ""dangdang.com"""
+ns1.dangdang.com.,"DNS information
+Domain: dangdang.com
+Host: ns1.dangdang.com.
+IPv4 Addresses: 119.90.58.227 60.29.254.191 
+IPv6 Addresses : No information
+Description: Name server for domain ""dangdang.com"""
+switch.nic.cat.,"DNS information
+Domain: cat
+Host: switch.nic.cat.
+IPv4 Addresses: 130.59.31.29 
+IPv6 Addresses :2001:620:0:ff::2f 
+Description: Name server for domain ""cat"""
+nsc.nic.de.,"DNS information
+Domain: cat
+Host: nsc.nic.de.
+IPv4 Addresses: 194.0.11.110 
+IPv6 Addresses :2001:678:e:110::53 
+Description: Name server for domain ""cat"""
+ns.nic.cat.,"DNS information
+Domain: cat
+Host: ns.nic.cat.
+IPv4 Addresses: 84.88.0.162 
+IPv6 Addresses :2001:40b0:1:3::2 
+Description: Name server for domain ""cat"""
+anyc1.irondns.net.,"DNS information
+Domain: cat
+Host: anyc1.irondns.net.
+IPv4 Addresses: 195.253.64.4 
+IPv6 Addresses :2a01:5b0:4::4 
+Description: Name server for domain ""cat"""
+cat.pch.net.,"DNS information
+Domain: cat
+Host: cat.pch.net.
+IPv4 Addresses: 204.61.216.20 
+IPv6 Addresses :2001:500:14:6020:ad::1 
+Description: Name server for domain ""cat"""
+ns1.nic.es.,"DNS information
+Domain: cat
+Host: ns1.nic.es.
+IPv4 Addresses: 194.69.254.1 
+IPv6 Addresses :2001:67c:21cc:2000::64:41 
+Description: Name server for domain ""cat"""
+e.nic.ch.,"DNS information
+Domain: ch
+Host: e.nic.ch.
+IPv4 Addresses: 194.0.17.1 
+IPv6 Addresses :2001:678:3::1 
+Description: Name server for domain ""ch"""
+f.nic.ch.,"DNS information
+Domain: ch
+Host: f.nic.ch.
+IPv4 Addresses: 194.146.106.10 
+IPv6 Addresses :2001:67c:1010:2::53 
+Description: Name server for domain ""ch"""
+d.nic.ch.,"DNS information
+Domain: ch
+Host: d.nic.ch.
+IPv4 Addresses: 200.160.0.5 
+IPv6 Addresses :2001:12ff:0:a20::5 
+Description: Name server for domain ""ch"""
+h.nic.ch.,"DNS information
+Domain: ch
+Host: h.nic.ch.
+IPv4 Addresses: 85.119.5.230 
+IPv6 Addresses :2a03:bd80:36::1:203:230 
+Description: Name server for domain ""ch"""
+g.nic.ch.,"DNS information
+Domain: ch
+Host: g.nic.ch.
+IPv4 Addresses: 194.0.1.40 
+IPv6 Addresses :2001:678:4::28 
+Description: Name server for domain ""ch"""
+c.nic.ch.,"DNS information
+Domain: ch
+Host: c.nic.ch.
+IPv4 Addresses: 147.28.0.39 
+IPv6 Addresses :2001:418:1::39 
+Description: Name server for domain ""ch"""
+a.nic.ch.,"DNS information
+Domain: ch
+Host: a.nic.ch.
+IPv4 Addresses: 130.59.31.41 
+IPv6 Addresses :2001:620:0:ff::56 
+Description: Name server for domain ""ch"""
+b.nic.ch.,"DNS information
+Domain: ch
+Host: b.nic.ch.
+IPv4 Addresses: 130.59.31.43 
+IPv6 Addresses :2001:620:0:ff::58 
+Description: Name server for domain ""ch"""
+ns2.uniregistry.info.,"DNS information
+Domain: photo
+Host: ns2.uniregistry.info.
+IPv4 Addresses: 64.96.245.53 
+IPv6 Addresses : No information
+Description: Name server for domain ""photo"""
+ns3.uniregistry.net.,"DNS information
+Domain: photo
+Host: ns3.uniregistry.net.
+IPv4 Addresses: 185.159.197.3 
+IPv6 Addresses :2620:10a:80aa::3 
+Description: Name server for domain ""photo"""
+ns4.uniregistry.info.,"DNS information
+Domain: photo
+Host: ns4.uniregistry.info.
+IPv4 Addresses: 185.159.198.3 
+IPv6 Addresses :2620:10a:80ab::3 
+Description: Name server for domain ""photo"""
+ns1.uniregistry.net.,"DNS information
+Domain: photo
+Host: ns1.uniregistry.net.
+IPv4 Addresses: 64.96.1.1 
+IPv6 Addresses :2620:57:4000:1::1 
+Description: Name server for domain ""photo"""
+surma.btcl.net.bd.,"DNS information
+Domain: bd
+Host: surma.btcl.net.bd.
+IPv4 Addresses: 203.112.194.232 
+IPv6 Addresses :2407:5000:88:4::232 
+Description: Name server for domain ""bd"""
+bd-ns.anycast.pch.net.,"DNS information
+Domain: bd
+Host: bd-ns.anycast.pch.net.
+IPv4 Addresses: 204.61.216.108 
+IPv6 Addresses :2001:500:14:6108:ad::1 
+Description: Name server for domain ""bd"""
+dns.bd.,"DNS information
+Domain: bd
+Host: dns.bd.
+IPv4 Addresses: 123.49.12.112 
+IPv6 Addresses :2407:5000:88:5::3 
+Description: Name server for domain ""bd"""
+jamuna.btcl.net.bd.,"DNS information
+Domain: bd
+Host: jamuna.btcl.net.bd.
+IPv4 Addresses: 203.112.194.231 
+IPv6 Addresses :2407:5000:88:4::231 
+Description: Name server for domain ""bd"""
+ns3.dns.nic.bid.,"DNS information
+Domain: bid
+Host: ns3.dns.nic.bid.
+IPv4 Addresses: 156.154.159.25 
+IPv6 Addresses :2610:a1:1073::19 
+Description: Name server for domain ""bid"""
+ns6.dns.nic.bid.,"DNS information
+Domain: bid
+Host: ns6.dns.nic.bid.
+IPv4 Addresses: 156.154.158.25 
+IPv6 Addresses :2610:a1:1076::19 
+Description: Name server for domain ""bid"""
+ns2.dns.nic.bid.,"DNS information
+Domain: bid
+Host: ns2.dns.nic.bid.
+IPv4 Addresses: 156.154.145.25 
+IPv6 Addresses :2610:a1:1072::19 
+Description: Name server for domain ""bid"""
+ns1.dns.nic.bid.,"DNS information
+Domain: bid
+Host: ns1.dns.nic.bid.
+IPv4 Addresses: 156.154.144.25 
+IPv6 Addresses :2610:a1:1071::19 
+Description: Name server for domain ""bid"""
+ns5.dns.nic.bid.,"DNS information
+Domain: bid
+Host: ns5.dns.nic.bid.
+IPv4 Addresses: 156.154.157.25 
+IPv6 Addresses :2610:a1:1075::19 
+Description: Name server for domain ""bid"""
+ns4.dns.nic.bid.,"DNS information
+Domain: bid
+Host: ns4.dns.nic.bid.
+IPv4 Addresses: 156.154.156.25 
+IPv6 Addresses :2610:a1:1074::19 
+Description: Name server for domain ""bid"""
+u2.hoster.by.,"DNS information
+Domain: gov.by
+Host: u2.hoster.by.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""gov.by"""
+u1.hoster.by.,"DNS information
+Domain: gov.by
+Host: u1.hoster.by.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""gov.by"""
+ns.ideay.net.ni.,"DNS information
+Domain: ni
+Host: ns.ideay.net.ni.
+IPv4 Addresses: 200.9.190.130 
+IPv6 Addresses : No information
+Description: Name server for domain ""ni"""
+ns2.ni.,"DNS information
+Domain: ni
+Host: ns2.ni.
+IPv4 Addresses: 200.9.187.2 
+IPv6 Addresses : No information
+Description: Name server for domain ""ni"""
+ns.ibw.com.ni.,"DNS information
+Domain: ni
+Host: ns.ibw.com.ni.
+IPv4 Addresses: 200.85.160.2 
+IPv6 Addresses : No information
+Description: Name server for domain ""ni"""
+ns.ni.,"DNS information
+Domain: ni
+Host: ns.ni.
+IPv4 Addresses: 165.98.1.2 
+IPv6 Addresses : No information
+Description: Name server for domain ""ni"""
+ns.cr.,"DNS information
+Domain: ni
+Host: ns.cr.
+IPv4 Addresses: 163.178.8.2 
+IPv6 Addresses : No information
+Description: Name server for domain ""ni"""
+ns.uu.net.,"DNS information
+Domain: ni
+Host: ns.uu.net.
+IPv4 Addresses: 137.39.1.3 
+IPv6 Addresses : No information
+Description: Name server for domain ""ni"""
+ns.tmx.com.ni.,"DNS information
+Domain: ni
+Host: ns.tmx.com.ni.
+IPv4 Addresses: 200.62.64.1 
+IPv6 Addresses : No information
+Description: Name server for domain ""ni"""
+dns.nic.cr.,"DNS information
+Domain: ni
+Host: dns.nic.cr.
+IPv4 Addresses: 200.107.82.100 
+IPv6 Addresses :2001:13c7:7004:1::d100 
+Description: Name server for domain ""ni"""
+auth01.ns.uu.net.,"DNS information
+Domain: com.ni
+Host: auth01.ns.uu.net.
+IPv4 Addresses: 198.6.1.81 
+IPv6 Addresses : No information
+Description: Name server for domain ""com.ni"""
+ns2.aedns.ae.,"DNS information
+Domain: ae
+Host: ns2.aedns.ae.
+IPv4 Addresses: 79.98.121.73 
+IPv6 Addresses : No information
+Description: Name server for domain ""ae"""
+ns1.aedns.ae.,"DNS information
+Domain: ae
+Host: ns1.aedns.ae.
+IPv4 Addresses: 79.98.120.73 
+IPv6 Addresses : No information
+Description: Name server for domain ""ae"""
+nsext-pch.aedns.ae.,"DNS information
+Domain: ae
+Host: nsext-pch.aedns.ae.
+IPv4 Addresses: 199.4.137.1 
+IPv6 Addresses :2001:500:7d::1 
+Description: Name server for domain ""ae"""
+sec3.apnic.net.,"DNS information
+Domain: ae
+Host: sec3.apnic.net.
+IPv4 Addresses: 202.12.28.140 
+IPv6 Addresses :2001:dc0:1:0:4777::140 
+Description: Name server for domain ""ae"""
+d.ns.tk.,"DNS information
+Domain: tk
+Host: d.ns.tk.
+IPv4 Addresses: 194.0.41.1 
+IPv6 Addresses :2001:678:5c::1 
+Description: Name server for domain ""tk"""
+c.ns.tk.,"DNS information
+Domain: tk
+Host: c.ns.tk.
+IPv4 Addresses: 194.0.40.1 
+IPv6 Addresses :2001:678:58::1 
+Description: Name server for domain ""tk"""
+a.ns.tk.,"DNS information
+Domain: tk
+Host: a.ns.tk.
+IPv4 Addresses: 194.0.38.1 
+IPv6 Addresses :2001:678:50::1 
+Description: Name server for domain ""tk"""
+b.ns.tk.,"DNS information
+Domain: tk
+Host: b.ns.tk.
+IPv4 Addresses: 194.0.39.1 
+IPv6 Addresses :2001:678:54::1 
+Description: Name server for domain ""tk"""
+ns1.qq.com.,"DNS information
+Domain: comsenz.com
+Host: ns1.qq.com.
+IPv4 Addresses: 101.89.19.165 
+IPv6 Addresses : No information
+Description: Name server for domain ""comsenz.com"""
+ns2.qq.com.,"DNS information
+Domain: comsenz.com
+Host: ns2.qq.com.
+IPv4 Addresses: 101.227.169.106 
+IPv6 Addresses : No information
+Description: Name server for domain ""comsenz.com"""
+ns3.qq.com.,"DNS information
+Domain: comsenz.com
+Host: ns3.qq.com.
+IPv4 Addresses: 182.140.167.157 182.140.177.149 
+IPv6 Addresses : No information
+Description: Name server for domain ""comsenz.com"""
+ns4.qq.com.,"DNS information
+Domain: comsenz.com
+Host: ns4.qq.com.
+IPv4 Addresses: 123.151.178.115 125.39.247.247 184.105.206.124 203.205.144.156 
+IPv6 Addresses : No information
+Description: Name server for domain ""comsenz.com"""
+root-s.pknic.pk.,"DNS information
+Domain: pk
+Host: root-s.pknic.pk.
+IPv4 Addresses: 119.81.34.90 
+IPv6 Addresses : No information
+Description: Name server for domain ""pk"""
+root-c2.pknic.pk.,"DNS information
+Domain: pk
+Host: root-c2.pknic.pk.
+IPv4 Addresses: 185.159.198.160 
+IPv6 Addresses :2620:10a:80ab::160 
+Description: Name server for domain ""pk"""
+root-c1.pknic.pk.,"DNS information
+Domain: pk
+Host: root-c1.pknic.pk.
+IPv4 Addresses: 185.159.197.160 
+IPv6 Addresses :2620:10a:80aa::160 
+Description: Name server for domain ""pk"""
+ns3.pknic.net.pk.,"DNS information
+Domain: pk
+Host: ns3.pknic.net.pk.
+IPv4 Addresses: 199.192.75.54 
+IPv6 Addresses : No information
+Description: Name server for domain ""pk"""
+n1.pknic.net.pk.,"DNS information
+Domain: pk
+Host: n1.pknic.net.pk.
+IPv4 Addresses: 162.252.84.2 
+IPv6 Addresses : No information
+Description: Name server for domain ""pk"""
+root-e.pknic.pk.,"DNS information
+Domain: pk
+Host: root-e.pknic.pk.
+IPv4 Addresses: 107.6.178.178 
+IPv6 Addresses : No information
+Description: Name server for domain ""pk"""
+root-e.pknic.PK.,"DNS information
+Domain: pk
+Host: root-e.pknic.PK.
+IPv4 Addresses: 107.6.178.178 
+IPv6 Addresses : No information
+Description: Name server for domain ""pk"""
+root-s.pknic.PK.,"DNS information
+Domain: pk
+Host: root-s.pknic.PK.
+IPv4 Addresses: 119.81.34.90 
+IPv6 Addresses : No information
+Description: Name server for domain ""pk"""
+root-c1.pknic.PK.,"DNS information
+Domain: pk
+Host: root-c1.pknic.PK.
+IPv4 Addresses: 185.159.197.160 
+IPv6 Addresses :2620:10a:80aa::160 
+Description: Name server for domain ""pk"""
+root-c2.pknic.PK.,"DNS information
+Domain: pk
+Host: root-c2.pknic.PK.
+IPv4 Addresses: 185.159.198.160 
+IPv6 Addresses :2620:10a:80ab::160 
+Description: Name server for domain ""pk"""
+pknic.pk.,"DNS information
+Domain: gov.pk
+Host: pknic.pk.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""gov.pk"""
+auth00.ns.de.uu.net.,"DNS information
+Domain: gov.uk
+Host: auth00.ns.de.uu.net.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""gov.uk"""
+auth50.ns.de.uu.net.,"DNS information
+Domain: gov.uk
+Host: auth50.ns.de.uu.net.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""gov.uk"""
+c.nic.cl.,"DNS information
+Domain: cl
+Host: c.nic.cl.
+IPv4 Addresses: 200.16.112.16 
+IPv6 Addresses : No information
+Description: Name server for domain ""cl"""
+cl1.dnsnode.net.,"DNS information
+Domain: cl
+Host: cl1.dnsnode.net.
+IPv4 Addresses: 194.146.106.34 
+IPv6 Addresses :2001:67c:1010:8::53 
+Description: Name server for domain ""cl"""
+cl-ns.anycast.pch.net.,"DNS information
+Domain: cl
+Host: cl-ns.anycast.pch.net.
+IPv4 Addresses: 204.61.216.30 
+IPv6 Addresses :2001:500:14:6030:ad::1 
+Description: Name server for domain ""cl"""
+a.nic.cl.,"DNS information
+Domain: cl
+Host: a.nic.cl.
+IPv4 Addresses: 190.124.27.10 
+IPv6 Addresses :2001:1398:121:0:190:124:27:10 
+Description: Name server for domain ""cl"""
+b.nic.cl.,"DNS information
+Domain: cl
+Host: b.nic.cl.
+IPv4 Addresses: 200.7.4.7 
+IPv6 Addresses :2001:1398:274:0:200:7:4:7 
+Description: Name server for domain ""cl"""
+pch-anycast.rds.org.hn.,"DNS information
+Domain: hn
+Host: pch-anycast.rds.org.hn.
+IPv4 Addresses: 204.61.216.64 
+IPv6 Addresses :2001:500:14:6064:ad::1 
+Description: Name server for domain ""hn"""
+nicmx-anycast.rds.org.hn.,"DNS information
+Domain: hn
+Host: nicmx-anycast.rds.org.hn.
+IPv4 Addresses: 200.33.111.1 
+IPv6 Addresses : No information
+Description: Name server for domain ""hn"""
+nsp.alibabaonline.com.,"DNS information
+Domain: 1688.com
+Host: nsp.alibabaonline.com.
+IPv4 Addresses: 198.11.138.241 200.196.225.111 213.244.178.211 
+IPv6 Addresses : No information
+Description: Name server for domain ""1688.com"""
+ns8.alibabaonline.com.,"DNS information
+Domain: 1688.com
+Host: ns8.alibabaonline.com.
+IPv4 Addresses: 140.205.2.185 140.205.71.244 
+IPv6 Addresses : No information
+Description: Name server for domain ""1688.com"""
+nshz.alibabaonline.com.,"DNS information
+Domain: 1688.com
+Host: nshz.alibabaonline.com.
+IPv4 Addresses: 140.205.2.186 140.205.71.243 
+IPv6 Addresses : No information
+Description: Name server for domain ""1688.com"""
+nsp2.alibabaonline.com.,"DNS information
+Domain: 1688.com
+Host: nsp2.alibabaonline.com.
+IPv4 Addresses: 198.11.138.242 
+IPv6 Addresses : No information
+Description: Name server for domain ""1688.com"""
+ns1.alibabadns.com.,"DNS information
+Domain: 1688.com
+Host: ns1.alibabadns.com.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""1688.com"""
+ns2.alibabadns.com.,"DNS information
+Domain: 1688.com
+Host: ns2.alibabadns.com.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""1688.com"""
+jm.cctld.authdns.ripe.net.,"DNS information
+Domain: jm
+Host: jm.cctld.authdns.ripe.net.
+IPv4 Addresses: 193.0.9.82 
+IPv6 Addresses :2001:67c:e0::82 
+Description: Name server for domain ""jm"""
+ns.jm.,"DNS information
+Domain: jm
+Host: ns.jm.
+IPv4 Addresses: 196.2.1.6 
+IPv6 Addresses : No information
+Description: Name server for domain ""jm"""
+ns3-jm.fsl.org.jm.,"DNS information
+Domain: jm
+Host: ns3-jm.fsl.org.jm.
+IPv4 Addresses: 196.3.191.66 
+IPv6 Addresses : No information
+Description: Name server for domain ""jm"""
+ns.utechjamaica.edu.jm.,"DNS information
+Domain: jm
+Host: ns.utechjamaica.edu.jm.
+IPv4 Addresses: 200.9.115.2 
+IPv6 Addresses : No information
+Description: Name server for domain ""jm"""
+ns-jm.ripe.net.,"DNS information
+Domain: jm
+Host: ns-jm.ripe.net.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""jm"""
+ee.aso.ee.,"DNS information
+Domain: ee
+Host: ee.aso.ee.
+IPv4 Addresses: 213.184.51.122 
+IPv6 Addresses :2a02:88:0:21::2 
+Description: Name server for domain ""ee"""
+e.tld.ee.,"DNS information
+Domain: ee
+Host: e.tld.ee.
+IPv4 Addresses: 204.61.216.36 
+IPv6 Addresses :2001:678:94:53::53 
+Description: Name server for domain ""ee"""
+ee.eenet.ee.,"DNS information
+Domain: ee
+Host: ee.eenet.ee.
+IPv4 Addresses: 193.40.132.5 
+IPv6 Addresses :2001:bb8:4001::53 
+Description: Name server for domain ""ee"""
+ns.tld.ee.,"DNS information
+Domain: ee
+Host: ns.tld.ee.
+IPv4 Addresses: 195.43.87.10 
+IPv6 Addresses : No information
+Description: Name server for domain ""ee"""
+b.tld.ee.,"DNS information
+Domain: ee
+Host: b.tld.ee.
+IPv4 Addresses: 194.146.106.110 
+IPv6 Addresses :2001:67c:1010:28::53 
+Description: Name server for domain ""ee"""
+dns1.lttnet.net.,"DNS information
+Domain: ly
+Host: dns1.lttnet.net.
+IPv4 Addresses: 62.68.42.9 
+IPv6 Addresses : No information
+Description: Name server for domain ""ly"""
+ns-ly.afrinic.net.,"DNS information
+Domain: ly
+Host: ns-ly.afrinic.net.
+IPv4 Addresses: 196.216.168.24 
+IPv6 Addresses :2001:43f8:120::24 
+Description: Name server for domain ""ly"""
+dns.lttnet.net.,"DNS information
+Domain: ly
+Host: dns.lttnet.net.
+IPv4 Addresses: 62.240.36.9 
+IPv6 Addresses : No information
+Description: Name server for domain ""ly"""
+pch.ltt.ly.,"DNS information
+Domain: ly
+Host: pch.ltt.ly.
+IPv4 Addresses: 204.61.216.67 
+IPv6 Addresses :2001:500:14:6067:ad::1 
+Description: Name server for domain ""ly"""
+h.ns.ie.,"DNS information
+Domain: ie
+Host: h.ns.ie.
+IPv4 Addresses: 192.93.0.4 
+IPv6 Addresses :2001:660:3005:1::1:2 
+Description: Name server for domain ""ie"""
+a.ns.ie.,"DNS information
+Domain: ie
+Host: a.ns.ie.
+IPv4 Addresses: 77.72.72.44 
+IPv6 Addresses :2a01:4b0::3 
+Description: Name server for domain ""ie"""
+c.ns.ie.,"DNS information
+Domain: ie
+Host: c.ns.ie.
+IPv4 Addresses: 194.146.106.98 
+IPv6 Addresses :2001:67c:1010:25::53 
+Description: Name server for domain ""ie"""
+b.ns.ie.,"DNS information
+Domain: ie
+Host: b.ns.ie.
+IPv4 Addresses: 77.72.72.34 
+IPv6 Addresses :2a01:4b0::2 
+Description: Name server for domain ""ie"""
+d.ns.ie.,"DNS information
+Domain: ie
+Host: d.ns.ie.
+IPv4 Addresses: 77.72.229.245 
+IPv6 Addresses :2a01:3f0:0:309::53 
+Description: Name server for domain ""ie"""
+e.ns.ie.,"DNS information
+Domain: ie
+Host: e.ns.ie.
+IPv4 Addresses: 199.19.2.1 
+IPv6 Addresses :2001:500:93::1 
+Description: Name server for domain ""ie"""
+g.ns.ie.,"DNS information
+Domain: ie
+Host: g.ns.ie.
+IPv4 Addresses: 192.111.39.100 
+IPv6 Addresses :2001:7c8:2:a::64 
+Description: Name server for domain ""ie"""
+f.ns.ie.,"DNS information
+Domain: ie
+Host: f.ns.ie.
+IPv4 Addresses: 199.19.3.1 
+IPv6 Addresses :2001:500:95::1 
+Description: Name server for domain ""ie"""
+a.NS.IE.,"DNS information
+Domain: ie
+Host: a.NS.IE.
+IPv4 Addresses: 77.72.72.44 
+IPv6 Addresses :2a01:4b0::3 
+Description: Name server for domain ""ie"""
+b.NS.IE.,"DNS information
+Domain: ie
+Host: b.NS.IE.
+IPv4 Addresses: 77.72.72.34 
+IPv6 Addresses :2a01:4b0::2 
+Description: Name server for domain ""ie"""
+c.NS.IE.,"DNS information
+Domain: ie
+Host: c.NS.IE.
+IPv4 Addresses: 194.146.106.98 
+IPv6 Addresses :2001:67c:1010:25::53 
+Description: Name server for domain ""ie"""
+d.NS.IE.,"DNS information
+Domain: ie
+Host: d.NS.IE.
+IPv4 Addresses: 77.72.229.245 
+IPv6 Addresses :2a01:3f0:0:309::53 
+Description: Name server for domain ""ie"""
+e.NS.IE.,"DNS information
+Domain: ie
+Host: e.NS.IE.
+IPv4 Addresses: 199.19.2.1 
+IPv6 Addresses :2001:500:93::1 
+Description: Name server for domain ""ie"""
+f.NS.IE.,"DNS information
+Domain: ie
+Host: f.NS.IE.
+IPv4 Addresses: 199.19.3.1 
+IPv6 Addresses :2001:500:95::1 
+Description: Name server for domain ""ie"""
+g.NS.IE.,"DNS information
+Domain: ie
+Host: g.NS.IE.
+IPv4 Addresses: 192.111.39.100 
+IPv6 Addresses :2001:7c8:2:a::64 
+Description: Name server for domain ""ie"""
+h.NS.IE.,"DNS information
+Domain: ie
+Host: h.NS.IE.
+IPv4 Addresses: 192.93.0.4 
+IPv6 Addresses : No information
+Description: Name server for domain ""ie"""
+ir.cctld.authdns.ripe.net.,"DNS information
+Domain: ir
+Host: ir.cctld.authdns.ripe.net.
+IPv4 Addresses: 193.0.9.85 
+IPv6 Addresses :2001:67c:e0::85 
+Description: Name server for domain ""ir"""
+b.nic.ir.,"DNS information
+Domain: ir
+Host: b.nic.ir.
+IPv4 Addresses: 193.189.122.83 
+IPv6 Addresses : No information
+Description: Name server for domain ""ir"""
+ns5.univie.ac.at.,"DNS information
+Domain: ir
+Host: ns5.univie.ac.at.
+IPv4 Addresses: 193.171.255.77 
+IPv6 Addresses :2001:628:453:4305::53 
+Description: Name server for domain ""ir"""
+a.nic.ir.,"DNS information
+Domain: ir
+Host: a.nic.ir.
+IPv4 Addresses: 193.189.123.2 
+IPv6 Addresses : No information
+Description: Name server for domain ""ir"""
+ns.cocca.fr.,"DNS information
+Domain: gs
+Host: ns.cocca.fr.
+IPv4 Addresses: 185.17.236.93 
+IPv6 Addresses :2a03:dd40:3::93 
+Description: Name server for domain ""gs"""
+ns.anycast.nic.gs.,"DNS information
+Domain: gs
+Host: ns.anycast.nic.gs.
+IPv4 Addresses: 204.61.216.21 
+IPv6 Addresses :2001:500:14:6021:ad::1 
+Description: Name server for domain ""gs"""
+n2.nic.ec.,"DNS information
+Domain: ec
+Host: n2.nic.ec.
+IPv4 Addresses: 200.12.199.1 
+IPv6 Addresses :2801:0:60::1 
+Description: Name server for domain ""ec"""
+n3.dns.ec.,"DNS information
+Domain: ec
+Host: n3.dns.ec.
+IPv4 Addresses: 204.61.216.39 
+IPv6 Addresses :2001:500:14:6039:ad::1 
+Description: Name server for domain ""ec"""
+a.riu.edu.ar.,"DNS information
+Domain: edu.ar
+Host: a.riu.edu.ar.
+IPv4 Addresses: 170.210.5.56 
+IPv6 Addresses :2800:110:5::56 
+Description: Name server for domain ""edu.ar"""
+ns1.uba.ar.,"DNS information
+Domain: edu.ar
+Host: ns1.uba.ar.
+IPv4 Addresses: 157.92.1.1 
+IPv6 Addresses :2001:1318:100c:1::1 
+Description: Name server for domain ""edu.ar"""
+b.riu.edu.ar.,"DNS information
+Domain: edu.ar
+Host: b.riu.edu.ar.
+IPv4 Addresses: 170.210.180.50 
+IPv6 Addresses :2800:110:10::50 
+Description: Name server for domain ""edu.ar"""
+noc.uncu.edu.ar.,"DNS information
+Domain: edu.ar
+Host: noc.uncu.edu.ar.
+IPv4 Addresses: 170.210.2.97 
+IPv6 Addresses :2800:110:2800:296:21a:4aff:fe77:7122 
+Description: Name server for domain ""edu.ar"""
+unlp.unlp.edu.ar.,"DNS information
+Domain: edu.ar
+Host: unlp.unlp.edu.ar.
+IPv4 Addresses: 163.10.0.67 
+IPv6 Addresses :2800:340:0:64::67 
+Description: Name server for domain ""edu.ar"""
+merlin.net.na.,"DNS information
+Domain: na
+Host: merlin.net.na.
+IPv4 Addresses: 204.152.184.96 
+IPv6 Addresses : No information
+Description: Name server for domain ""na"""
+na-ns.anycast.pch.net.,"DNS information
+Domain: na
+Host: na-ns.anycast.pch.net.
+IPv4 Addresses: 204.61.216.35 
+IPv6 Addresses :2001:500:14:6035:ad::1 
+Description: Name server for domain ""na"""
+b.na.dyntld.net.,"DNS information
+Domain: na
+Host: b.na.dyntld.net.
+IPv4 Addresses: 108.59.163.1 
+IPv6 Addresses :2a02:e180:6::1 
+Description: Name server for domain ""na"""
+a.na.dyntld.net.,"DNS information
+Domain: na
+Host: a.na.dyntld.net.
+IPv4 Addresses: 108.59.162.1 
+IPv6 Addresses :2a02:e180:5::1 
+Description: Name server for domain ""na"""
+anyc2.irondns.net.,"DNS information
+Domain: na
+Host: anyc2.irondns.net.
+IPv4 Addresses: 195.253.64.7 
+IPv6 Addresses :2a01:5b0:4::7 
+Description: Name server for domain ""na"""
+ns-na.afrinic.net.,"DNS information
+Domain: com.na
+Host: ns-na.afrinic.net.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""com.na"""
+dnsd.nic.wales.,"DNS information
+Domain: wales
+Host: dnsd.nic.wales.
+IPv4 Addresses: 156.154.103.3 
+IPv6 Addresses : No information
+Description: Name server for domain ""wales"""
+dnsc.nic.wales.,"DNS information
+Domain: wales
+Host: dnsc.nic.wales.
+IPv4 Addresses: 156.154.102.3 
+IPv6 Addresses : No information
+Description: Name server for domain ""wales"""
+dns4.nic.wales.,"DNS information
+Domain: wales
+Host: dns4.nic.wales.
+IPv4 Addresses: 43.230.51.2 
+IPv6 Addresses :2401:fd80:407::2 
+Description: Name server for domain ""wales"""
+dns2.nic.wales.,"DNS information
+Domain: wales
+Host: dns2.nic.wales.
+IPv4 Addresses: 103.49.83.2 
+IPv6 Addresses :2401:fd80:403::2 
+Description: Name server for domain ""wales"""
+dns3.nic.wales.,"DNS information
+Domain: wales
+Host: dns3.nic.wales.
+IPv4 Addresses: 213.248.223.2 
+IPv6 Addresses :2a01:618:407::2 
+Description: Name server for domain ""wales"""
+dnsa.nic.wales.,"DNS information
+Domain: wales
+Host: dnsa.nic.wales.
+IPv4 Addresses: 156.154.100.3 
+IPv6 Addresses :2001:502:ad09::3 
+Description: Name server for domain ""wales"""
+dns1.nic.wales.,"DNS information
+Domain: wales
+Host: dns1.nic.wales.
+IPv4 Addresses: 213.248.219.2 
+IPv6 Addresses :2a01:618:403::2 
+Description: Name server for domain ""wales"""
+dnsb.nic.wales.,"DNS information
+Domain: wales
+Host: dnsb.nic.wales.
+IPv4 Addresses: 156.154.101.3 
+IPv6 Addresses : No information
+Description: Name server for domain ""wales"""
+a.gtld.travel.,"DNS information
+Domain: travel
+Host: a.gtld.travel.
+IPv4 Addresses: 156.154.100.1 
+IPv6 Addresses :2001:502:ad09::1 
+Description: Name server for domain ""travel"""
+f.gtld.travel.,"DNS information
+Domain: travel
+Host: f.gtld.travel.
+IPv4 Addresses: 156.154.105.1 
+IPv6 Addresses :2610:a1:1012::1 
+Description: Name server for domain ""travel"""
+d.gtld.travel.,"DNS information
+Domain: travel
+Host: d.gtld.travel.
+IPv4 Addresses: 156.154.103.1 
+IPv6 Addresses :2001:502:2eda::1 
+Description: Name server for domain ""travel"""
+c.gtld.travel.,"DNS information
+Domain: travel
+Host: c.gtld.travel.
+IPv4 Addresses: 156.154.102.1 
+IPv6 Addresses :2610:a1:1010::1 
+Description: Name server for domain ""travel"""
+b.gtld.travel.,"DNS information
+Domain: travel
+Host: b.gtld.travel.
+IPv4 Addresses: 156.154.101.1 
+IPv6 Addresses :2610:a1:1009::1 
+Description: Name server for domain ""travel"""
+e.gtld.travel.,"DNS information
+Domain: travel
+Host: e.gtld.travel.
+IPv4 Addresses: 156.154.104.1 
+IPv6 Addresses :2610:a1:1011::1 
+Description: Name server for domain ""travel"""
+ns.nic.kz.,"DNS information
+Domain: kz
+Host: ns.nic.kz.
+IPv4 Addresses: 194.0.21.5 
+IPv6 Addresses :2001:678:98:1::5 
+Description: Name server for domain ""kz"""
+ns1.nic.kz.,"DNS information
+Domain: kz
+Host: ns1.nic.kz.
+IPv4 Addresses: 185.79.212.7 
+IPv6 Addresses :2a01:7640:9000::7 
+Description: Name server for domain ""kz"""
+ns3.nease.net.,"DNS information
+Domain: 163.com
+Host: ns3.nease.net.
+IPv4 Addresses: 220.181.36.234 
+IPv6 Addresses : No information
+Description: Name server for domain ""163.com"""
+ns4.nease.net.,"DNS information
+Domain: 163.com
+Host: ns4.nease.net.
+IPv4 Addresses: 123.125.48.245 
+IPv6 Addresses : No information
+Description: Name server for domain ""163.com"""
+ns5.nease.net.,"DNS information
+Domain: 163.com
+Host: ns5.nease.net.
+IPv4 Addresses: 121.195.179.18 
+IPv6 Addresses : No information
+Description: Name server for domain ""163.com"""
+ns6.nease.net.,"DNS information
+Domain: 163.com
+Host: ns6.nease.net.
+IPv4 Addresses: 52.215.24.44 
+IPv6 Addresses : No information
+Description: Name server for domain ""163.com"""
+ns1.nease.net.,"DNS information
+Domain: 163.com
+Host: ns1.nease.net.
+IPv4 Addresses: 123.58.173.177 
+IPv6 Addresses : No information
+Description: Name server for domain ""163.com"""
+ns2.166.com.,"DNS information
+Domain: 163.com
+Host: ns2.166.com.
+IPv4 Addresses: 123.58.173.178 
+IPv6 Addresses : No information
+Description: Name server for domain ""163.com"""
+ns8.166.com.,"DNS information
+Domain: 163.com
+Host: ns8.166.com.
+IPv4 Addresses: 52.27.107.218 52.69.168.90 
+IPv6 Addresses : No information
+Description: Name server for domain ""163.com"""
+ns-sn.nic.fr.,"DNS information
+Domain: sn
+Host: ns-sn.nic.fr.
+IPv4 Addresses: 194.0.9.1 
+IPv6 Addresses :2001:678:c::1 
+Description: Name server for domain ""sn"""
+sn.cctld.authdns.ripe.net.,"DNS information
+Domain: sn
+Host: sn.cctld.authdns.ripe.net.
+IPv4 Addresses: 193.0.9.111 
+IPv6 Addresses :2001:67c:e0::111 
+Description: Name server for domain ""sn"""
+ns.ucad.sn.,"DNS information
+Domain: sn
+Host: ns.ucad.sn.
+IPv4 Addresses: 196.1.95.1 
+IPv6 Addresses : No information
+Description: Name server for domain ""sn"""
+ns1.sonatel.sn.,"DNS information
+Domain: sn
+Host: ns1.sonatel.sn.
+IPv4 Addresses: 213.154.64.11 
+IPv6 Addresses : No information
+Description: Name server for domain ""sn"""
+censvrns0001.ird.fr.,"DNS information
+Domain: sn
+Host: censvrns0001.ird.fr.
+IPv4 Addresses: 91.203.32.147 
+IPv6 Addresses : No information
+Description: Name server for domain ""sn"""
+y.iana-servers.net.,"DNS information
+Domain: int
+Host: y.iana-servers.net.
+IPv4 Addresses: 199.43.133.53 
+IPv6 Addresses :2001:500:8d::53 
+Description: Name server for domain ""int"""
+x.iana-servers.net.,"DNS information
+Domain: int
+Host: x.iana-servers.net.
+IPv4 Addresses: 199.43.135.53 
+IPv6 Addresses :2001:500:8f::53 
+Description: Name server for domain ""int"""
+z.iana-servers.net.,"DNS information
+Domain: int
+Host: z.iana-servers.net.
+IPv4 Addresses: 199.43.134.53 
+IPv6 Addresses :2001:500:8e::53 
+Description: Name server for domain ""int"""
+sec2.authdns.ripe.net.,"DNS information
+Domain: int
+Host: sec2.authdns.ripe.net.
+IPv4 Addresses: 193.0.9.4 
+IPv6 Addresses :2001:67c:e0::4 
+Description: Name server for domain ""int"""
+b2.cctld.afilias-nst.org.,"DNS information
+Domain: bz
+Host: b2.cctld.afilias-nst.org.
+IPv4 Addresses: 199.249.124.1 
+IPv6 Addresses :2001:500:4c::1 
+Description: Name server for domain ""bz"""
+a2.cctld.afilias-nst.info.,"DNS information
+Domain: bz
+Host: a2.cctld.afilias-nst.info.
+IPv4 Addresses: 199.249.116.1 
+IPv6 Addresses :2001:500:44::1 
+Description: Name server for domain ""bz"""
+ns1.ns.sx.,"DNS information
+Domain: sx
+Host: ns1.ns.sx.
+IPv4 Addresses: 185.159.197.10 
+IPv6 Addresses :2620:10a:80aa::10 
+Description: Name server for domain ""sx"""
+ns2.ns.sx.,"DNS information
+Domain: sx
+Host: ns2.ns.sx.
+IPv4 Addresses: 185.159.198.10 
+IPv6 Addresses :2620:10a:80ab::10 
+Description: Name server for domain ""sx"""
+b.nic.online.,"DNS information
+Domain: online
+Host: b.nic.online.
+IPv4 Addresses: 185.24.64.54 
+IPv6 Addresses :2a04:2b00:13cc::1:54 
+Description: Name server for domain ""online"""
+c.nic.online.,"DNS information
+Domain: online
+Host: c.nic.online.
+IPv4 Addresses: 185.38.99.7 
+IPv6 Addresses :2a02:e180:3::7 
+Description: Name server for domain ""online"""
+a.nic.online.,"DNS information
+Domain: online
+Host: a.nic.online.
+IPv4 Addresses: 194.169.218.54 
+IPv6 Addresses :2001:67c:13cc::1:54 
+Description: Name server for domain ""online"""
+d.nic.online.,"DNS information
+Domain: online
+Host: d.nic.online.
+IPv4 Addresses: 108.59.161.7 
+IPv6 Addresses :2a02:e180:4::7 
+Description: Name server for domain ""online"""
+ns2-cctld.vunic.vu.,"DNS information
+Domain: vu
+Host: ns2-cctld.vunic.vu.
+IPv4 Addresses: 202.80.32.10 
+IPv6 Addresses : No information
+Description: Name server for domain ""vu"""
+santo.vanuatu.com.vu.,"DNS information
+Domain: vu
+Host: santo.vanuatu.com.vu.
+IPv4 Addresses: 202.80.32.7 
+IPv6 Addresses : No information
+Description: Name server for domain ""vu"""
+ns1-cctld.vunic.vu.,"DNS information
+Domain: vu
+Host: ns1-cctld.vunic.vu.
+IPv4 Addresses: 202.80.32.9 
+IPv6 Addresses : No information
+Description: Name server for domain ""vu"""
+efate.vanuatu.com.vu.,"DNS information
+Domain: vu
+Host: efate.vanuatu.com.vu.
+IPv4 Addresses: 202.80.32.5 
+IPv6 Addresses : No information
+Description: Name server for domain ""vu"""
+ug.cctld.authdns.ripe.net.,"DNS information
+Domain: ug
+Host: ug.cctld.authdns.ripe.net.
+IPv4 Addresses: 193.0.9.52 
+IPv6 Addresses :2001:67c:e0::52 
+Description: Name server for domain ""ug"""
+ns-ug.afrinic.net.,"DNS information
+Domain: ug
+Host: ns-ug.afrinic.net.
+IPv4 Addresses: 196.216.168.42 
+IPv6 Addresses :2001:43f8:120::42 
+Description: Name server for domain ""ug"""
+root.eahd.or.ug.,"DNS information
+Domain: ug
+Host: root.eahd.or.ug.
+IPv4 Addresses: 212.88.97.132 
+IPv6 Addresses : No information
+Description: Name server for domain ""ug"""
+anycast.eahd.or.ug.,"DNS information
+Domain: ug
+Host: anycast.eahd.or.ug.
+IPv4 Addresses: 204.61.216.60 
+IPv6 Addresses :2001:500:14:6060:ad::1 
+Description: Name server for domain ""ug"""
+ns.icann.org.,"DNS information
+Domain: ug
+Host: ns.icann.org.
+IPv4 Addresses: 199.4.138.53 
+IPv6 Addresses :2001:500:89::53 
+Description: Name server for domain ""ug"""
+n3ns.nic.es.,"DNS information
+Domain: com.es
+Host: n3ns.nic.es.
+IPv4 Addresses: 194.69.254.42 
+IPv6 Addresses :2001:67c:21cc:2000::64:42 
+Description: Name server for domain ""com.es"""
+fnicdos.rediris.es.,"DNS information
+Domain: com.es
+Host: fnicdos.rediris.es.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""com.es"""
+tld2.ultradns.net.,"DNS information
+Domain: fm
+Host: tld2.ultradns.net.
+IPv4 Addresses: 204.74.113.1 
+IPv6 Addresses : No information
+Description: Name server for domain ""fm"""
+tld4.ultradns.org.,"DNS information
+Domain: fm
+Host: tld4.ultradns.org.
+IPv4 Addresses: 199.7.67.1 
+IPv6 Addresses :2001:502:100e::1 
+Description: Name server for domain ""fm"""
+tld3.ultradns.org.,"DNS information
+Domain: fm
+Host: tld3.ultradns.org.
+IPv4 Addresses: 199.7.66.1 
+IPv6 Addresses : No information
+Description: Name server for domain ""fm"""
+tld6.ultradns.co.uk.,"DNS information
+Domain: fm
+Host: tld6.ultradns.co.uk.
+IPv4 Addresses: 198.133.199.11 
+IPv6 Addresses : No information
+Description: Name server for domain ""fm"""
+tld5.ultradns.info.,"DNS information
+Domain: fm
+Host: tld5.ultradns.info.
+IPv4 Addresses: 192.100.59.11 
+IPv6 Addresses : No information
+Description: Name server for domain ""fm"""
+tld1.ultradns.net.,"DNS information
+Domain: fm
+Host: tld1.ultradns.net.
+IPv4 Addresses: 204.74.112.1 
+IPv6 Addresses :2001:502:d399::1 
+Description: Name server for domain ""fm"""
+osiris.namex.it.,"DNS information
+Domain: va
+Host: osiris.namex.it.
+IPv4 Addresses: 193.201.40.6 
+IPv6 Addresses :2001:7f8:10:f00a::6 
+Description: Name server for domain ""va"""
+va.cctld.authdns.ripe.net.,"DNS information
+Domain: va
+Host: va.cctld.authdns.ripe.net.
+IPv4 Addresses: 193.0.9.123 
+IPv6 Addresses :2001:67c:e0::123 
+Description: Name server for domain ""va"""
+john.vatican.va.,"DNS information
+Domain: va
+Host: john.vatican.va.
+IPv4 Addresses: 212.77.0.110 
+IPv6 Addresses :2a01:b8:0:1:212:77:0:110 
+Description: Name server for domain ""va"""
+seth.namex.it.,"DNS information
+Domain: va
+Host: seth.namex.it.
+IPv4 Addresses: 193.201.40.7 
+IPv6 Addresses :2001:7f8:10:f00a::7 
+Description: Name server for domain ""va"""
+michael.vatican.va.,"DNS information
+Domain: va
+Host: michael.vatican.va.
+IPv4 Addresses: 212.77.0.2 
+IPv6 Addresses :2a01:b8:0:1:212:77:0:2 
+Description: Name server for domain ""va"""
+a1.domain.by.,"DNS information
+Domain: com.by
+Host: a1.domain.by.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""com.by"""
+a2.domain.by.,"DNS information
+Domain: com.by
+Host: a2.domain.by.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""com.by"""
+dns.inria.fr.,"DNS information
+Domain: ma
+Host: dns.inria.fr.
+IPv4 Addresses: 193.51.208.13 
+IPv6 Addresses : No information
+Description: Name server for domain ""ma"""
+ns1.registre.ma.,"DNS information
+Domain: ma
+Host: ns1.registre.ma.
+IPv4 Addresses: 81.192.171.83 81.192.171.131 
+IPv6 Addresses :2001:4288:1800:186::3 
+Description: Name server for domain ""ma"""
+ns2.registre.ma.,"DNS information
+Domain: ma
+Host: ns2.registre.ma.
+IPv4 Addresses: 81.192.171.84 81.192.171.132 
+IPv6 Addresses :2001:4288:1800:186::4 
+Description: Name server for domain ""ma"""
+ns4.registre.ma.,"DNS information
+Domain: ma
+Host: ns4.registre.ma.
+IPv4 Addresses: 81.192.171.140 81.192.171.116 
+IPv6 Addresses :2001:4288:1800:386::4 
+Description: Name server for domain ""ma"""
+ns3.registre.ma.,"DNS information
+Domain: ma
+Host: ns3.registre.ma.
+IPv4 Addresses: 81.192.171.139 81.192.171.115 
+IPv6 Addresses :2001:4288:1800:386::3 
+Description: Name server for domain ""ma"""
+ns3.sina.com.cn.,"DNS information
+Domain: sina.com.cn
+Host: ns3.sina.com.cn.
+IPv4 Addresses: 123.125.29.99 
+IPv6 Addresses : No information
+Description: Name server for domain ""sina.com.cn"""
+ns1.sina.com.cn.,"DNS information
+Domain: sina.com.cn
+Host: ns1.sina.com.cn.
+IPv4 Addresses: 202.106.184.166 
+IPv6 Addresses : No information
+Description: Name server for domain ""sina.com.cn"""
+ns4.sina.com.cn.,"DNS information
+Domain: sina.com.cn
+Host: ns4.sina.com.cn.
+IPv4 Addresses: 121.14.1.22 
+IPv6 Addresses : No information
+Description: Name server for domain ""sina.com.cn"""
+ns2.sina.com.cn.,"DNS information
+Domain: sina.com.cn
+Host: ns2.sina.com.cn.
+IPv4 Addresses: 61.172.201.254 
+IPv6 Addresses : No information
+Description: Name server for domain ""sina.com.cn"""
+spool.house.sina.com.cn.,"DNS information
+Domain: jiaju.sina.com.cn
+Host: spool.house.sina.com.cn.
+IPv4 Addresses:  No information
+IPv6 Addresses : No information
+Description: Name server for domain ""jiaju.sina.com.cn"""
+dns-md.rotld.ro.,"DNS information
+Domain: md
+Host: dns-md.rotld.ro.
+IPv4 Addresses: 192.162.16.19 
+IPv6 Addresses :2a03:5e80:0:4:192:162:16:19 
+Description: Name server for domain ""md"""
+nsf.dns.md.,"DNS information
+Domain: md
+Host: nsf.dns.md.
+IPv4 Addresses: 86.106.212.21 
+IPv6 Addresses : No information
+Description: Name server for domain ""md"""
+nsfr.dns.md.,"DNS information
+Domain: md
+Host: nsfr.dns.md.
+IPv4 Addresses: 92.222.76.179 
+IPv6 Addresses : No information
+Description: Name server for domain ""md"""
+nsb.dns.md.,"DNS information
+Domain: md
+Host: nsb.dns.md.
+IPv4 Addresses: 217.26.144.15 
+IPv6 Addresses : No information
+Description: Name server for domain ""md"""
+ns-int.dns.md.,"DNS information
+Domain: md
+Host: ns-int.dns.md.
+IPv4 Addresses: 217.26.144.5 
+IPv6 Addresses : No information
+Description: Name server for domain ""md"""
+nsca.dns.md.,"DNS information
+Domain: md
+Host: nsca.dns.md.
+IPv4 Addresses: 144.217.93.2 
+IPv6 Addresses : No information
+Description: Name server for domain ""md"""
+ns-ext.isc.org.,"DNS information
+Domain: md
+Host: ns-ext.isc.org.
+IPv4 Addresses: 204.152.184.64 
+IPv6 Addresses :2001:4f8:0:2::13 
+Description: Name server for domain ""md"""
+c.nic.store.,"DNS information
+Domain: store
+Host: c.nic.store.
+IPv4 Addresses: 185.38.99.8 
+IPv6 Addresses :2a02:e180:3::8 
+Description: Name server for domain ""store"""
+b.nic.store.,"DNS information
+Domain: store
+Host: b.nic.store.
+IPv4 Addresses: 185.24.64.45 
+IPv6 Addresses :2a04:2b00:13cc::1:45 
+Description: Name server for domain ""store"""
+d.nic.store.,"DNS information
+Domain: store
+Host: d.nic.store.
+IPv4 Addresses: 108.59.161.8 
+IPv6 Addresses :2a02:e180:4::8 
+Description: Name server for domain ""store"""
+a.nic.store.,"DNS information
+Domain: store
+Host: a.nic.store.
+IPv4 Addresses: 194.169.218.45 
+IPv6 Addresses :2001:67c:13cc::1:45 
+Description: Name server for domain ""store"""
+nsp-anycast.cmc.iq.,"DNS information
+Domain: iq
+Host: nsp-anycast.cmc.iq.
+IPv4 Addresses: 194.117.58.42 
+IPv6 Addresses :2001:500:14:8001:ad::42 
+Description: Name server for domain ""iq"""
+dyn2.cmc.iq.,"DNS information
+Domain: iq
+Host: dyn2.cmc.iq.
+IPv4 Addresses: 199.19.6.8 
+IPv6 Addresses :2001:500:96::8 
+Description: Name server for domain ""iq"""
+ns1.cmc.iq.,"DNS information
+Domain: iq
+Host: ns1.cmc.iq.
+IPv4 Addresses: 194.117.57.100 
+IPv6 Addresses : No information
+Description: Name server for domain ""iq"""
+dyn1.cmc.iq.,"DNS information
+Domain: iq
+Host: dyn1.cmc.iq.
+IPv4 Addresses: 199.19.5.8 
+IPv6 Addresses :2001:500:92::8 
+Description: Name server for domain ""iq"""
+c.ci-servers.net.,"DNS information
+Domain: as
+Host: c.ci-servers.net.
+IPv4 Addresses: 194.146.106.86 
+IPv6 Addresses :2001:67c:1010:22::53 
+Description: Name server for domain ""as"""
+ns99.dns.net.nz.,"DNS information
+Domain: as
+Host: ns99.dns.net.nz.
+IPv4 Addresses: 202.46.190.131 
+IPv6 Addresses :2001:dce:2000:2::131 
+Description: Name server for domain ""as"""
+pch.nic.as.,"DNS information
+Domain: as
+Host: pch.nic.as.
+IPv4 Addresses: 204.61.216.111 
+IPv6 Addresses :2001:500:14:6111:ad::1 
+Description: Name server for domain ""as"""
+tld.gdns.net.,"DNS information
+Domain: as
+Host: tld.gdns.net.
+IPv4 Addresses: 68.178.129.149 
+IPv6 Addresses : No information
+Description: Name server for domain ""as"""
+k.dns.lu.,"DNS information
+Domain: lu
+Host: k.dns.lu.
+IPv4 Addresses: 194.0.1.13 
+IPv6 Addresses :2001:678:4::d 
+Description: Name server for domain ""lu"""
+ns1.dns.lu.,"DNS information
+Domain: lu
+Host: ns1.dns.lu.
+IPv4 Addresses: 158.64.229.18 
+IPv6 Addresses :2001:a18:4:1::18 
+Description: Name server for domain ""lu"""
+p.dns.lu.,"DNS information
+Domain: lu
+Host: p.dns.lu.
+IPv4 Addresses: 194.0.42.42 
+IPv6 Addresses :2001:678:60::42:42 
+Description: Name server for domain ""lu"""
+j.dns.lu.,"DNS information
+Domain: lu
+Host: j.dns.lu.
+IPv4 Addresses: 77.72.229.247 
+IPv6 Addresses :2a01:3f0:0:307::53 
+Description: Name server for domain ""lu"""
+i.dns.lu.,"DNS information
+Domain: lu
+Host: i.dns.lu.
+IPv4 Addresses: 194.146.106.66 
+IPv6 Addresses :2001:67c:1010:16::53 
+Description: Name server for domain ""lu"""
+g.dns.lu.,"DNS information
+Domain: lu
+Host: g.dns.lu.
+IPv4 Addresses: 194.0.23.5 
+IPv6 Addresses :2001:678:1b:5::5 
+Description: Name server for domain ""lu"""
+moemoon.edu.tw.,"DNS information
+Domain: edu.tw
+Host: moemoon.edu.tw.
+IPv4 Addresses: 192.83.166.17 
+IPv6 Addresses :2001:288:1:1002::a611 
+Description: Name server for domain ""edu.tw"""
+moestar.edu.tw.,"DNS information
+Domain: edu.tw
+Host: moestar.edu.tw.
+IPv4 Addresses: 163.28.6.21 
+IPv6 Addresses : No information
+Description: Name server for domain ""edu.tw"""
