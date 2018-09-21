@@ -95,6 +95,7 @@ def storeInCSV(file_name, dict_to_store, field_names):
         data = [dict(zip(field_names, [k, v])) for k, v in dict_to_store.items()]
         writer.writerows(data)
 
+
 def storeInServer(dns_worker):
     for k, v in dns_worker.name_to_server_info_dict.items():
         server = Server.objects.create(host_name=v[SI.HOST_NAME], description=v[SI.DESCRIPTION], original_domain=v[SI.DOMAIN])
@@ -135,11 +136,16 @@ def check_misconfig(dns_worker, misconfiguration_result):
 
 def main_url(url):
     dns_worker = DI.DNSWorker()
+    misconfiguration_result = MisconfigurationResult()
 
     getDataForURL([url], dns_worker)
 
+    check_misconfig(dns_worker, misconfiguration_result)
+
     storeInServer(dns_worker)
     storeInKnownNameServer(dns_worker)
+
+    return dns_worker, misconfiguration_result
 
 
 def main_csv(file):
@@ -156,8 +162,9 @@ def main_csv(file):
     storeInServer(dns_worker)
     storeInKnownNameServer(dns_worker)
 
-    storeInCSV('results_servers.csv', dns_worker.name_to_server_info_dict, ['Server Name', 'Server Information'])
-    storeInCSV('results_records.csv', dns_worker.DNS_dict, ['(Server Name, Domain)', 'Servers known in domain'])
-    storeInCSV("misconfigurations.csv", misconfiguration_result.misconfiguration_dict, ["server1, server2, domain", "misconfiguration info"])
-    storeInCSV("misconfigurations_count.csv", misconfiguration_result.misconfiguration_count_dict, ["domain", "num of misconfigurations"])
+    # storeInCSV('results_servers.csv', dns_worker.name_to_server_info_dict, ['Server Name', 'Server Information'])
+    # storeInCSV('results_records.csv', dns_worker.DNS_dict, ['(Server Name, Domain)', 'Servers known in domain'])
+    # storeInCSV("misconfigurations.csv", misconfiguration_result.misconfiguration_dict, ["server1, server2, domain", "misconfiguration info"])
+    # storeInCSV("misconfigurations_count.csv", misconfiguration_result.misconfiguration_count_dict, ["domain", "num of misconfigurations"])
 
+    return dns_worker, misconfiguration_result
