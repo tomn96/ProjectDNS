@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect, HttpResponse
-from .utils.handle_csv import handle_csv_file
+from . import dns_utils
+from .forms import SingleUrlForm
 from django.views.decorators.csrf import csrf_exempt
 
 
@@ -31,7 +32,15 @@ def csv(request):
 
 
 def address(request):
-    return render(request, 'DNSmisconfiguration/address.html')
+    if request.method == 'POST':
+        form = SingleUrlForm(request.POST)
+        if form.is_valid():
+            result = dns_utils.main_url(form.cleaned_data["url"])
+            return HttpResponseRedirect("uploaded_csv/" + str(result))  # FIXME - show results
+    else:
+        form = SingleUrlForm()
+
+    return render(request, 'DNSmisconfiguration/address.html', {'form': form})
 
 
 def about(request):
@@ -41,8 +50,8 @@ def about(request):
 @csrf_exempt
 def upload_csv(request):
     if request.method == 'POST':
-        result = handle_csv_file(request.FILES['file'])
-        return HttpResponseRedirect("uploaded_csv/" + str(result))
+        result = dns_utils.main_csv(request.FILES['file'])
+        return HttpResponseRedirect("uploaded_csv/" + str(result))  # FIXME - show results
     return csv(request)
 
 
