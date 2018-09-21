@@ -2,7 +2,31 @@ import DomainInfo as DI
 import pandas as PD
 import csv
 
-DEFAULT_URLS_FILE = "C:\\Users\\Tomeriq\\Documents\\Visual Code\\Python\\ProjectDNS\\dns\\URLs.csv"
+DEFAULT_URLS_FILE = "URLs.csv"
+
+misconfiguration_dict = dict()
+misconfiguration_count_dict = dict()
+
+class MisconfigurationInfo:
+
+    def __init__(self, server1, server2, foreign_to_server_1, foreign_to_server_2, domain):
+        self.__foreign_to_server_1 = foreign_to_server_1
+        self.__foreign_to_server_2 = foreign_to_server_2
+        self.__domain = domain
+        self.__server1 = server1
+        self.__server2 = server2
+
+    def __str__(self):
+        s = "Misconfiguration information\n"
+        s += "Domain: " + str(self.__domain) + "\n"
+        s += "Host1: " + str(self.__server1) + "\n"
+        s += "Host2: " + str(self.__server2) + "\n"
+        f1 = "" if len(self.__foreign_to_server_1) == 0 else str(self.__foreign_to_server_1)
+        f2 = "" if len(self.__foreign_to_server_2) == 0 else str(self.__foreign_to_server_2)
+        s += "NS known to host1 and not known to host2: " + f2 + "\n"
+        s += "NS known to host2 and not known to host1: " + f1 + "\n"
+        return s
+
 
 GET_URL = 0
 
@@ -63,11 +87,38 @@ def storeInCSV(file_name, dict_to_store, field_names):
         data = [dict(zip(field_names, [k, v])) for k, v in dict_to_store.items()]
         writer.writerows(data)
 
+
+
+def check_misconfig():
+    record_num = 0
+    for keyA,valueA in DI.DNS_dict.items():
+        record_num += 1
+        if (record_num % 100 == 0):
+            print("record #" + str(record_num))
+        host_A, domain_A = keyA
+        if domain_A not in misconfiguration_count_dict:
+            misconfiguration_count_dict[domain_A] = 0
+        servers_known_to_A = set(valueA)
+        for keyB, valueB in DI.DNS_dict.items():
+            host_B, domain_B = keyB
+            servers_known_to_B = set(valueB)
+            if (host_A != host_B and domain_A == domain_B):
+                foreign_to_B = servers_known_to_A - servers_known_to_B
+                foreign_to_A = servers_known_to_B - servers_known_to_A
+                if (len(foreign_to_A) > 0 or len(foreign_to_B) > 0):
+                    misconfiguration_dict[(host_A, host_B, domain_A)] = \
+                        MisconfigurationInfo(host_A, host_B, foreign_to_A, foreign_to_B, domain_A)
+                    misconfiguration_count_dict[domain_A] += 1
+
 if __name__ == '__main__':
     url_list = getURLsFromCSV()
     for url_data in url_list.values:
         getDataForURL(url_data)
+    check_misconfig()
+
     
     storeInCSV('results_servers.csv', DI.name_to_server_info_dict, ['Server Name', 'Server Information'])
     storeInCSV('results_records.csv', DI.DNS_dict, ['(Server Name, Domain)', 'Servers known in domain'])
+    storeInCSV("misconfigurations.csv", misconfiguration_dict, ["server1, server2, domain", "misconfiguration info"])
+    storeInCSV("misconfigurations_count.csv", misconfiguration_count_dict, ["domain", "num of misconfigurations"])
 
