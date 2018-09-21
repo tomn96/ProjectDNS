@@ -115,7 +115,7 @@ def check_misconfig(dns_worker, misconfiguration_result):
     record_num = 0
     for keyA,valueA in dns_worker.DNS_dict.items():
         record_num += 1
-        if (record_num % 100 == 0):
+        if record_num % 100 == 0:
             print("record #" + str(record_num))
         host_A, domain_A = keyA
         if domain_A not in misconfiguration_result.misconfiguration_count_dict:
@@ -124,10 +124,10 @@ def check_misconfig(dns_worker, misconfiguration_result):
         for keyB, valueB in dns_worker.DNS_dict.items():
             host_B, domain_B = keyB
             servers_known_to_B = set(valueB)
-            if (host_A != host_B and domain_A == domain_B):
+            if host_A != host_B and domain_A == domain_B:
                 foreign_to_B = servers_known_to_A - servers_known_to_B
                 foreign_to_A = servers_known_to_B - servers_known_to_A
-                if (len(foreign_to_A) > 0 or len(foreign_to_B) > 0):
+                if len(foreign_to_A) > 0 or len(foreign_to_B) > 0:
                     misconfiguration_result.misconfiguration_dict[(host_A, host_B, domain_A)] = \
                         MisconfigurationInfo(host_A, host_B, foreign_to_A, foreign_to_B, domain_A)
                     misconfiguration_result.misconfiguration_count_dict[domain_A] += 1
