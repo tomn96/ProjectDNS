@@ -1,3 +1,4 @@
+from django.db.utils import Error
 from . import DomainInfo as DI
 from . import ServerInfo as SI
 from .models import Server, AddressIPv4, AddressIPv6, KnownNameServer
@@ -26,17 +27,13 @@ class MisconfigurationInfo:
         s += "Domain: " + str(self.__domain) + "\n"
         s += "Host1: " + str(self.__server1) + "\n"
         s += "Host2: " + str(self.__server2) + "\n"
-        f1 = "" if len(self.__foreign_to_server_1) == 0 else str(
-            self.__foreign_to_server_1)
-        f2 = "" if len(self.__foreign_to_server_2) == 0 else str(
-            self.__foreign_to_server_2)
-        m = "" if len(self.__mutual_to_both_server) == 0 else str(
-            self.__mutual_to_both_server)
+        f1 = "" if len(self.__foreign_to_server_1) == 0 else str(self.__foreign_to_server_1)
+        f2 = "" if len(self.__foreign_to_server_2) == 0 else str(self.__foreign_to_server_2)
+        m = "" if len(self.__mutual_to_both_server) == 0 else str(self.__mutual_to_both_server)
         s += "NS known to both servers: " + m + "\n"
         s += "NS known to host1 and not known to host2: " + f1 + "\n"
         s += "NS known to host2 and not known to host1: " + f2 + "\n"
         return s
-
 
 
 GET_URL = 0
@@ -103,20 +100,35 @@ def storeInCSV(file_name, dict_to_store, field_names):
         writer.writerows(data)
 
 
-def storeInServer(dns_worker):
+def storeServer(dns_worker):
     for k, v in dns_worker.name_to_server_info_dict.items():
-        server = Server.objects.create(host_name=v[SI.HOST_NAME], description=v[SI.DESCRIPTION], original_domain=v[SI.DOMAIN])
+        try:
+            server = Server.objects.create(host_name=v[SI.HOST_NAME], description=v[SI.DESCRIPTION], original_domain=v[SI.DOMAIN])
+        except Error:
+            continue
         for ipv4address in v[SI.HOST_ADDRESS]:
-            server.addressipv4_set.create(ip_address=ipv4address)
+            try:
+                server.addressipv4_set.create(ip_address=ipv4address)
+            except Error:
+                continue
         for ipv6address in v[SI.HOST6_ADDRESS]:
-            server.addressipv6_set.create(ip_address=ipv6address)
+            try:
+                server.addressipv6_set.create(ip_address=ipv6address)
+            except Error:
+                continue
 
 
-def storeInKnownNameServer(dns_worker):
+def storeKnownNameServer(dns_worker):
     for k, v in dns_worker.DNS_dict.items():
-        s = Server.objects.get(host_name=k[0])
+        try:
+            s = Server.objects.get(host_name=k[0])
+        except Error:
+            continue
         for known_server in v:
-            KnownNameServer.objects.create(server=s, domain=k[1], known_server=known_server)
+            try:
+                KnownNameServer.objects.create(server=s, domain=k[1], known_server=known_server)
+            except Error:
+                continue
 
 
 def check_misconfig(dns_worker, misconfiguration_result):
@@ -150,8 +162,8 @@ def main_url(url):
 
     check_misconfig(dns_worker, misconfiguration_result)
 
-    storeInServer(dns_worker)
-    storeInKnownNameServer(dns_worker)
+    storeServer(dns_worker)
+    storeKnownNameServer(dns_worker)
 
     return dns_worker, misconfiguration_result
 
@@ -167,8 +179,8 @@ def main_csv(file):
 
     check_misconfig(dns_worker, misconfiguration_result)
 
-    storeInServer(dns_worker)
-    storeInKnownNameServer(dns_worker)
+    storeServer(dns_worker)
+    storeKnownNameServer(dns_worker)
 
     # storeInCSV('results_servers.csv', dns_worker.name_to_server_info_dict, ['Server Name', 'Server Information'])
     # storeInCSV('results_records.csv', dns_worker.DNS_dict, ['(Server Name, Domain)', 'Servers known in domain'])
