@@ -35,8 +35,22 @@ def address(request):
     if request.method == 'POST':
         form = SingleUrlForm(request.POST)
         if form.is_valid():
-            result = dns_utils.main_url(form.cleaned_data["url"])
-            return HttpResponseRedirect("uploaded_csv/" + str(result))  # FIXME - show results
+            dns_worker, misconfiguration_result = dns_utils.main_url(form.cleaned_data["url"])
+
+            sorted_misconfiguration_count = sorted(misconfiguration_result.misconfiguration_count_dict.items(), key=lambda kv: (kv[1], kv[0]), reverse=True)
+
+            top10_misconfiguration_count = sorted_misconfiguration_count[:10]
+
+            domains = list(map(lambda a: a[0], top10_misconfiguration_count))
+
+            context = {'misconfigurations': list(map(lambda a: a[1], top10_misconfiguration_count)),
+                       'domains_amount': len(domains)}
+
+            for i, domain in enumerate(domains):
+                domain_str_key = 'domain' + str(i)
+                context[domain_str_key] = domain
+
+            return render(request, 'DNSmisconfiguration/results.html', context)
     else:
         form = SingleUrlForm()
 
@@ -50,8 +64,23 @@ def about(request):
 @csrf_exempt
 def upload_csv(request):
     if request.method == 'POST':
-        result = dns_utils.main_csv(request.FILES['file'])
-        return HttpResponseRedirect("uploaded_csv/" + str(result))  # FIXME - show results
+        dns_worker, misconfiguration_result = dns_utils.main_csv(request.FILES['file'])
+
+        sorted_misconfiguration_count = sorted(misconfiguration_result.misconfiguration_count_dict.items(), key=lambda kv: (kv[1], kv[0]), reverse=True)
+
+        top10_misconfiguration_count = sorted_misconfiguration_count[:10]
+
+        domains = list(map(lambda a: a[0], top10_misconfiguration_count))
+
+        context = {'misconfigurations': list(map(lambda a: a[1], top10_misconfiguration_count)),
+                   'domains_amount': len(domains)}
+
+        for i, domain in enumerate(domains):
+            domain_str_key = 'domain' + str(i)
+            context[domain_str_key] = domain
+
+        return render(request, 'DNSmisconfiguration/results.html', context)
+
     return csv(request)
 
 

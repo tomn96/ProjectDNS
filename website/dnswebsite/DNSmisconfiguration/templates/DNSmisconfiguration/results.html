@@ -1,0 +1,64 @@
+{% extends "DNSmisconfiguration/base.html" %}
+
+{% block head %}
+{% load static %}
+<script src="{% static 'DNSmisconfiguration/Chart.min.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+
+<div class="w3-content w3-container w3-padding-64">
+    <canvas id="details" width="90%" height="50"></canvas>
+</div>
+
+<script defer>
+var details_config = {
+    type: 'bar',
+    data: {
+        labels: ["{{ domain0 }}", "{{ domain1 }}", "{{ domain2 }}", "{{ domain3 }}", "{{ domain4 }}", "{{ domain5 }}", "{{ domain6 }}", "{{ domain7 }}", "{{ domain8 }}", "{{ domain9 }}"],
+        datasets: [{
+            label: 'Result',
+            data: {{ misconfigurations }},
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(255, 99, 132, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(255,99,132,1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        responsive: true,
+        title: {
+            display: true,
+            text: 'Top 10 domains which contain the most misconfiguration'
+        },
+        scales: {
+            xAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Sub-Domain'
+                }
+            }],
+            yAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Amount of servers containing Misconfiguration'
+                },
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+};
+var details_ctx = document.getElementById("details").getContext("2d");
+new Chart(details_ctx, details_config);
+</script>
+
+{% endblock %}
