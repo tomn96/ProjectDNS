@@ -48,10 +48,10 @@ def handle_dns(dns_worker, misconfiguration_result):
 def index(request):
 
     members = list()
-    members.append(Member("Tom Nissim"))
-    members.append(Member("Tomer Lior"))
-    members.append(Member("Tom Eliassy"))
-    members.append(Member("Haya Shulman", role="Mentor"))
+    members.append(Member("Tom Nissim", email="tom.nissim1@mail.huji.ac.il", image_alt=""))
+    members.append(Member("Tomer Lior", email="tomer.lior@mail.huji.ac.il", image_alt=""))
+    members.append(Member("Tom Eliassy", email="tom.eliassy@mail.huji.ac.il", image_alt=""))
+    members.append(Member("Haya Shulman", role="Mentor", image_alt=""))
 
     context = {'team_members': members}
     return render(request, 'DNSmisconfiguration/index.html', context)
