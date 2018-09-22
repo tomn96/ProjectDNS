@@ -40,3 +40,7 @@ class RootDNSServers(models.Model):
     ipv4_address = models.GenericIPAddressField(protocol='IPv4')
     ipv6_address = models.GenericIPAddressField(protocol='IPv6')
     description = models.CharField(max_length=512, default="")
+
+
+class StoredDict(models.Model):
+    pickle_dict = models.BinaryField()

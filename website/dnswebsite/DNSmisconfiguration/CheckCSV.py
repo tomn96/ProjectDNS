@@ -2,7 +2,7 @@ import pandas as PD
 import re
 import csv
 
-PATH = "records.csv"
+PATH = "C:\\Users\\Tomeriq\\Documents\\Visual Code\\Python\\DNS\\ProjectDNS\\website\\dnswebsite\\DNSmisconfiguration\\results_records_1-10k.csv"
 
 
 class MisconfigurationResult:
@@ -14,9 +14,10 @@ class MisconfigurationResult:
 
 class MisconfigurationInfo:
 
-    def __init__(self, server1, server2, foreign_to_server_1, foreign_to_server_2, domain):
+    def __init__(self, server1, server2, foreign_to_server_1, foreign_to_server_2, mutual_to_both_servers, domain):
         self.__foreign_to_server_1 = foreign_to_server_1
         self.__foreign_to_server_2 = foreign_to_server_2
+        self.__mutual_to_both_server = mutual_to_both_servers
         self.__domain = domain
         self.__server1 = server1
         self.__server2 = server2
@@ -28,6 +29,8 @@ class MisconfigurationInfo:
         s += "Host2: " + str(self.__server2) + "\n"
         f1 = "" if len(self.__foreign_to_server_1) == 0 else str(self.__foreign_to_server_1)
         f2 = "" if len(self.__foreign_to_server_2) == 0 else str(self.__foreign_to_server_2)
+        m = "" if len(self.__mutual_to_both_server) == 0 else str(self.__mutual_to_both_server)
+        s += "NS known to both servers: " + m + "\n"
         s += "NS known to host1 and not known to host2: " + f1 + "\n"
         s += "NS known to host2 and not known to host1: " + f2 + "\n"
         return s
@@ -55,6 +58,8 @@ def check_csv(misconfiguration_result):
     data = read_from_csv()
     record_num = 0
     for record_A in data.values:
+        if record_A[0] == "(Server Name, Domain)":
+            continue
         record_num += 1
         if record_num % 100 == 0:
             print("record #" + str(record_num))
@@ -69,8 +74,9 @@ def check_csv(misconfiguration_result):
                 foreign_to_A = servers_known_to_A - servers_known_to_B
                 foreign_to_B = servers_known_to_B - servers_known_to_A
                 if len(foreign_to_A) > 0 or len(foreign_to_B) > 0:
+                    intersection = servers_known_to_A.intersection(servers_known_to_B)
                     misconfiguration_result.misconfiguration_dict[(host_A, host_B, domain_A)] =\
-                        MisconfigurationInfo(host_A, host_B, foreign_to_A, foreign_to_B, domain_A)
+                        MisconfigurationInfo(host_A, host_B, foreign_to_A, foreign_to_B, intersection, domain_A)
                     misconfiguration_result.misconfiguration_count_dict[domain_A] += 1
 
 
