@@ -74,8 +74,8 @@ def address(request):
     return render(request, 'DNSmisconfiguration/address.html', {'form': form})
 
 
-def about(request):
-    return render(request, 'DNSmisconfiguration/about.html')
+def readme(request):
+    return render(request, 'DNSmisconfiguration/readme.html')
 
 
 @csrf_exempt

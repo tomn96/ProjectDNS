@@ -33,16 +33,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
         <a href="{% url 'DNSmisconfiguration:index' %}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
         {% endblock %}
 
-        {% block navbarCSV %}
-        <a href="{% url 'DNSmisconfiguration:csv_url' %}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">CSV</a>
+        {% block navbarABOUT %}
+        <a href="{% url 'DNSmisconfiguration:readme' %}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">README</a>
         {% endblock %}
 
         {% block navbarADDRESS %}
         <a href="{% url 'DNSmisconfiguration:address' %}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Address</a>
         {% endblock %}
 
-        {% block navbarABOUT %}
-        <a href="{% url 'DNSmisconfiguration:about' %}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About</a>
+        {% block navbarCSV %}
+        <a href="{% url 'DNSmisconfiguration:csv_url' %}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">CSV</a>
         {% endblock %}
 
     </div>
@@ -54,16 +54,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
         <a href="{% url 'DNSmisconfiguration:index' %}" class="w3-bar-item w3-button w3-padding-large">Home</a>
         {% endblock %}
 
-        {% block navbarDemoCSV %}
-        <a href="{% url 'DNSmisconfiguration:csv_url' %}" class="w3-bar-item w3-button w3-padding-large">CSV</a>
+        {% block navbarDemoABOUT %}
+        <a href="{% url 'DNSmisconfiguration:readme' %}" class="w3-bar-item w3-button w3-padding-large">README</a>
         {% endblock %}
 
         {% block navbarDemoADDRESS %}
         <a href="{% url 'DNSmisconfiguration:address' %}" class="w3-bar-item w3-button w3-padding-large">Address</a>
         {% endblock %}
 
-        {% block navbarDemoABOUT %}
-        <a href="{% url 'DNSmisconfiguration:about' %}" class="w3-bar-item w3-button w3-padding-large">About</a>
+        {% block navbarDemoCSV %}
+        <a href="{% url 'DNSmisconfiguration:csv_url' %}" class="w3-bar-item w3-button w3-padding-large">CSV</a>
         {% endblock %}
 
     </div>
