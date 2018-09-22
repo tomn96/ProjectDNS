@@ -92,6 +92,16 @@ def known_ns(request):
     return render(request, 'DNSmisconfiguration/known_ns.html')
 
 
+@csrf_exempt
+def upload_known_ns(request):
+    if request.method == 'POST':
+        dns_worker, misconfiguration_result = dns_utils.main_csv(request.FILES['file'])
+        context = handle_dns(dns_worker, misconfiguration_result)
+        return render(request, 'DNSmisconfiguration/results.html', context)
+
+    return known_ns(request)
+
+
 class Echo:
     def write(self, value):
         return value
