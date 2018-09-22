@@ -15,7 +15,7 @@
 <!-- Header -->
 {% block header %}
 <header class="w3-container w3-red w3-center" style="padding:128px 16px">
-    <h1 class="w3-margin w3-jumbo">DNS Misconfiguration Project</h1>
+    <h1 class="w3-margin w3-jumbo">DNS Mis-configuration Project</h1>
     <!--<button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>-->
 </header>
 {% endblock %}
@@ -28,18 +28,16 @@
 <div class="w3-row-padding w3-padding-64 w3-container">
     <div class="w3-content">
         <div class="w3-twothird">
-            <h1>Lorem Ipsum</h1>
-            <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</h5>
+            <h1>Abstract</h1>
+            <h5 class="w3-padding-32">A brief look at our program</h5>
 
-            <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="w3-text-grey">The goal of this project is to prepare a tool for detecting and analyzing DNS
+                misconfigurations among the internet servers. The tool gets a list of DNS addresses for processing
+                (aka URLs) and check whether their responsible servers are misconfigured. The program manages a database
+                (using "Django") in order to store the servers' information by a convenient manner.  The output of the
+                process is a list of misconfigurations that were discovered. The findings of the processing are
+                displayed using graphs. There is a feature of checking a given DNS address in real time (online).
+                The tool is available on the web via AWS (Amazon Web Services).</p>
         </div>
 
         <div class="w3-third w3-center">
@@ -59,18 +57,43 @@
         </div>
 
         <div class="w3-twothird">
-            <h1>Lorem Ipsum</h1>
-            <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</h5>
+            <h1>Specification</h1>
+            <h5 class="w3-padding-32">Explanation about the program we developed</h5>
 
-            <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="w3-text-grey">Producing a program that receives a .csv file which contains a list of DNS addresses
+                (aka URLs) for checking as input (In case of an illegal address, the process will be interrupted).
+                The program parses every DNS address in the file such that for each URL it creates a set of all the
+                correspond domains. (for example, regarding the URL www.walla.co.il the set of the domains will be:
+                il, co.il , walla.co.il).<br>
+                After parsing, the program is going to imitate the DNS protocol as for each domain in the mentioned set,
+                two NS-queries will be submitted (using UDP, port 53) by the Python.dns module:</p>
+                <ol class="w3-text-grey">
+                <li> The domain's address (regarding the previous example, for each "il"-server it will submit the
+                NS-query "il").</li>
+                <li> The address which the domain is responsible for – regarding the DNS protocol (considering the
+                previous example, for each "il"-server it will submit the NS-query "co.il").</li>
+                </ol>
+            <p class="w3-text-grey">Note: The first NS-query (the whole domain address – "www.walla.co.il" in the example above) will be
+                submitted to all the 13 IANA root servers.<br>
+                The information of the responses will be stored in a data structure using the format<br>
+                (_ServerName,  _Domain,   The servers that  _ServerName  knows for the domain _Domain) .<br>
+                (See an example in the <a href="https://github.cs.huji.ac.il/tomn96/ProjectDNS">README file:
+                    https://github.cs.huji.ac.il/tomn96/ProjectDNS</a> ).<br>
+                This data structure enables to find the differences in the stored information between each two servers
+                of the same domain. Using python manipulations, it can compute a table of the format -<br>
+                (_host1, _host2, _domain, known servers to host1 but not to host2, known servers to host2 but not to
+                host1).<br>
+                The last table enables to point at the misconfigurations that were found during the process:<br>
+                From each server that _host1 knows for _domain and _host2 doesn't, it can be figured out a
+                misconfiguration of _host2 regarding the domain _domain (and vice versa).<br>
+                After performing the mentioned operations for each URL address, the program is going  to store the
+                results. In order to do it by a convenient manner, the application manages a database by the Python
+                "Django" framework. By managing the database there is an option to execute queries in order to find out
+                which servers are misconfigured and what are the correspond domains.<br>
+                The program also has the ability to perform checking (for misconfigurations) regarding a given DNS
+                address in real time (online) by the same functionality that was used for every single DNS which its
+                address is in the list.<br>
+                Finally, the statistics of the processing results are shown by graphs.</p>
         </div>
     </div>
 </div>
