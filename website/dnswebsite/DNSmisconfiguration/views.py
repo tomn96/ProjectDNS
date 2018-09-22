@@ -57,8 +57,8 @@ def index(request):
     return render(request, 'DNSmisconfiguration/index.html', context)
 
 
-def csv_url(request):
-    return render(request, 'DNSmisconfiguration/csv.html')
+def readme(request):
+    return render(request, 'DNSmisconfiguration/readme.html')
 
 
 def address(request):
@@ -74,8 +74,8 @@ def address(request):
     return render(request, 'DNSmisconfiguration/address.html', {'form': form})
 
 
-def readme(request):
-    return render(request, 'DNSmisconfiguration/readme.html')
+def csv_url(request):
+    return render(request, 'DNSmisconfiguration/csv.html')
 
 
 @csrf_exempt
@@ -86,6 +86,10 @@ def upload_csv(request):
         return render(request, 'DNSmisconfiguration/results.html', context)
 
     return csv_url(request)
+
+
+def known_ns(request):
+    return render(request, 'DNSmisconfiguration/known_ns.html')
 
 
 class Echo:
@@ -121,4 +125,3 @@ def download_dict(request, dict_id, option):
 
     response['Content-Disposition'] = 'attachment; filename="' + names[int_option] + '"'
     return response
-

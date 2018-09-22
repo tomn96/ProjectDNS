@@ -1,10 +1,223 @@
 {% extends "DNSmisconfiguration/base.html" %}
 
 
+{% block head %}
+
+<style>
+    p {color:#757575!important}
+</style>
+{% endblock %}
+
+
 {% block navbarABOUT %}
 <a href="{% url 'DNSmisconfiguration:readme' %}" class="w3-bar-item w3-button w3-padding-large w3-white">README</a>
 {% endblock %}
 
 {% block navbarDemoABOUT %}
 <a href="{% url 'DNSmisconfiguration:readme' %}" class="w3-bar-item w3-button w3-padding-large w3-gray">README</a>
+{% endblock %}
+
+
+{% block content %}
+
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+    <h1 class="w3-margin w3-jumbo">DNS Mis-configuration Project</h1>
+    <h2 class="w3-margin">DNS mis-configuration detection tool</h2>
+    <h2 class="w3-margin">67914 Communication Networks Security: HUJI 2017/18</h2>
+</header>
+
+<!--<div class="w3-row-padding w3-padding-64 w3-container">-->
+    <!--<div class="w3-content">-->
+        <!--<h1 id="dns-misconfiguration-detection-tool">DNS misconfiguration detection tool</h1>-->
+        <!--<h2 id="networks-security-course-67914">67914 Communication Networks Security: HUJI 2017/18</h2>-->
+    <!--</div>-->
+<!--</div>-->
+
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+        <h1 id="abstract">Abstract</h1>
+        <h5 class="w3-padding-32">see <a href="https://ns1.com/resources/dns-protocol">DNS protocol</a></h5>
+
+        <p>Tool for detecting and analyzing DNS misconfigurations among the internet servers.The tool scans through a list of URL addresses, and checks whether their authoritative servers are misconfigured.</p>
+        <p>The program is executed through a website that hosted in AWS.</p>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+        <h1 id="usage">Usage</h1>
+        <h3 class="w3-padding-32" id="the-program-supports-2-execution-modes">The program supports 3 execution modes:</h3>
+        <h4 id="single-url">1. Single URL</h4>
+        <blockquote>
+        <p>receives a single url address via designated text box in the website UI.</p>
+        </blockquote>
+        <blockquote>
+        <p>for example: walla.co.il</p>
+        </blockquote>
+        <h4 id="multiple-urls-in-csv-format">2. Multiple URLs in CSV format</h4>
+        <blockquote>
+        <p>receives a csv uploaded to the designated upload box. The csv file consists of the URLs that will be checked, in the following format:</p>
+        </blockquote>
+        <blockquote>
+        <p>URL_1</p>
+        </blockquote>
+        <blockquote>
+        <p>URL_2</p>
+        </blockquote>
+        <blockquote>
+        <p>...</p>
+        </blockquote>
+        <blockquote>
+        <p>URL_N</p>
+        </blockquote>
+        <blockquote>
+        <p>for example: input.csv:</p>
+        </blockquote>
+        <blockquote>
+        <p>google.com</p>
+        </blockquote>
+        <blockquote>
+        <p>walla.co.il</p>
+        </blockquote>
+        <blockquote>
+        <p>packetlife.net</p>
+        </blockquote>
+        <blockquote>
+        <p>moodle2.cs.huji.ac.il</p>
+        </blockquote>
+        <h4>3. CSV File of type "results_records"</h4>
+        <blockquote>
+        <p>This file is produced by using one of the above usages to run program.</p>
+        </blockquote>
+        <blockquote>
+        <p>Explanation about the file of type "results_records" is below.</p>
+        </blockquote>
+    </div>
+</div>
+
+
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+        <h1 id="process-and-output">Process and Output</h1>
+        <h3 id="the-program-performs-two-stages">The program performs two stages</h3>
+        <h4 class="w3-padding-32" id="information-gathering-and-data-base-construction">Information gathering and Data Base construction</h4>
+        <blockquote>
+        <p>the program breaks each URL in to sub-domains, for each sub domain the program collects DNS data.</p>
+        </blockquote>
+        <blockquote>
+        <p>The program will output <strong>two</strong> csv files consists of the data it collected:</p>
+        </blockquote>
+        <blockquote>
+        <ol style="list-style-type: decimal">
+        <li><strong>results_servers.csv</strong></li>
+        </ol>
+        </blockquote>
+        <blockquote>
+        <p>a csv file consists of the data collected on each server that participated in the dns process for the sub-domain.</p>
+        </blockquote>
+        <blockquote>
+        <p>The file is in the format of:</p>
+        </blockquote>
+        <blockquote>
+        <p>(server name) , (server information)</p>
+        </blockquote>
+        <blockquote>
+        <p>server information holds the following attributes for a specific server:</p>
+        </blockquote>
+        <blockquote>
+        <ul>
+        <li>host name</li>
+        <li>domain</li>
+        <li>ipv4 addresses</li>
+        <li>ipv6 addresses</li>
+        <li>description</li>
+        </ul>
+        </blockquote>
+        <blockquote>
+        <p>for additional information related to format download <a href="https://ns1.com/resources/dns-protocol"> results_servers.csv </a> example</p>
+        </blockquote>
+        <blockquote>
+        <ol start="2" style="list-style-type: decimal">
+        <li><strong>results_records.csv</strong></li>
+        </ol>
+        </blockquote>
+        <blockquote>
+        <p>a csv file in which each record consists of a <em>name server</em>, a domain and the name servers that the <em>name server</em> knows in the domain</p>
+        </blockquote>
+        <blockquote>
+        <p>The file is in the format of:</p>
+        </blockquote>
+        <blockquote>
+        <p>(server name, domain) , (servers known in the domain)</p>
+        </blockquote>
+        <blockquote>
+        <p>for additional information related to format download <a href="https://ns1.com/resources/dns-protocol"> results_records.csv </a> example</p>
+        </blockquote>
+        <h4 id="misconfigurations-detection">Misconfigurations Detection</h4>
+        <blockquote>
+        <p>the program uses the data it collected in the previous stage and analyzes it in order to discover misconfigurations.</p>
+        </blockquote>
+        <blockquote>
+        <p>A misconfiguration is defined to be a state in which two servers &quot;knows&quot; different servers in the same domain, one server knows more name servers (or less) in the same domain.</p>
+        </blockquote>
+        <blockquote>
+        <p>The program will output <strong>two</strong> csv files consists of the misconfiguration it detected:</p>
+        </blockquote>
+        <blockquote>
+        <ol style="list-style-type: decimal">
+        <li><strong>misconfigurations.csv</strong></li>
+        </ol>
+        </blockquote>
+        <blockquote>
+        <p>a csv file consists of the misconfigurations that were discovered.</p>
+        </blockquote>
+        <blockquote>
+        <p>The file is in the format of:</p>
+        </blockquote>
+        <blockquote>
+        <p>(server1, server2, domain) , (Misconfiguration information)</p>
+        </blockquote>
+        <blockquote>
+        <p>Misconfiguration information holds the following attributes for a specific misconfiguration:</p>
+        </blockquote>
+        <blockquote>
+        <ul>
+        <li>host name</li>
+        <li>domain</li>
+        <li>first server</li>
+        <li>second server</li>
+        <li>the servers that both servers know</li>
+        </ul>
+        </blockquote>
+        <blockquote>
+        <ul>
+        <li>the servers that the <em>first server</em> knows and the <em>second server</em> does not</li>
+        <li>the servers that the <em>second server</em> knows and the <em>first server</em> does not</li>
+        </ul>
+        </blockquote>
+        <blockquote>
+        <p>for additional information related to format download <a href="https://ns1.com/resources/dns-protocol"> misconfigurations.csv </a> example</p>
+        </blockquote>
+        <blockquote>
+        <ol start="2" style="list-style-type: decimal">
+        <li><strong>misconfigurations_count.csv</strong></li>
+        </ol>
+        </blockquote>
+        <blockquote>
+        <p>a csv file in which each record consists of a <em>domain</em>, and the number of misconfigurations detected for the <em>domain</em></p>
+        </blockquote>
+        <blockquote>
+        <p>The file is in the format of:</p>
+        </blockquote>
+        <blockquote>
+        <p>(domain) , (number of misconfigurations detected)</p>
+        </blockquote>
+        <blockquote>
+        <p>for additional information related to format download <a href="https://ns1.com/resources/dns-protocol"> misconfigurations_count.csv </a> example</p>
+        </blockquote>
+        <p><strong>In addition to the downloadable csv files, the results are stored in a Django database contained in the website </strong></p>
+    </div>
+</div>
+
+
 {% endblock %}
