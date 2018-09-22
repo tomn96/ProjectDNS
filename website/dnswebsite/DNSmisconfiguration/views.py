@@ -3,7 +3,7 @@ import csv
 from django.shortcuts import render, get_object_or_404
 from django.http import StreamingHttpResponse
 from django.views.decorators.csrf import csrf_exempt
-from . import dns_utils
+from . import dns_utils, CheckCSV
 from .forms import SingleUrlForm
 from .models import StoredDict
 
@@ -36,6 +36,32 @@ def handle_dns(dns_worker, misconfiguration_result):
                'dns_id': str(dns.id),
                'misconfiguration_data_id': str(misconfiguration_data.id),
                'misconfiguration_count_id': str(misconfiguration_count.id),
+               'also_dns': True
+               }
+
+    for i, domain in enumerate(domains):
+        domain_str_key = 'domain' + str(i)
+        context[domain_str_key] = domain
+
+    return context
+
+
+def handle_misconfiguration(misconfiguration_result):
+    misconfiguration_data = StoredDict.objects.create(pickle_dict=pickle.dumps(misconfiguration_result.misconfiguration_dict))
+    misconfiguration_count = StoredDict.objects.create(pickle_dict=pickle.dumps(misconfiguration_result.misconfiguration_count_dict))
+
+    sorted_misconfiguration_count = sorted(misconfiguration_result.misconfiguration_count_dict.items(), key=lambda kv: (kv[1], kv[0]), reverse=True)
+
+    top10_misconfiguration_count = sorted_misconfiguration_count[:10]
+
+    domains = list(map(lambda a: a[0], top10_misconfiguration_count))
+
+    context = {'misconfigurations': list(map(lambda a: a[1], top10_misconfiguration_count)),
+               'domains_amount': len(domains),
+               'information_id': str(-1),
+               'dns_id': str(-1),
+               'misconfiguration_data_id': str(misconfiguration_data.id),
+               'misconfiguration_count_id': str(misconfiguration_count.id)
                }
 
     for i, domain in enumerate(domains):
@@ -95,8 +121,8 @@ def known_ns(request):
 @csrf_exempt
 def upload_known_ns(request):
     if request.method == 'POST':
-        dns_worker, misconfiguration_result = dns_utils.main_csv(request.FILES['file'])
-        context = handle_dns(dns_worker, misconfiguration_result)
+        misconfiguration_result = CheckCSV.main_known_ns(request.FILES['file'])
+        context = handle_misconfiguration(misconfiguration_result)
         return render(request, 'DNSmisconfiguration/results.html', context)
 
     return known_ns(request)

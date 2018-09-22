@@ -1,8 +1,5 @@
-import pandas as PD
 import re
 import csv
-
-PATH = "C:\\Users\\Tomeriq\\Documents\\Visual Code\\Python\\DNS\\ProjectDNS\\website\\dnswebsite\\DNSmisconfiguration\\results_records_1-10k.csv"
 
 
 class MisconfigurationResult:
@@ -36,9 +33,14 @@ class MisconfigurationInfo:
         return s
 
 
-def read_from_csv():
-    raw_data = PD.read_csv(PATH, names=['Server Name, Domain', 'Known Servers'])
-    return raw_data
+def read_from_csv(file):
+    """
+    reads a csv file
+    :returns: {generator} the raw data read from the given csv file
+    """
+    utf8 = (line.decode('utf-8') for line in file)
+    file_reader = csv.reader(utf8)
+    return file_reader
 
 
 def convert_key_format(str):
@@ -54,10 +56,10 @@ def convert_val_format(str):
     return known_servers
 
 
-def check_csv(misconfiguration_result):
-    data = read_from_csv()
+def check_csv(misconfiguration_result, file):
+    data = read_from_csv(file)
     record_num = 0
-    for record_A in data.values:
+    for record_A in data:
         if record_A[0] == "(Server Name, Domain)":
             continue
         record_num += 1
@@ -67,7 +69,7 @@ def check_csv(misconfiguration_result):
         if domain_A not in misconfiguration_result.misconfiguration_count_dict:
             misconfiguration_result.misconfiguration_count_dict[domain_A] = 0
         servers_known_to_A = set(convert_val_format(record_A[1]))
-        for record_B in data.values:
+        for record_B in data:
             host_B, domain_B = convert_key_format(record_B[0])
             servers_known_to_B = set(convert_val_format(record_B[1]))
             if host_A != host_B and domain_A == domain_B:
@@ -94,13 +96,11 @@ def storeInCSV(file_name, dict_to_store, field_names):
         writer.writerows(data)
 
 
-def main():
+def main_known_ns(file):
     misconfiguration_result = MisconfigurationResult()
 
-    check_csv(misconfiguration_result)
-    storeInCSV("misconfigurations.csv", misconfiguration_result.misconfiguration_dict, ["server1, server2, domain", "misconfiguration info" ])
-    storeInCSV("misconfigurations_count.csv", misconfiguration_result.misconfiguration_count_dict, ["domain", "num of misconfigurations" ])
+    check_csv(misconfiguration_result, file)
+    # storeInCSV("misconfigurations.csv", misconfiguration_result.misconfiguration_dict, ["server1, server2, domain", "misconfiguration info" ])
+    # storeInCSV("misconfigurations_count.csv", misconfiguration_result.misconfiguration_count_dict, ["domain", "num of misconfigurations" ])
 
-
-if __name__ == "__main__":
-    main()
+    return misconfiguration_result

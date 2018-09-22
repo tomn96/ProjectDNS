@@ -16,6 +16,7 @@
 
 <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-center w3-content w3-container w3-padding-64">
+    {% if also_dns %}
     <div class="w3-row w3-padding-32 w3-section">
         <div class="w3-col w3-half w3-panel">
             <a href="/download_dict/{{information_id}}/0" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Servers Information</a>
@@ -24,6 +25,7 @@
             <a href="/download_dict/{{dns_id}}/1" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Known Data By Each Server</a>
         </div>
     </div>
+    {% endif %}
     <div class="w3-row w3-padding-32 w3-section">
         <div class="w3-col w3-half w3-panel">
             <a href="/download_dict/{{misconfiguration_data_id}}/2" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Misconfigurations Information</a>
