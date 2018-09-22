@@ -17,6 +17,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('dns/', include('DNSmisconfiguration.urls')),
+    path('', include('DNSmisconfiguration.urls')),
     path('admin/', admin.site.urls),
 ]
