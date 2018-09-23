@@ -92,7 +92,7 @@ def create_root():
         if not RootDNSServers.objects.filter(host_name=root[0]).exists():
             RootDNSServers.objects.create(host_name=root[0], ipv4_address=root[1], ipv6_address=root[2], description=root[3])
 
-    
+
 def index(request):
     create_root()
 
