@@ -94,7 +94,7 @@ def create_root():
 
 
 def index(request):
-    create_root()
+    # create_root()
 
     members = list()
     members.append(Member("Tom Nissim", email="tom.nissim1@mail.huji.ac.il", image_alt=""))
