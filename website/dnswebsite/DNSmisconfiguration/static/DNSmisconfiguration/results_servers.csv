@@ -1,0 +1,205 @@
+Server Name,Server Information
+a.root-servers.net,"DNS information
+Domain: Root Domain
+Host: a.root-servers.net
+IPv4 Addresses: 198.41.0.4 
+IPv6 Addresses :2001:503:ba3e::2:30 
+Description: VeriSign Inc."
+b.root-servers.net,"DNS information
+Domain: Root Domain
+Host: b.root-servers.net
+IPv4 Addresses: 199.9.14.201 
+IPv6 Addresses :2001:500:200::b 
+Description: University of Southern California (ISI)"
+c.root-servers.net,"DNS information
+Domain: Root Domain
+Host: c.root-servers.net
+IPv4 Addresses: 192.33.4.12 
+IPv6 Addresses :2001:500:2::c 
+Description: Cogent Communications"
+d.root-servers.net,"DNS information
+Domain: Root Domain
+Host: d.root-servers.net
+IPv4 Addresses: 199.7.91.13 
+IPv6 Addresses :2001:500:2d::d 
+Description: University of Maryland"
+e.root-servers.net,"DNS information
+Domain: Root Domain
+Host: e.root-servers.net
+IPv4 Addresses: 192.203.230.10 
+IPv6 Addresses :2001:500:a8::e 
+Description: NASA (Ames Research Center)"
+f.root-servers.net,"DNS information
+Domain: Root Domain
+Host: f.root-servers.net
+IPv4 Addresses: 192.5.5.241 
+IPv6 Addresses :2001:500:2f::f 
+Description: Internet Systems Consortium Inc."
+g.root-servers.net,"DNS information
+Domain: Root Domain
+Host: g.root-servers.net
+IPv4 Addresses: 192.112.36.4 
+IPv6 Addresses :2001:500:12::d0d 
+Description: US Department of Defense (NIC)"
+h.root-servers.net,"DNS information
+Domain: Root Domain
+Host: h.root-servers.net
+IPv4 Addresses: 198.97.190.53 
+IPv6 Addresses :2001:500:1::53 
+Description: US Army (Research Lab)"
+i.root-servers.net,"DNS information
+Domain: Root Domain
+Host: i.root-servers.net
+IPv4 Addresses: 192.36.148.17 
+IPv6 Addresses :2001:7fe::53 
+Description: Netnod"
+j.root-servers.net,"DNS information
+Domain: Root Domain
+Host: j.root-servers.net
+IPv4 Addresses: 192.58.128.30 
+IPv6 Addresses :2001:503:c27::2:30 
+Description: VeriSign Inc."
+k.root-servers.net,"DNS information
+Domain: Root Domain
+Host: k.root-servers.net
+IPv4 Addresses: 193.0.14.129 
+IPv6 Addresses :2001:7fd::1 
+Description: RIPE NCC"
+l.root-servers.net,"DNS information
+Domain: Root Domain
+Host: l.root-servers.net
+IPv4 Addresses: 199.7.83.42 
+IPv6 Addresses :2001:500:9f::42 
+Description: ICANN"
+m.root-servers.net,"DNS information
+Domain: Root Domain
+Host: m.root-servers.net
+IPv4 Addresses: 202.12.27.33 
+IPv6 Addresses :2001:dc3::35 
+Description: WIDE Project"
+d.gtld-servers.net.,"DNS information
+Domain: com
+Host: d.gtld-servers.net.
+IPv4 Addresses: 192.31.80.30 
+IPv6 Addresses :2001:500:856e::30 
+Description: Name server for domain ""com"""
+j.gtld-servers.net.,"DNS information
+Domain: com
+Host: j.gtld-servers.net.
+IPv4 Addresses: 192.48.79.30 
+IPv6 Addresses :2001:502:7094::30 
+Description: Name server for domain ""com"""
+i.gtld-servers.net.,"DNS information
+Domain: com
+Host: i.gtld-servers.net.
+IPv4 Addresses: 192.43.172.30 
+IPv6 Addresses :2001:503:39c1::30 
+Description: Name server for domain ""com"""
+c.gtld-servers.net.,"DNS information
+Domain: com
+Host: c.gtld-servers.net.
+IPv4 Addresses: 192.26.92.30 
+IPv6 Addresses :2001:503:83eb::30 
+Description: Name server for domain ""com"""
+b.gtld-servers.net.,"DNS information
+Domain: com
+Host: b.gtld-servers.net.
+IPv4 Addresses: 192.33.14.30 
+IPv6 Addresses :2001:503:231d::2:30 
+Description: Name server for domain ""com"""
+a.gtld-servers.net.,"DNS information
+Domain: com
+Host: a.gtld-servers.net.
+IPv4 Addresses: 192.5.6.30 
+IPv6 Addresses :2001:503:a83e::2:30 
+Description: Name server for domain ""com"""
+k.gtld-servers.net.,"DNS information
+Domain: com
+Host: k.gtld-servers.net.
+IPv4 Addresses: 192.52.178.30 
+IPv6 Addresses :2001:503:d2d::30 
+Description: Name server for domain ""com"""
+f.gtld-servers.net.,"DNS information
+Domain: com
+Host: f.gtld-servers.net.
+IPv4 Addresses: 192.35.51.30 
+IPv6 Addresses :2001:503:d414::30 
+Description: Name server for domain ""com"""
+g.gtld-servers.net.,"DNS information
+Domain: com
+Host: g.gtld-servers.net.
+IPv4 Addresses: 192.42.93.30 
+IPv6 Addresses :2001:503:eea3::30 
+Description: Name server for domain ""com"""
+l.gtld-servers.net.,"DNS information
+Domain: com
+Host: l.gtld-servers.net.
+IPv4 Addresses: 192.41.162.30 
+IPv6 Addresses :2001:500:d937::30 
+Description: Name server for domain ""com"""
+h.gtld-servers.net.,"DNS information
+Domain: com
+Host: h.gtld-servers.net.
+IPv4 Addresses: 192.54.112.30 
+IPv6 Addresses :2001:502:8cc::30 
+Description: Name server for domain ""com"""
+e.gtld-servers.net.,"DNS information
+Domain: com
+Host: e.gtld-servers.net.
+IPv4 Addresses: 192.12.94.30 
+IPv6 Addresses :2001:502:1ca1::30 
+Description: Name server for domain ""com"""
+m.gtld-servers.net.,"DNS information
+Domain: com
+Host: m.gtld-servers.net.
+IPv4 Addresses: 192.55.83.30 
+IPv6 Addresses :2001:501:b1f9::30 
+Description: Name server for domain ""com"""
+a.ns.apple.com.,"DNS information
+Domain: apple.com
+Host: a.ns.apple.com.
+IPv4 Addresses: 17.253.200.1 
+IPv6 Addresses :2620:149:ae0::53 
+Description: Name server for domain ""apple.com"""
+b.ns.apple.com.,"DNS information
+Domain: apple.com
+Host: b.ns.apple.com.
+IPv4 Addresses: 17.253.207.1 
+IPv6 Addresses : No information
+Description: Name server for domain ""apple.com"""
+c.ns.apple.com.,"DNS information
+Domain: apple.com
+Host: c.ns.apple.com.
+IPv4 Addresses: 204.19.119.1 
+IPv6 Addresses :2620:171:800:714::1 
+Description: Name server for domain ""apple.com"""
+d.ns.apple.com.,"DNS information
+Domain: apple.com
+Host: d.ns.apple.com.
+IPv4 Addresses: 204.26.57.1 
+IPv6 Addresses :2620:171:801:714::1 
+Description: Name server for domain ""apple.com"""
+e.ns.apple.com.,"DNS information
+Domain: apple.com
+Host: e.ns.apple.com.
+IPv4 Addresses: 208.78.70.129 
+IPv6 Addresses :2001:500:90:1::129 
+Description: Name server for domain ""apple.com"""
+f.ns.apple.com.,"DNS information
+Domain: apple.com
+Host: f.ns.apple.com.
+IPv4 Addresses: 204.13.250.129 
+IPv6 Addresses : No information
+Description: Name server for domain ""apple.com"""
+nserver6.apple.com.,"DNS information
+Domain: apple.com
+Host: nserver6.apple.com.
+IPv4 Addresses: 17.171.63.40 
+IPv6 Addresses : No information
+Description: Name server for domain ""apple.com"""
+nserver5.apple.com.,"DNS information
+Domain: apple.com
+Host: nserver5.apple.com.
+IPv4 Addresses: 17.171.63.30 
+IPv6 Addresses : No information
+Description: Name server for domain ""apple.com"""

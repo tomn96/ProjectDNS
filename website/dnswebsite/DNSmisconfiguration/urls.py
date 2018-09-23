@@ -13,5 +13,9 @@ urlpatterns = [
     path('upload_csv', views.upload_csv, name='upload_csv'),
     path('known_ns', views.known_ns, name='known_ns'),
     path('upload_known_ns', views.upload_known_ns, name='upload_known_ns'),
-    path('download_dict/<int:dict_id>/<int:option>', views.download_dict, name='download_dict')
+    path('download_dict/<int:dict_id>/<int:option>', views.download_dict, name='download_dict'),
+    path('download_results_servers', views.download_results_servers, name='download_results_servers'),
+    path('download_results_records', views.download_results_records, name='download_results_records'),
+    path('download_misconfigurations', views.download_misconfigurations, name='download_misconfigurations'),
+    path('download_misconfigurations_count', views.download_misconfigurations_count, name='download_misconfigurations_count')
 ]

@@ -1,0 +1,1093 @@
+"server1, server2, domain",misconfiguration info
+"('l.gtld-servers.net.', 'f.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: l.gtld-servers.net.
+Host2: f.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('l.gtld-servers.net.', 'b.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: l.gtld-servers.net.
+Host2: b.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('l.gtld-servers.net.', 'e.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: l.gtld-servers.net.
+Host2: e.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('l.gtld-servers.net.', 'a.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: l.gtld-servers.net.
+Host2: a.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('l.gtld-servers.net.', 'c.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: l.gtld-servers.net.
+Host2: c.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('l.gtld-servers.net.', 'd.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: l.gtld-servers.net.
+Host2: d.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('h.gtld-servers.net.', 'f.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: h.gtld-servers.net.
+Host2: f.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('h.gtld-servers.net.', 'b.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: h.gtld-servers.net.
+Host2: b.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('h.gtld-servers.net.', 'e.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: h.gtld-servers.net.
+Host2: e.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('h.gtld-servers.net.', 'a.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: h.gtld-servers.net.
+Host2: a.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('h.gtld-servers.net.', 'c.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: h.gtld-servers.net.
+Host2: c.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('h.gtld-servers.net.', 'd.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: h.gtld-servers.net.
+Host2: d.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('k.gtld-servers.net.', 'f.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: k.gtld-servers.net.
+Host2: f.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('k.gtld-servers.net.', 'b.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: k.gtld-servers.net.
+Host2: b.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('k.gtld-servers.net.', 'e.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: k.gtld-servers.net.
+Host2: e.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('k.gtld-servers.net.', 'a.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: k.gtld-servers.net.
+Host2: a.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('k.gtld-servers.net.', 'c.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: k.gtld-servers.net.
+Host2: c.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('k.gtld-servers.net.', 'd.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: k.gtld-servers.net.
+Host2: d.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('e.gtld-servers.net.', 'f.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: e.gtld-servers.net.
+Host2: f.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('e.gtld-servers.net.', 'b.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: e.gtld-servers.net.
+Host2: b.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('e.gtld-servers.net.', 'e.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: e.gtld-servers.net.
+Host2: e.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('e.gtld-servers.net.', 'a.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: e.gtld-servers.net.
+Host2: a.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('e.gtld-servers.net.', 'c.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: e.gtld-servers.net.
+Host2: c.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('e.gtld-servers.net.', 'd.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: e.gtld-servers.net.
+Host2: d.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('f.gtld-servers.net.', 'f.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: f.gtld-servers.net.
+Host2: f.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('f.gtld-servers.net.', 'b.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: f.gtld-servers.net.
+Host2: b.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('f.gtld-servers.net.', 'e.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: f.gtld-servers.net.
+Host2: e.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('f.gtld-servers.net.', 'a.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: f.gtld-servers.net.
+Host2: a.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('f.gtld-servers.net.', 'c.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: f.gtld-servers.net.
+Host2: c.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('f.gtld-servers.net.', 'd.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: f.gtld-servers.net.
+Host2: d.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('m.gtld-servers.net.', 'f.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: m.gtld-servers.net.
+Host2: f.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('m.gtld-servers.net.', 'b.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: m.gtld-servers.net.
+Host2: b.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('m.gtld-servers.net.', 'e.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: m.gtld-servers.net.
+Host2: e.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('m.gtld-servers.net.', 'a.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: m.gtld-servers.net.
+Host2: a.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('m.gtld-servers.net.', 'c.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: m.gtld-servers.net.
+Host2: c.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('m.gtld-servers.net.', 'd.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: m.gtld-servers.net.
+Host2: d.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('b.gtld-servers.net.', 'f.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: b.gtld-servers.net.
+Host2: f.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('b.gtld-servers.net.', 'b.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: b.gtld-servers.net.
+Host2: b.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('b.gtld-servers.net.', 'e.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: b.gtld-servers.net.
+Host2: e.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('b.gtld-servers.net.', 'a.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: b.gtld-servers.net.
+Host2: a.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('b.gtld-servers.net.', 'c.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: b.gtld-servers.net.
+Host2: c.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('b.gtld-servers.net.', 'd.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: b.gtld-servers.net.
+Host2: d.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('d.gtld-servers.net.', 'f.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: d.gtld-servers.net.
+Host2: f.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('d.gtld-servers.net.', 'b.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: d.gtld-servers.net.
+Host2: b.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('d.gtld-servers.net.', 'e.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: d.gtld-servers.net.
+Host2: e.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('d.gtld-servers.net.', 'a.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: d.gtld-servers.net.
+Host2: a.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('d.gtld-servers.net.', 'c.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: d.gtld-servers.net.
+Host2: c.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('d.gtld-servers.net.', 'd.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: d.gtld-servers.net.
+Host2: d.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('g.gtld-servers.net.', 'f.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: g.gtld-servers.net.
+Host2: f.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('g.gtld-servers.net.', 'b.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: g.gtld-servers.net.
+Host2: b.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('g.gtld-servers.net.', 'e.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: g.gtld-servers.net.
+Host2: e.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('g.gtld-servers.net.', 'a.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: g.gtld-servers.net.
+Host2: a.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('g.gtld-servers.net.', 'c.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: g.gtld-servers.net.
+Host2: c.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('g.gtld-servers.net.', 'd.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: g.gtld-servers.net.
+Host2: d.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('a.gtld-servers.net.', 'f.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: a.gtld-servers.net.
+Host2: f.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('a.gtld-servers.net.', 'b.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: a.gtld-servers.net.
+Host2: b.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('a.gtld-servers.net.', 'e.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: a.gtld-servers.net.
+Host2: e.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('a.gtld-servers.net.', 'a.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: a.gtld-servers.net.
+Host2: a.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('a.gtld-servers.net.', 'c.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: a.gtld-servers.net.
+Host2: c.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('a.gtld-servers.net.', 'd.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: a.gtld-servers.net.
+Host2: d.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('i.gtld-servers.net.', 'f.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: i.gtld-servers.net.
+Host2: f.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('i.gtld-servers.net.', 'b.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: i.gtld-servers.net.
+Host2: b.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('i.gtld-servers.net.', 'e.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: i.gtld-servers.net.
+Host2: e.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('i.gtld-servers.net.', 'a.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: i.gtld-servers.net.
+Host2: a.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('i.gtld-servers.net.', 'c.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: i.gtld-servers.net.
+Host2: c.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('i.gtld-servers.net.', 'd.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: i.gtld-servers.net.
+Host2: d.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('j.gtld-servers.net.', 'f.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: j.gtld-servers.net.
+Host2: f.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('j.gtld-servers.net.', 'b.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: j.gtld-servers.net.
+Host2: b.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('j.gtld-servers.net.', 'e.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: j.gtld-servers.net.
+Host2: e.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('j.gtld-servers.net.', 'a.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: j.gtld-servers.net.
+Host2: a.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('j.gtld-servers.net.', 'c.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: j.gtld-servers.net.
+Host2: c.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('j.gtld-servers.net.', 'd.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: j.gtld-servers.net.
+Host2: d.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('c.gtld-servers.net.', 'f.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: c.gtld-servers.net.
+Host2: f.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('c.gtld-servers.net.', 'b.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: c.gtld-servers.net.
+Host2: b.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('c.gtld-servers.net.', 'e.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: c.gtld-servers.net.
+Host2: e.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('c.gtld-servers.net.', 'a.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: c.gtld-servers.net.
+Host2: a.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('c.gtld-servers.net.', 'c.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: c.gtld-servers.net.
+Host2: c.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('c.gtld-servers.net.', 'd.ns.apple.com.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: c.gtld-servers.net.
+Host2: d.ns.apple.com.
+NS known to host1 and not known to host2: 
+NS known to host2 and not known to host1: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+"
+"('f.ns.apple.com.', 'l.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: f.ns.apple.com.
+Host2: l.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('f.ns.apple.com.', 'h.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: f.ns.apple.com.
+Host2: h.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('f.ns.apple.com.', 'k.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: f.ns.apple.com.
+Host2: k.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('f.ns.apple.com.', 'e.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: f.ns.apple.com.
+Host2: e.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('f.ns.apple.com.', 'f.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: f.ns.apple.com.
+Host2: f.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('f.ns.apple.com.', 'm.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: f.ns.apple.com.
+Host2: m.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('f.ns.apple.com.', 'b.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: f.ns.apple.com.
+Host2: b.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('f.ns.apple.com.', 'd.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: f.ns.apple.com.
+Host2: d.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('f.ns.apple.com.', 'g.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: f.ns.apple.com.
+Host2: g.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('f.ns.apple.com.', 'a.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: f.ns.apple.com.
+Host2: a.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('f.ns.apple.com.', 'i.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: f.ns.apple.com.
+Host2: i.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('f.ns.apple.com.', 'j.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: f.ns.apple.com.
+Host2: j.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('f.ns.apple.com.', 'c.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: f.ns.apple.com.
+Host2: c.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('b.ns.apple.com.', 'l.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: b.ns.apple.com.
+Host2: l.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('b.ns.apple.com.', 'h.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: b.ns.apple.com.
+Host2: h.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('b.ns.apple.com.', 'k.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: b.ns.apple.com.
+Host2: k.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('b.ns.apple.com.', 'e.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: b.ns.apple.com.
+Host2: e.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('b.ns.apple.com.', 'f.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: b.ns.apple.com.
+Host2: f.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('b.ns.apple.com.', 'm.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: b.ns.apple.com.
+Host2: m.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('b.ns.apple.com.', 'b.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: b.ns.apple.com.
+Host2: b.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('b.ns.apple.com.', 'd.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: b.ns.apple.com.
+Host2: d.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('b.ns.apple.com.', 'g.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: b.ns.apple.com.
+Host2: g.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('b.ns.apple.com.', 'a.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: b.ns.apple.com.
+Host2: a.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('b.ns.apple.com.', 'i.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: b.ns.apple.com.
+Host2: i.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('b.ns.apple.com.', 'j.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: b.ns.apple.com.
+Host2: j.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('b.ns.apple.com.', 'c.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: b.ns.apple.com.
+Host2: c.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('e.ns.apple.com.', 'l.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: e.ns.apple.com.
+Host2: l.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('e.ns.apple.com.', 'h.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: e.ns.apple.com.
+Host2: h.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('e.ns.apple.com.', 'k.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: e.ns.apple.com.
+Host2: k.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('e.ns.apple.com.', 'e.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: e.ns.apple.com.
+Host2: e.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('e.ns.apple.com.', 'f.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: e.ns.apple.com.
+Host2: f.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('e.ns.apple.com.', 'm.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: e.ns.apple.com.
+Host2: m.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('e.ns.apple.com.', 'b.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: e.ns.apple.com.
+Host2: b.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('e.ns.apple.com.', 'd.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: e.ns.apple.com.
+Host2: d.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('e.ns.apple.com.', 'g.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: e.ns.apple.com.
+Host2: g.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('e.ns.apple.com.', 'a.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: e.ns.apple.com.
+Host2: a.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('e.ns.apple.com.', 'i.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: e.ns.apple.com.
+Host2: i.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('e.ns.apple.com.', 'j.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: e.ns.apple.com.
+Host2: j.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('e.ns.apple.com.', 'c.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: e.ns.apple.com.
+Host2: c.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('a.ns.apple.com.', 'l.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: a.ns.apple.com.
+Host2: l.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('a.ns.apple.com.', 'h.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: a.ns.apple.com.
+Host2: h.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('a.ns.apple.com.', 'k.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: a.ns.apple.com.
+Host2: k.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('a.ns.apple.com.', 'e.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: a.ns.apple.com.
+Host2: e.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('a.ns.apple.com.', 'f.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: a.ns.apple.com.
+Host2: f.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('a.ns.apple.com.', 'm.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: a.ns.apple.com.
+Host2: m.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('a.ns.apple.com.', 'b.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: a.ns.apple.com.
+Host2: b.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('a.ns.apple.com.', 'd.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: a.ns.apple.com.
+Host2: d.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('a.ns.apple.com.', 'g.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: a.ns.apple.com.
+Host2: g.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('a.ns.apple.com.', 'a.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: a.ns.apple.com.
+Host2: a.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('a.ns.apple.com.', 'i.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: a.ns.apple.com.
+Host2: i.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('a.ns.apple.com.', 'j.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: a.ns.apple.com.
+Host2: j.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('a.ns.apple.com.', 'c.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: a.ns.apple.com.
+Host2: c.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('c.ns.apple.com.', 'l.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: c.ns.apple.com.
+Host2: l.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('c.ns.apple.com.', 'h.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: c.ns.apple.com.
+Host2: h.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('c.ns.apple.com.', 'k.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: c.ns.apple.com.
+Host2: k.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('c.ns.apple.com.', 'e.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: c.ns.apple.com.
+Host2: e.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('c.ns.apple.com.', 'f.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: c.ns.apple.com.
+Host2: f.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('c.ns.apple.com.', 'm.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: c.ns.apple.com.
+Host2: m.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('c.ns.apple.com.', 'b.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: c.ns.apple.com.
+Host2: b.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('c.ns.apple.com.', 'd.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: c.ns.apple.com.
+Host2: d.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('c.ns.apple.com.', 'g.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: c.ns.apple.com.
+Host2: g.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('c.ns.apple.com.', 'a.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: c.ns.apple.com.
+Host2: a.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('c.ns.apple.com.', 'i.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: c.ns.apple.com.
+Host2: i.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('c.ns.apple.com.', 'j.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: c.ns.apple.com.
+Host2: j.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('c.ns.apple.com.', 'c.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: c.ns.apple.com.
+Host2: c.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('d.ns.apple.com.', 'l.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: d.ns.apple.com.
+Host2: l.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('d.ns.apple.com.', 'h.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: d.ns.apple.com.
+Host2: h.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('d.ns.apple.com.', 'k.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: d.ns.apple.com.
+Host2: k.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('d.ns.apple.com.', 'e.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: d.ns.apple.com.
+Host2: e.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('d.ns.apple.com.', 'f.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: d.ns.apple.com.
+Host2: f.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('d.ns.apple.com.', 'm.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: d.ns.apple.com.
+Host2: m.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('d.ns.apple.com.', 'b.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: d.ns.apple.com.
+Host2: b.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('d.ns.apple.com.', 'd.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: d.ns.apple.com.
+Host2: d.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('d.ns.apple.com.', 'g.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: d.ns.apple.com.
+Host2: g.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('d.ns.apple.com.', 'a.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: d.ns.apple.com.
+Host2: a.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('d.ns.apple.com.', 'i.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: d.ns.apple.com.
+Host2: i.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('d.ns.apple.com.', 'j.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: d.ns.apple.com.
+Host2: j.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"
+"('d.ns.apple.com.', 'c.gtld-servers.net.', 'apple.com')","Misconfiguration information
+Domain: apple.com
+Host1: d.ns.apple.com.
+Host2: c.gtld-servers.net.
+NS known to host1 and not known to host2: {'nserver6.apple.com.', 'nserver5.apple.com.'}
+NS known to host2 and not known to host1: 
+"

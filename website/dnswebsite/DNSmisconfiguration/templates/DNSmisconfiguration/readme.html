@@ -36,7 +36,7 @@
 <div class="w3-row-padding w3-padding-64 w3-container">
     <div class="w3-content">
         <h1 id="abstract">Abstract</h1>
-        <h5 class="w3-padding-32">see <a href="https://ns1.com/resources/dns-protocol">DNS protocol</a></h5>
+        <!--<h5 class="w3-padding-32">see <a href="https://ns1.com/resources/dns-protocol">DNS protocol</a></h5>-->
 
         <p>Tool for detecting and analyzing DNS misconfigurations among the internet servers.The tool scans through a list of URL addresses, and checks whether their authoritative servers are misconfigured.</p>
         <p>The program is executed through a website that hosted in AWS.</p>
@@ -134,7 +134,7 @@
         </ul>
         </blockquote>
         <blockquote>
-        <p>for additional information related to format download <a href="https://ns1.com/resources/dns-protocol"> results_servers.csv </a> example</p>
+        <p>for additional information related to format download <a href="{% url 'DNSmisconfiguration:download_results_servers' %}"> results_servers.csv </a> example</p>
         </blockquote>
         <blockquote>
         <ol start="2" style="list-style-type: decimal">
@@ -151,7 +151,7 @@
         <p>(server name, domain) , (servers known in the domain)</p>
         </blockquote>
         <blockquote>
-        <p>for additional information related to format download <a href="https://ns1.com/resources/dns-protocol"> results_records.csv </a> example</p>
+        <p>for additional information related to format download <a href="{% url 'DNSmisconfiguration:download_results_records' %}"> results_records.csv </a> example</p>
         </blockquote>
         <h4 id="misconfigurations-detection">Misconfigurations Detection</h4>
         <blockquote>
@@ -196,7 +196,7 @@
         </ul>
         </blockquote>
         <blockquote>
-        <p>for additional information related to format download <a href="https://ns1.com/resources/dns-protocol"> misconfigurations.csv </a> example</p>
+        <p>for additional information related to format download <a href="{% url 'DNSmisconfiguration:download_misconfigurations' %}"> misconfigurations.csv </a> example</p>
         </blockquote>
         <blockquote>
         <ol start="2" style="list-style-type: decimal">
@@ -213,7 +213,7 @@
         <p>(domain) , (number of misconfigurations detected)</p>
         </blockquote>
         <blockquote>
-        <p>for additional information related to format download <a href="https://ns1.com/resources/dns-protocol"> misconfigurations_count.csv </a> example</p>
+        <p>for additional information related to format download <a href="{% url 'DNSmisconfiguration:download_misconfigurations_count' %}"> misconfigurations_count.csv </a> example</p>
         </blockquote>
         <p><strong>In addition to the downloadable csv files, the results are stored in a Django database contained in the website </strong></p>
     </div>
