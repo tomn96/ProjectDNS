@@ -3,7 +3,7 @@ import pickle
 import csv
 from django.conf import settings
 from django.shortcuts import render, get_object_or_404
-from django.http import StreamingHttpResponse, Http404
+from django.http import StreamingHttpResponse, Http404, HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from . import dns_utils, CheckCSV
 from .forms import SingleUrlForm
@@ -168,9 +168,9 @@ def download_dict(request, dict_id, option):
 def download_csv_file(request, path):
     file_path = os.path.join(settings.STATIC_ROOT, path)
     if os.path.exists(file_path):
-        with open(file_path, 'r') as f:
-            response = StreamingHttpResponse((line for line in f), content_type="text/csv")
-            response['Content-Disposition'] = 'attachment; filename=' + os.path.basename(file_path)
+        with open(file_path, 'rb') as fh:
+            response = HttpResponse(fh.read(), content_type="text/csv")
+            response['Content-Disposition'] = 'inline; filename=' + os.path.basename(file_path)
             return response
     raise Http404
 
