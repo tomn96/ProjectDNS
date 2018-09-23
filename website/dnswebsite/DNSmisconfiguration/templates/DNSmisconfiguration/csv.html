@@ -12,53 +12,12 @@
 
 
 {% block content %}
-<script src="{% static 'DNSmisconfiguration/dropzonejs/dropzone.js' %}"></script>
-<link rel="stylesheet" href="{% static 'DNSmisconfiguration/dropzonejs/dropzone.css' %}">
-
-<style>
-#dropzone
-{
-    margin-bottom: 3rem;
-}
-
-.dropzone
-{
-    border: 2px dashed #f44336;
-    border-radius: 5px;
-    background: white;
-}
-
-.dropzone:hover
-{
-    background: LightGray;
-}
-
-.dropzone .dz-message
-{
-    font-weight: 400;
-}
-
-.dropzone .dz-message .note
-{
-    font-size: 0.8em;
-    font-weight: 200;
-    display: block;
-    margin-top: 1.4rem;
-}
-</style>
-
-
-<div id="dropzone" style="padding:50px 25px 50px 25px; margin: 0px 0px 0px 0px;">
-    <form action="{% url 'DNSmisconfiguration:upload_csv' %}" class="dropzone" id="csv-file-upload">
-        <div class="dz-message">
-            <p>Drop files here or click to upload</p>
-            <span class="note">upload a CSV file</span>
-        </div>
-
-        <div class="fallback">
-            <input name="file" type="file"/>
-        </div>
-    </form>
+<div class="w3-center w3-content w3-container w3-padding-64">
+<form action="{% url 'DNSmisconfiguration:csv_url' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form }}
+    <input class="w3-button w3-black w3-padding-large w3-large w3-margin-top" type="submit" value="Submit">
+</form>
 </div>
 
 {% endblock %}

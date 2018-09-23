@@ -3,10 +3,10 @@ import pickle
 import csv
 from django.conf import settings
 from django.shortcuts import render, get_object_or_404
-from django.http import StreamingHttpResponse, Http404, HttpResponse
+from django.http import StreamingHttpResponse, Http404, HttpResponse, HttpResponseRedirect
 from django.views.decorators.csrf import csrf_exempt
 from . import dns_utils, CheckCSV
-from .forms import SingleUrlForm
+from .forms import SingleUrlForm, UploadFileForm
 from .models import StoredDict, RootDNSServers
 
 
@@ -123,32 +123,38 @@ def address(request):
     return render(request, 'DNSmisconfiguration/address.html', {'form': form})
 
 
+@csrf_exempt
 def csv_url(request):
-    return render(request, 'DNSmisconfiguration/csv.html')
+    if request.method == 'POST':
+        form = UploadFileForm(request.POST, request.FILES)
+        if form.is_valid():
+            dns_worker, misconfiguration_result = dns_utils.main_csv(request.FILES['file'])
+            context = handle_dns(dns_worker, misconfiguration_result)
+            context_stored = StoredDict.objects.create(pickle_dict=pickle.dumps(context))
+            return HttpResponseRedirect('/results/' + str(context_stored.id))
+    else:
+        form = UploadFileForm()
+    return render(request, 'DNSmisconfiguration/csv.html', {'form': form})
 
 
 @csrf_exempt
-def upload_csv(request):
-    if request.method == 'POST':
-        dns_worker, misconfiguration_result = dns_utils.main_csv(request.FILES['file'])
-        context = handle_dns(dns_worker, misconfiguration_result)
-        return render(request, 'DNSmisconfiguration/results.html', context)
-
-    return csv_url(request)
-
-
 def known_ns(request):
-    return render(request, 'DNSmisconfiguration/known_ns.html')
-
-
-@csrf_exempt
-def upload_known_ns(request):
     if request.method == 'POST':
-        misconfiguration_result = CheckCSV.main_known_ns(request.FILES['file'])
-        context = handle_misconfiguration(misconfiguration_result)
-        return render(request, 'DNSmisconfiguration/results.html', context)
+        form = UploadFileForm(request.POST, request.FILES)
+        if form.is_valid():
+            misconfiguration_result = CheckCSV.main_known_ns(request.FILES['file'])
+            context = handle_misconfiguration(misconfiguration_result)
+            context_stored = StoredDict.objects.create(pickle_dict=pickle.dumps(context))
+            return HttpResponseRedirect('/results/' + str(context_stored.id))
+    else:
+        form = UploadFileForm()
+    return render(request, 'DNSmisconfiguration/known_ns.html', {'form': form})
 
-    return known_ns(request)
+
+def results(request, dict_id):
+    stored_context = get_object_or_404(StoredDict, id=int(dict_id))
+    context = pickle.loads(stored_context.pickle_dict)
+    return render(request, 'DNSmisconfiguration/results.html', context)
 
 
 class Echo:
