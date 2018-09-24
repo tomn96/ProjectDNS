@@ -3,7 +3,6 @@
 
 ----
 ## Abstract
-see [DNS protocol](https://ns1.com/resources/dns-protocol)
 
 > Tool for detecting and analyzing DNS misconfigurations among the internet servers.The tool scans through a list of URL addresses, and checks whether their authoritative servers are misconfigured.
 
@@ -60,15 +59,13 @@ see [DNS protocol](https://ns1.com/resources/dns-protocol)
 
 >  server information holds the following attributes for a specific server:
 >  * host name
-
 >  * domain
 >  * ipv4 addresses
-
 >  * ipv6 addresses
 >  * description
 
 >  for additional information related to format
->  [download results_records.csv example](https://ns1.com/resources/dns-protocol)
+>  download [results_servers.csv](http://env-dnsweb.bgbr3jbjqh.eu-central-1.elasticbeanstalk.com/download_results_servers) example
 
 >2. **results_records.csv**
 
@@ -78,7 +75,7 @@ see [DNS protocol](https://ns1.com/resources/dns-protocol)
 
 >  <server name, domain> , <servers known in the domain>
 
->  [download results_records.csv example](https://ns1.com/resources/dns-protocol)
+>  download [results_records.csv](http://env-dnsweb.bgbr3jbjqh.eu-central-1.elasticbeanstalk.com/download_results_records) example
 
 
 #### Misconfigurations Detection 
@@ -99,19 +96,16 @@ see [DNS protocol](https://ns1.com/resources/dns-protocol)
 
 >  Misconfiguration information holds the following attributes for a specific misconfiguration:
 >  * host name
-
 >  * domain
 >  * first server
-
 >  * second server
 >  * the servers that both servers know
-
 >  * the servers that the *first server* knows and the *second server* does not
 >  * the servers that the *second server* knows and the *first server* does not
 
 
 >  for additional information related to format
->  [download misconfigurations.csv example](https://ns1.com/resources/dns-protocol)
+>  download [misconfigurations.csv](http://env-dnsweb.bgbr3jbjqh.eu-central-1.elasticbeanstalk.com/download_misconfigurations) example
 
 >2. **misconfigurations_count.csv**
 
@@ -121,7 +115,7 @@ see [DNS protocol](https://ns1.com/resources/dns-protocol)
 
 >  <domain> , <number of misconfigurations detected>
 
->  [download misconfigurations_count.csv example](https://ns1.com/resources/dns-protocol)
+>  download [misconfigurations_count.csv](http://env-dnsweb.bgbr3jbjqh.eu-central-1.elasticbeanstalk.com/download_misconfigurations_count) example
 
 **In addition to the downloadable csv files, the results are stored in a Django database contained in the website
 **
