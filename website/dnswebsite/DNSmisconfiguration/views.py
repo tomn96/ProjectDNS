@@ -1,6 +1,7 @@
 import os
 import pickle
 import csv
+from ast import literal_eval
 from django.conf import settings
 from django.shortcuts import render, get_object_or_404
 from django.http import StreamingHttpResponse, Http404, HttpResponse, HttpResponseRedirect
@@ -142,7 +143,29 @@ def known_ns(request):
     if request.method == 'POST':
         form = UploadFileForm(request.POST, request.FILES)
         if form.is_valid():
-            misconfiguration_result = CheckCSV.main_known_ns(request.FILES['file'])
+            file = request.FILES['file']
+            utf8 = (line.decode('utf-8') for line in file)
+            file_reader = csv.reader(utf8)
+
+            known_ns_dict = dict()
+            for counter, row in enumerate(file_reader):
+                if row == ['(Server Name, Domain)', 'Servers known in domain']:
+                    continue
+                elif len(row) == 0:
+                    continue
+                else:
+                    try:
+                        tuple_key = literal_eval(row[0])
+                        set_value = literal_eval(row[1])
+                    except Exception:
+                        continue
+
+                    if type(tuple_key) == tuple and type(set_value) == set and len(tuple_key) == 2:
+                        known_ns_dict[tuple_key] = set_value
+                    else:
+                        continue
+
+            misconfiguration_result = dns_utils.main_known_ns(known_ns_dict)
             context = handle_misconfiguration(misconfiguration_result)
             context_stored = StoredDict.objects.create(pickle_dict=pickle.dumps(context))
             return HttpResponseRedirect('/results/' + str(context_stored.id))
@@ -164,7 +187,7 @@ def top500(request):
         with open(file_path, 'r') as fh:
             reader = csv.reader(fh)
             for counter, row in enumerate(reader):
-                if counter == 0:
+                if row == ['domain', 'num of misconfigurations']:
                     continue
                 elif len(row) == 0:
                     continue

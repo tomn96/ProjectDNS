@@ -188,3 +188,16 @@ def main_csv(file):
     # storeInCSV("misconfigurations_count.csv", misconfiguration_result.misconfiguration_count_dict, ["domain", "num of misconfigurations"])
 
     return dns_worker, misconfiguration_result
+
+
+def main_known_ns(known_ns_dict):
+
+    dns_worker = DI.DNSWorker()
+    dns_worker.name_to_server_info_dict = dict()
+    dns_worker.DNS_dict = known_ns_dict
+
+    misconfiguration_result = MisconfigurationResult()
+
+    check_misconfig(dns_worker, misconfiguration_result)
+
+    return misconfiguration_result
