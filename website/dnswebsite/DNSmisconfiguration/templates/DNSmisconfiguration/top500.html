@@ -1,0 +1,112 @@
+{% extends "DNSmisconfiguration/base.html" %}
+
+{% block head %}
+{% load static %}
+<script src="{% static 'DNSmisconfiguration/Chart.min.js' %}"></script>
+{% endblock %}
+
+{% block navbarTop500 %}
+<a href="{% url 'DNSmisconfiguration:top500' %}" class="w3-bar-item w3-button w3-padding-large w3-white">Top500</a>
+{% endblock %}
+
+
+{% block navbarDemoTop500 %}
+<a href="{% url 'DNSmisconfiguration:top500' %}" class="w3-bar-item w3-button w3-padding-large w3-gray">Top500</a>
+{% endblock %}
+
+
+{% block content %}
+
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+        <h1 id="abstract">Top 500 URLs from Majestic Milion database</h1>
+        <h5 class="w3-padding-32">The results of the run of the program with the top 500 sites on the web</h5>
+    </div>
+</div>
+
+
+<div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-content w3-container w3-padding-64">
+        <canvas id="details" width="90%" height="50"></canvas>
+    </div>
+</div>
+
+
+<div class="w3-row w3-light-grey w3-padding-32 w3-section">
+    <div class="w3-center w3-content w3-container w3-padding-64">
+    {% if also_dns %}
+    <div class="w3-row w3-padding-32 w3-section">
+        <div class="w3-col w3-half w3-panel">
+            <a href="{% url 'DNSmisconfiguration:download_top500_results_servers' %}" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Servers Information</a>
+        </div>
+        <div class="w3-col w3-half w3-panel">
+            <a href="{% url 'DNSmisconfiguration:download_top500_results_records' %}" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Known Data By Each Server</a>
+        </div>
+    </div>
+    {% endif %}
+    <div class="w3-row w3-padding-32 w3-section">
+        <div class="w3-col w3-half w3-panel">
+            <a href="{% url 'DNSmisconfiguration:download_top500_misconfigurations' %}" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Misconfigurations Information</a>
+        </div>
+        <div class="w3-col w3-half w3-panel">
+            <a href="{% url 'DNSmisconfiguration:download_top500_misconfigurations_count' %}" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Misconfigurations Count</a>
+        </div>
+    </div>
+
+    </div>
+</div>
+
+
+
+
+<script defer>
+var details_config = {
+    type: 'bar',
+    data: {
+        labels: ["{{ domain0 }}", "{{ domain1 }}", "{{ domain2 }}", "{{ domain3 }}", "{{ domain4 }}", "{{ domain5 }}", "{{ domain6 }}", "{{ domain7 }}", "{{ domain8 }}", "{{ domain9 }}"],
+        datasets: [{
+            label: 'Result',
+            data: {{ misconfigurations }},
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(255, 99, 132, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(255,99,132,1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        responsive: true,
+        title: {
+            display: true,
+            text: 'Top 10 domains which contain the most misconfiguration'
+        },
+        scales: {
+            xAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Sub-Domain'
+                }
+            }],
+            yAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Amount of servers containing Misconfiguration'
+                },
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+};
+var details_ctx = document.getElementById("details").getContext("2d");
+new Chart(details_ctx, details_config);
+</script>
+
+{% endblock %}

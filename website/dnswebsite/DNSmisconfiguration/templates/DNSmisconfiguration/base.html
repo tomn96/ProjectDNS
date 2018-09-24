@@ -49,6 +49,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
         <!--<a href="{% url 'DNSmisconfiguration:known_ns' %}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">KnownNS</a>-->
         {% endblock %}
 
+        {% block navbarTop500 %}
+        <a href="{% url 'DNSmisconfiguration:top500' %}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Top500</a>
+        {% endblock %}
+
     </div>
 
     <!-- Navbar on small screens -->
@@ -72,6 +76,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
         {% block navbarDemoKnownNS %}
         <!--<a href="{% url 'DNSmisconfiguration:known_ns' %}" class="w3-bar-item w3-button w3-padding-large">KnownNS</a>-->
+        {% endblock %}
+
+        {% block navbarDemoTop500 %}
+        <a href="{% url 'DNSmisconfiguration:top500' %}" class="w3-bar-item w3-button w3-padding-large">Top500</a>
         {% endblock %}
 
     </div>

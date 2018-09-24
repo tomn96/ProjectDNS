@@ -157,6 +157,43 @@ def results(request, dict_id):
     return render(request, 'DNSmisconfiguration/results.html', context)
 
 
+def top500(request):
+    file_path = os.path.join(settings.STATIC_ROOT, 'DNSmisconfiguration/500topResults/misconfigurations_count.csv')
+    if os.path.exists(file_path):
+        misconfigurations_count = dict()
+        with open(file_path, 'r') as fh:
+            reader = csv.reader(fh)
+            for counter, row in enumerate(reader):
+                if counter == 0:
+                    continue
+                elif len(row) == 0:
+                    continue
+                else:
+                    if int(row[1]) == 0:
+                        continue
+                    else:
+                        misconfigurations_count[row[0]] = int(row[1])
+
+        sorted_misconfiguration_count = sorted(misconfigurations_count.items(), key=lambda kv: (kv[1], kv[0]), reverse=True)
+
+        top10_misconfiguration_count = sorted_misconfiguration_count[:10]
+
+        domains = list(map(lambda a: a[0], top10_misconfiguration_count))
+
+        context = {'misconfigurations': list(map(lambda a: a[1], top10_misconfiguration_count)),
+                   'domains_amount': len(domains),
+                   'also_dns': True
+                   }
+
+        for i, domain in enumerate(domains):
+            domain_str_key = 'domain' + str(i)
+            context[domain_str_key] = domain
+
+        return render(request, 'DNSmisconfiguration/top500.html', context)
+    else:
+        raise Http404
+
+
 class Echo:
     def write(self, value):
         return value
@@ -216,3 +253,19 @@ def download_misconfigurations(request):
 
 def download_misconfigurations_count(request):
     return download_csv_file(request, 'DNSmisconfiguration/misconfigurations_count.csv')
+
+
+def download_top500_results_servers(request):
+    return download_csv_file(request, 'DNSmisconfiguration/500topResults/results_servers.csv')
+
+
+def download_top500_results_records(request):
+    return download_csv_file(request, 'DNSmisconfiguration/500topResults/results_records.csv')
+
+
+def download_top500_misconfigurations(request):
+    return download_csv_file(request, 'DNSmisconfiguration/500topResults/misconfigurations.csv')
+
+
+def download_top500_misconfigurations_count(request):
+    return download_csv_file(request, 'DNSmisconfiguration/500topResults/misconfigurations_count.csv')
