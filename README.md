@@ -10,7 +10,7 @@
 
 ----
 ## Usage
-### The program supports 2 execution modes:
+### The program supports 3 execution modes:
 
 #### 1. Single URL
 > receives a single url address via designated text box in the website UI.
@@ -37,6 +37,11 @@
 > packetlife.net
 
 > moodle2.cs.huji.ac.il
+
+#### 3. CSV File of type "results_records"
+> This file is produced by using one of the above usages to run program.
+
+> Explanation about the file of type "results_records.csv" is below.
 
 ----
 ## Process and Output
