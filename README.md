@@ -55,7 +55,7 @@
 
 >  The file is in the format of:
 
->  <server name> , <server information>
+>  (server name) , (server information)
 
 >  server information holds the following attributes for a specific server:
 >  * host name
@@ -73,7 +73,7 @@
 
 >  The file is in the format of:
 
->  <server name, domain> , <servers known in the domain>
+>  (server name, domain) , (servers known in the domain)
 
 >  download [results_records.csv](http://env-dnsweb.bgbr3jbjqh.eu-central-1.elasticbeanstalk.com/download_results_records) example
 
@@ -92,7 +92,7 @@
 
 >  The file is in the format of:
 
->  <server1, server2, domain> , <Misconfiguration information>
+>  (server1, server2, domain) , (Misconfiguration information)
 
 >  Misconfiguration information holds the following attributes for a specific misconfiguration:
 >  * host name
@@ -113,7 +113,7 @@
 
 >  The file is in the format of:
 
->  <domain> , <number of misconfigurations detected>
+>  (domain) , (number of misconfigurations detected)
 
 >  download [misconfigurations_count.csv](http://env-dnsweb.bgbr3jbjqh.eu-central-1.elasticbeanstalk.com/download_misconfigurations_count) example
 
